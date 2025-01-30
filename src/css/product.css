@@ -1,0 +1,89 @@
+/* css for secection before image  */
+
+header::before {
+  content: "";
+  background: url("../images/banner-slider3.png");
+  position: absolute;
+  /* height: 40%;  */
+  height: 50%;
+  width: 100%;
+  opacity: 9;
+  z-index: -1;
+}
+
+.text-color {
+  color: #874f47;
+}
+
+.product_images {
+  margin-top: 50px;
+  align-items: center;
+  text-align: center;
+  /* cursor: pointer; */
+}
+
+.h3-product {
+  margin-left: 150px;
+  /* cursor: pointer; */
+}
+
+.product_content {
+  margin-top: 100px;
+  /* cursor: pointer; */
+}
+
+.product_bar {
+  height: 360px;
+  width: 582px;
+  background-color: black;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+  border-radius: 16px;
+  /* cursor:pointer; */
+  display: flex; /* Ensure flex behavior for alignment */
+  /* Default to column layout */
+  overflow: hidden;
+  justify-content: center; /* Center content */
+  margin: auto; /* Center the bar on the page */
+}
+
+/* For tablets (768px and above) */
+@media (max-width: 1024px) {
+  .product_bar {
+    width: 90%; /* Adjust width to fit smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 20px; /* Add padding for spacing */
+  }
+}
+
+/* For mobile devices (below 768px) */
+@media (max-width: 768px) {
+  .product_bar {
+    width: 100%; /* Take up full width of the viewport */
+    border-radius: 8px; /* Reduce border radius for smaller screens */
+    padding: 15px; /* Add padding for spacing */
+  }
+}
+
+.img-hov:hover {
+  transform: scale(1.005);
+  cursor: pointer;
+}
+
+.product_bar h1 {
+  cursor: pointer;
+}
+.product_footer {
+  margin-top: 100px;
+}
+footer::before {
+  content: "";
+  background-image: url("../images/foot.jpg");
+  position: absolute;
+  height: 35%;
+  width: 100%;
+
+  z-index: -1;
+  /* opacity: 0.1; */
+}

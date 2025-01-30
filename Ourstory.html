@@ -1,0 +1,412 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/css/corporate.css" />
+  <link rel="stylesheet" href="./src/css/tailwind.css" />
+  <link rel="stylesheet" href="./src/css/navbar.css" />
+  <link rel="stylesheet" href="./src/css/footer.css" />
+  <!-- <link rel="stylesheet" href="./src/css/ourstory.css" /> -->
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <title>Makkuse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body class="">
+  <!-- Navbar -->
+ <nav class="navbar">
+    <div class="containerr">
+      <a href="index.html" class="logo">
+        <img src="./src/images/logo.png" alt="Logo" class="logo-image">
+      </a>
+      <button class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="Ourstory.html" class="nav-link">Our Story</a>
+        <a href="Product.html" class="nav-link">Product</a>
+        <div class="dropdown">
+          <button class="dropdown-btn nav-link">Customized Gifting</button>
+          <div class="dropdown-menu">
+            <a href="Coperategift.html" class="dropdown-item">Corporate Gifts</a>
+            <div class="dropdown-1 dropdown-nested">
+              <a href="Festive.html" class="dropdown-item dropdown-toggle">Festival Gifts</a>
+              <div class="dropdown-menu-1">
+                <a href="Festive.html" class="dropdown-item">Dashain</a>
+                <a href="Festive.html" class="dropdown-item">Tihar</a>
+                <a href="Festive.html" class="dropdown-item">Teej</a>
+                <a href="Festive.html" class="dropdown-item">Fathers Day</a>
+                <a href="Festive.html" class="dropdown-item">Christmas Day</a>
+                <a href="Valentine.html" class="dropdown-item">Valentines Day</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+
+          <button class="dropdown-btn nav-link">Makkuse Outlet</button>
+          <div class="dropdown-menu">
+            <a href="Outlet.html" class="dropdown-item">Thamel</a>
+            <a href="Outlet.html" class="dropdown-item">Jhamiskhel</a>
+            <a href="Outlet.html" class="dropdown-item">Pokhara</a>
+          </div>
+        </div>
+
+        <a href="Franchise.html" class="nav-link">Franchise</a>
+        <a href="Contact.html" class="nav-link">Contact Us</a>
+        <a href="#" class="basket-icon py-1 px-2" id="orderNowButton">
+          <i class="bi bi-basket-fill text-white text-[30px]"></i>
+          <div class="shop-now-text my-auto">Shop Now</div>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div id="orderModal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2 class="text-[#BE6449] text-[24px] font-bold">E-Commerce Distributors</h2>
+        <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
+        <div class="flex flex-col justify-center gap-4 w-full mt-8">
+            <div class="flex flex-wrap gap-10 justify-center w-full">
+                <div
+                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
+                        <i class="bi bi-google-play"></i>
+                        <p class="text-white">daraz</p>
+                    </div>
+                </div>
+                <div
+                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
+                        <i class="bi bi-google-play"></i>
+                        <p class="text-white">daraz</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-10 justify-center w-full">
+                <div
+                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
+                        <i class="bi bi-google-play"></i>
+                        <p class="text-white">daraz</p>
+                    </div>
+                </div>
+                <div
+                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
+                        <i class="bi bi-google-play"></i>
+                        <p class="text-white">daraz</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+  const modal = document.getElementById('orderModal');
+  const openButton = document.getElementById('orderNowButton');
+  const closeButton = document.getElementById('closeModal');
+
+  // Open the modal
+  openButton.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+  });
+
+  // Close the modal
+  closeButton.addEventListener('click', () => {
+      modal.classList.add('hidden');
+  });
+
+  // Close modal when clicking outside of the modal content
+  window.addEventListener('click', (event) => {
+      if (event.target === modal) {
+          modal.classList.add('hidden');
+      }
+  });
+</script>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });</script>
+
+  <!-- Hero Section -->
+  <section class="slider-section-1 ">
+    <!-- Slider -->
+    <div class="slider-1">
+      <div class="slide-1" style="background-image: url('./src/images/storybanner.png');"></div>
+    </div>
+
+    <!-- Mission Text -->
+    <div class="footer-line">
+      <img src="./src/images/line.jpg" alt="Footer Divider">
+    </div>
+    <div class="mission-text" style="font-family: Arial;font-weight: 600;">
+      <p>
+        Our mission is to transform the way that the world experiences Nepali desserts, elevating its making while taking action in favor of sustainable future
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content-1">
+      <h1 class="title-2" style="font-family: 'Montserrat',sans-serif;">Makkuse</h1>
+      <h2 class="subtitle-1" style="font-family: 'Montserrat',sans-serif;">Preserving, Promoting, & Innovating</h2>
+      <p class="description-1" style="font-family: 'Montserrat',sans-serif;">Authentic Nepali Dessert Recipes</p>
+    </div>
+  </section>
+  
+
+ <section class="about-section-1">
+  <div class="image-container-1">
+    <img src="./src//images//choclate.png" alt="Delicious cookies with milk" class="about-image-1">
+  </div>
+    <div class="text-container-1">
+      <p class="about-text-1" style="font-family: Arial;font-weight: 500;">
+        Makkusé brings you an authentic taste from the magical, mystical land of The Himalayas.<br /><br />
+        With an innovative touch to the recipes that have been passed down from generations, we labor to deliver a
+        scrumptious experience in every bite. A luxurious & wholesome experience; Blend of traditional recipes
+        with a modern touch.<br /><br />
+        Aromatic alleys filled with notes of fresh khuwa roasted daily, a wonderful sight that residents of Kathmandu
+        enjoyed decades ago, have sadly diminished - along with the lively entertaining process of making these unique
+        Nepali desserts. With Makkusé, we aim to revive the lost recipes and make the Nepali richness well known across
+        the globe whilst meeting the expectations of customers, making sure we use locally resourced raw products by
+        sourcing the local talent.<br /><br />
+        Makkusé simply means Scrumptious & Beyond Delicious in Newari, our brand logo is written in Kutaakshar, a
+        version
+        within the Ranjana Lipi; the language of the Newar community, from whom our signature recipes originate.
+      </p>
+    </div>
+   
+  </section>
+  <section class="features-section-1">
+    <div class="features-content">
+      <div class="features-cards">
+        <div class="feature-card">
+          <img src="./src/images/solar_hand-heart-bold.png" alt="Handmade Icon">
+          <h1 class="feature-title" style="font-family: 'Montserrat',sans-serif;">HANDMADE</h1>
+          <p class="feature-text" style="font-family: Arial;">
+            Crafted By Hand, Using Recipes Passed Down Through Generations With Utmost Care & Attention To Hygiene.
+          </p>
+        </div>
+        <div class="feature-card">
+          <img src="./src/images/lets-icons_dimond-alt-fill.png" alt="Luxury Icon">
+          <h1 class="feature-title" style="font-family: 'Montserrat',sans-serif;">A Luxurious Experience</h1>
+          <p class="feature-text" style="font-family: Arial;">
+            Luxury Isn’t A Price Tag – It Is An Experience – An Enriching Fulfilling Experience & Nepali Luxury, is What
+            we Deliver.
+          </p>
+        </div>
+        <div class="feature-card">
+          <img src="./src/images/la_cookie-bite.png" alt="Delight Icon">
+          <h1 class="feature-title" style="font-family: 'Montserrat',sans-serif;">Delight In Every Bite</h1>
+          <p class="feature-text" style="font-family: Arial;">
+            Every Bite Feels Wholesome, Fulfilling & Delectable.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="features-image">
+      <img src="./src/images/product-description 1.png" alt="Product Description" class="features-img">
+    </div>
+  </section>
+  <section class="product-section-1">
+    <div class="image-container-3">
+      <img
+        src="./src/images/brass-spoon 1.png"
+        class="product-image-1">
+    </div>
+    <div class="product-text-1">
+      <div class="title-1" style="font-family: 'Montserrat',sans-serif;">Significance of Copper Spoon</div>
+      <div class="underline"></div>
+      <div class="description-3">
+        <p style="font-family: 'Montserrat',sans-serif;">
+          You will see copper hints throughout our branding, an ode to the unique copper elements that are an integral part of ceremonies and occasions celebrated within the Newar and the wider Nepali community, especially in the signature handcrafted copper spoon.
+        </p>
+      </div>
+    </div>
+
+  </section>
+  <section class="product-section-1">
+    <div class="product-text-1">
+      <div class="title-1" style="font-family: 'Montserrat',sans-serif;">Lokta Paper Benefits</div>
+      <div class="underline"></div>
+      <div class="description-3">
+        <p style="font-family: 'Montserrat',sans-serif;">
+          Artisans from the heart of Himalayas in Nepal, render a traditional process of ancient paper making with modern fashion and style to make the Lokta paper. The Lokta paper is characterized by high paper quality, prized with superior durability and rich texture. Our packages are reusable for decorational and storage purposes.
+        </p>
+      </div>
+    </div>
+    <div class="image-container-3">
+      <img
+        src="./src/images/lokta-paper-benifits 1.png"
+        class="product-image-1">
+    </div>
+  </section>
+  <section class="blog-section">
+    <div class="header">
+      <div class="title-1">Makkuse Blogs</div>
+      <div class="underline"></div>
+    </div>
+    <div class="blog-container">
+      <div class="blog-card">
+        <img src="./src/images/makkuse-lux 1.png" alt="Handmade Blog">
+        <h1 class="blog-title" style="font-family: 'Montserrat',sans-serif;">The Nepali Sagun</h1>
+        <p class="blog-description" style="font-family: 'Montserrat',sans-serif;">Sagun: /səˈgun/ सगुन , is a polite and original cultural practice widely followed in the Hindu culture and also significantly practiced in the Newari culture too. Sagun is a word taken from Sanskrit, which simply means auspicious. </p>
+        <div class="flex mt-8 container-eg-btn-2">
+          <a class="button button-5">read more</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="./src/images/makkuse-lux 1.png" alt="Handmade Blog">
+        <h1 class="blog-title" style="font-family: 'Montserrat',sans-serif;">Our Blogs</h1>
+        <p class="blog-description" style="font-family: 'Montserrat',sans-serif;">There are so many exciting conversations waiting to happen within the Nepali dessert space – here are some thoughts from our team, clients and enthusiasts! Do have a read and leave your thoughts!</p>
+        <div class="flex mt-8 container-eg-btn-2">
+          <a class="button button-5">read more</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="./src/images/makkuse-lux 1.png" alt="Handmade Blog">
+        <h1 class="blog-title" style="font-family: 'Montserrat',sans-serif;">Celebrating With Makkusé</h1>
+        <p class="blog-description" style="font-family: 'Montserrat',sans-serif;">There are so many exciting conversations waiting to happen within the Nepali dessert space – here are some thoughts from our team, clients and enthusiasts! Do have a read and leave your thoughts!</p>
+        <div class="flex mt-8 container-eg-btn-2">
+          <a class="button button-5">read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+
+
+  <!-- Footer -->
+  <footer class="footer relative">
+    <div class="footer-overlay absolute inset-0 bg-gradient-to-r opacity-100" style="background-image: linear-gradient(to right, #874F47 0%, #211311 100%);"></div>
+
+    <div class="footer-line">
+      <img src="./src/images/line.jpg" alt="Footer Divider">
+    </div>
+    <div class="container-foot">
+      <div class="grid">
+        <!-- Logo Section -->
+        <div class="footer-logo">
+          <img src="./src/images/logo.png" alt="Your Brand Logo" class="rounded w-28">
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="footer-links ">
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Quick Links</h3>
+          <ul>
+            <li><a href="#" class="footer-link text-white">Send Gift to Nepal</a></li>
+            <li><a href="#" class="footer-link text-white">Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us Section -->
+        <div class="footer-contact">
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Contact Us</h3>
+          <div>
+            <i class="bi bi-envelope text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">info@makkuse.com</p>
+          </div>
+          <div>
+            <i class="bi bi-telephone text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">+977 9820202020</p>
+          </div>
+          <div>
+            <i class="bi bi-telephone text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">+977 9820202020</p>
+          </div>
+       
+        </div>
+      
+
+        <!-- Address Section -->
+        <div class="footer-address">
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Address</h3>
+          <div class="flex gap-2 mt-2">
+            <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">info@makkuse.com</p>
+          </div>
+          <div class="flex gap-2 mt-2">
+            <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">+977 9820202020</p>
+          </div>
+          <div class="flex gap-2 mt-2">
+            <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">+977 9820202020</p>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Follow us on</h3>
+          <div class="footer-media">
+            <i class="bi bi-instagram text-white"></i>
+            <i class="bi bi-facebook text-white"></i>
+            <i class="bi bi-twitter text-white"></i>
+            <i class="bi bi-linkedin text-white"></i>
+          </div>
+        </div>
+
+        <!-- Have a Question Section -->
+        <div class="footer-question">
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Have a Question?</h3>
+          <form action="#" method="POST">
+            <div class="flex">
+              <input type="text" name="question" id="question" required placeholder="Type your question"
+                class="input-field">
+              <button type="submit" class="submit-btn">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // JavaScript for auto-sliding functionality
+    const slider = document.getElementById("slider");
+    const dots = document.querySelectorAll(".custom-dot");
+    const indicator = document.querySelector(".indicator");
+    let currentSlide = 0;
+    const totalSlides = dots.length;
+
+    const updateSlider = () => {
+      // Update slider position
+      slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+      // Move the sliding indicator
+      indicator.style.transform = `translateX(${currentSlide * 30}px)`;
+      // 32px is the combined width + space between each dot (e.g., 10px width + 22px margin)
+    };
+
+    // Auto-slide functionality
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateSlider();
+    }, 3000); // Change every 3 seconds
+
+    // Initialize the slider and indicator
+    updateSlider();
+  </script>
+</body>
+
+</html>

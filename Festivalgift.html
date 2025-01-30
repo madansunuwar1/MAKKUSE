@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/corporate.css" />
+    <link rel="stylesheet" href="./src/css/tailwind.css" />
+    <link rel="stylesheet" href="./src/css/navbar.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
+    <link rel="stylesheet" href="./src/css/festival.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Makkuse</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <section class="">
+        <nav class="navbar">
+            <div class="containerr">
+                <a href="index.html" class="logo">
+                    <img src="./src/images/logo.png" alt="Logo" class="logo-image">
+                </a>
+                <button class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <div class="nav-links" id="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="Ourstory.html" class="nav-link">Our Story</a>
+                    <a href="Product.html" class="nav-link">Product</a>
+                    <div class="dropdown">
+                        <button class="dropdown-btn nav-link">Customized Gifting</button>
+                        <div class="dropdown-menu">
+                            <a href="Coperategift.html" class="dropdown-item">Corporate Gifts</a>
+                             <a href="Festive.html" class="dropdown-item">Festival Gifts</a>
+                        </div>
+                    </div>
+
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+
+                        <button class="dropdown-btn nav-link">Makkuse Outlet</button>
+                        <div class="dropdown-menu">
+                            <a href="Outlet.html" class="dropdown-item">Thamel</a>
+                            <a href="Outlet.html" class="dropdown-item">Jhamiskhel</a>
+                            <a href="Outlet.html" class="dropdown-item">Pokhara</a>
+                        </div>
+                    </div>
+
+                    <a href="Franchise.html" class="nav-link">Franchise</a>
+                    <a href="Contact.html" class="nav-link">Contact Us</a>
+                    <a href="#" class="basket-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 3h2l.344 2.469A1 1 0 006.344 6h11.312a1 1 0 00.988-.781L19 3h2m-2 6h-14v12a2 2 0 002 2h8a2 2 0 002-2V9z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });</script>
+    </section>
+    <div class="banner-img">
+        <h1 style="font-family: 'Montserrat', serif;"
+            class=" h--primary-text bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] bg-clip-text text-transparent">
+            Makkuse Corporate<br /> Gifts</h1>
+        <img src="./src/images/chr3 1.png" alt="" class="w-full h-[300px] object-cover">
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <section class="product-section">
+        <div class="image-container">
+            <img src="https://img.freepik.com/free-photo/cookies-near-milk-bottle-against-black-background_23-2147898356.jpg?t=st=1735296665~exp=1735300265~hmac=e95213b1894fe8eb3acb1128c0090522cc491a8f5e515f6b8a8a91162946d09e&w=740"
+                class="product-image">
+        </div>
+        <div class="product-text">
+            <div class="title-1">Our Product</div>
+            <div class="underline"></div>
+            <div class="description">
+                <p>
+                    With Our Selection Of Pustakari, Gundpak & Cookies
+                    Travel Back In Time To A Nostalgic Past, Journey Through A Playful Present & Get Ready To Leap Into
+                    An
+                    Innovative Future.
+                </p>
+
+            </div>
+            <div class="flex gap-4 flex-wrap ">
+                <div class="flex justify-center mt-8 container-eg-btn-3">
+                    <a class="button button-6">read more</a>
+                </div>
+                <div class="flex justify-center mt-8 container-eg-btn-3">
+
+                    <a class="button button-6 flex gap-3" id="orderNowButton"><i
+                            class="bi bi-basket-fill"></i><span>order
+                            now</span></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="product-section">
+        <div class="product-text">
+            <div class="title-1">Our Product</div>
+            <div class="underline"></div>
+            <div class="description">
+                <p>
+                    With Our Selection Of Pustakari, Gundpak & Cookies
+                    Travel Back In Time To A Nostalgic Past, Journey Through A Playful Present & Get Ready To Leap Into
+                    An
+                    Innovative Future.
+                </p>
+            </div>
+            <div class="flex gap-4 flex-wrap ">
+                <div class="flex justify-center mt-8 container-eg-btn-3">
+                    <a class="button button-6">read more</a>
+                </div>
+                <div class="flex justify-center mt-8 container-eg-btn-3">
+                    <a class="button button-6 flex gap-3" id="orderNowButton"><i
+                            class="bi bi-basket-fill"></i><span>order
+                            now</span></a>
+                </div>
+            </div>
+            <style>
+
+            </style>
+        </div>
+        <div class="image-container-1">
+            <img src="https://img.freepik.com/free-photo/cookies-near-milk-bottle-against-black-background_23-2147898356.jpg?t=st=1735296665~exp=1735300265~hmac=e95213b1894fe8eb3acb1128c0090522cc491a8f5e515f6b8a8a91162946d09e&w=740"
+                class="product-image-1">
+        </div>
+    </section>
+    <section class="product-section">
+        <div class="image-container">
+            <img src="https://img.freepik.com/free-photo/cookies-near-milk-bottle-against-black-background_23-2147898356.jpg?t=st=1735296665~exp=1735300265~hmac=e95213b1894fe8eb3acb1128c0090522cc491a8f5e515f6b8a8a91162946d09e&w=740"
+                class="product-image">
+        </div>
+        <div class="product-text">
+            <div class="title-1">Our Product</div>
+            <div class="underline"></div>
+            <div class="description">
+                <p>
+                    With Our Selection Of Pustakari, Gundpak & Cookies
+                    Travel Back In Time To A Nostalgic Past, Journey Through A Playful Present & Get Ready To Leap Into
+                    An
+                    Innovative Future.
+                </p>
+            </div>
+            <div class="flex gap-4 flex-wrap ">
+                <div class="flex justify-center mt-8 container-eg-btn-3">
+                    <a class="button button-6">read more</a>
+                </div>
+                <div class="flex justify-center mt-8 container-eg-btn-3 ">
+
+                    <a class="button button-6 flex gap-3" id="orderNowButton"><i
+                            class="bi bi-basket-fill"></i><span>order
+                            now</span></a>
+                </div>
+                <div id="orderModal" class="modal hidden">
+                    <div class="modal-content">
+                        <span class="close" id="closeModal">&times;</span>
+                        <h2 class="text-[#BE6449] text-[34px] font-bold">E-Commerce Distributors</h2>
+                        <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
+                        <div class="flex flex-col justify-center gap-4 w-full mt-8">
+                            <div class="flex flex-wrap gap-10 justify-center w-full">
+                                <div
+                                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                                    <div class="bg-slate-600 py-2 px-12 rounded-lg flex gap-4">
+                                        <i class="bi bi-google-play"></i>
+                                        <p class="text-white">daraz</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                                    <div class="bg-slate-600 py-2 px-12 rounded-lg flex gap-4">
+                                        <i class="bi bi-google-play"></i>
+                                        <p class="text-white">daraz</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-10 justify-center w-full">
+                                <div
+                                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                                    <div class="bg-slate-600 py-2 px-12 rounded-lg flex gap-4">
+                                        <i class="bi bi-google-play"></i>
+                                        <p class="text-white">daraz</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                                    <div class="bg-slate-600 py-2 px-12 rounded-lg flex gap-4">
+                                        <i class="bi bi-google-play"></i>
+                                        <p class="text-white">daraz</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                const modal = document.getElementById('orderModal');
+                const openButton = document.getElementById('orderNowButton');
+                const closeButton = document.getElementById('closeModal');
+
+                // Open the modal
+                openButton.addEventListener('click', () => {
+                    modal.classList.remove('hidden');
+                });
+
+                // Close the modal
+                closeButton.addEventListener('click', () => {
+                    modal.classList.add('hidden');
+                });
+
+                // Close modal when clicking outside of the modal content
+                window.addEventListener('click', (event) => {
+                    if (event.target === modal) {
+                        modal.classList.add('hidden');
+                    }
+                });
+            </script>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer relative">
+        <div class="footer-overlay absolute inset-0 bg-gradient-to-r opacity-100" style="background-image: linear-gradient(to right, #874F47 0%, #211311 100%);"></div>
+    
+        <div class="footer-line">
+          <img src="./src/images/line.jpg" alt="Footer Divider">
+        </div>
+        <div class="container-foot">
+          <div class="grid">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+              <img src="./src/images/logo.png" alt="Your Brand Logo" class="rounded w-28">
+            </div>
+    
+            <!-- Quick Links Section -->
+            <div class="footer-links ">
+              <h3 class="footer-heading text-white font-bold text-2xl mb-4">Quick Links</h3>
+              <ul>
+                <li><a href="#" class="footer-link text-white">Send Gift to Nepal</a></li>
+                <li><a href="#" class="footer-link text-white">Gallery</a></li>
+              </ul>
+            </div>
+    
+            <!-- Contact Us Section -->
+            <div class="footer-contact">
+              <h3 class="footer-heading text-white font-bold text-2xl mb-4">Contact Us</h3>
+              <div>
+                <i class="bi bi-envelope text-white hover:text-black"></i>
+                <p class="text-white hover:text-black">info@makkuse.com</p>
+              </div>
+              <div>
+                <i class="bi bi-telephone text-white hover:text-black"></i>
+                <p class="text-white hover:text-black">+977 9820202020</p>
+              </div>
+              <div>
+                <i class="bi bi-telephone text-white hover:text-black"></i>
+                <p class="text-white hover:text-black">+977 9820202020</p>
+              </div>
+           
+            </div>
+          
+    
+            <!-- Address Section -->
+            <div class="footer-address">
+              <h3 class="footer-heading text-white font-bold text-2xl mb-4">Address</h3>
+              <div class="flex gap-2 mt-2">
+                <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
+                <p class="text-white hover:text-black">info@makkuse.com</p>
+              </div>
+              <div class="flex gap-2 mt-2">
+                <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
+                <p class="text-white hover:text-black">+977 9820202020</p>
+              </div>
+              <div class="flex gap-2 mt-2">
+                <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
+                <p class="text-white hover:text-black">+977 9820202020</p>
+              </div>
+            </div>
+            <div>
+              <h3 class="footer-heading text-white font-bold text-2xl mb-4">Follow us on</h3>
+              <div class="footer-media">
+                <i class="bi bi-instagram text-white"></i>
+                <i class="bi bi-facebook text-white"></i>
+                <i class="bi bi-twitter text-white"></i>
+                <i class="bi bi-linkedin text-white"></i>
+              </div>
+            </div>
+    
+            <!-- Have a Question Section -->
+            <div class="footer-question">
+              <h3 class="footer-heading text-white font-bold text-2xl mb-4">Have a Question?</h3>
+              <form action="#" method="POST">
+                <div class="flex">
+                  <input type="text" name="question" id="question" required placeholder="Type your question"
+                    class="input-field">
+                  <button type="submit" class="submit-btn">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+
+
+</html>

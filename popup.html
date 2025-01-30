@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage with Ad Popup</title>
+    <style>
+/* Modal Styles */
+.modal-1 {
+    display: flex; /* Always show on page load */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-1 {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    max-width: 80%;
+}
+
+.modal-content-1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Close Button */
+.close-btn-1 {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div id="imageModal-1" class="modal-1">
+        <div class="modal-content-1">
+            <span class="close-btn-1">&times;</span>
+            <img src="your-image.jpg" alt="Popup Image">
+        </div>
+    </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const modal1 = document.getElementById("imageModal-1");
+    const closeButton1 = document.querySelector(".close-btn-1");
+
+    // Close modal on button click
+    closeButton1.addEventListener("click", function () {
+        modal1.style.display = "none";
+    });
+
+    // Close modal when clicking outside the modal content
+    window.addEventListener("click", function (event) {
+        if (event.target === modal1) {
+            modal1.style.display = "none";
+        }
+    });
+});
+    </script>
+</body>
+</html>

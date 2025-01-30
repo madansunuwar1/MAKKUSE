@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <link rel="stylesheet" href="./src/css/corporate.css" />
+  <link rel="stylesheet" href="./src/css/tailwind.css" />
+  <link rel="stylesheet" href="./src/css/navbar.css" />
+  <link rel="stylesheet" href="./src/css/footer.css" />
+  <title>Makkuse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<body class="">
+  <style>
+    /* Modal Styles */
+  .modal-1 {
+    display: flex; /* Always show on page load */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .modal-content-1 {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    max-width: 80%;
+  }
+  
+  .modal-content-1 img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Close Button */
+  .close-btn-1 {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  </style>
+    <div id="imageModal-1" class="modal-1">
+      <div class="modal-content-1">
+          <span class="close-btn-1">&times;</span>
+          <img src="https://images.ctfassets.net/wowgx05xsdrr/4DdV8DD9iRipHlLRiQIj6t/6e65d02ab4015926bd5ce3f1383151e1/popup-example-1.png?fm=webp&w=3840&q=75" alt="Popup Image">
+      </div>
+  </div>
+  
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="containerr">
+      <a href="index.html" class="logo">
+        <img src="./src/images/logo.png" alt="Logo" class="logo-image">
+      </a>
+      <button class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="Ourstory.html" class="nav-link">Our Story</a>
+        <a href="Product.html" class="nav-link">Product</a>
+        <div class="dropdown">
+          <button class="dropdown-btn nav-link">Customized Gifting</button>
+          <div class="dropdown-menu">
+            <a href="Coperategift.html" class="dropdown-item">Corporate Gifts</a>
+            <div class="dropdown-1 dropdown-nested">
+              <a href="Festive.html" class="dropdown-item dropdown-toggle">Festival Gifts</a>
+              <div class="dropdown-menu-1">
+                <a href="Festive.html" class="dropdown-item">Dashain</a>
+                <a href="Festive.html" class="dropdown-item">Tihar</a>
+                <a href="Festive.html" class="dropdown-item">Teej</a>
+                <a href="Festive.html" class="dropdown-item">Fathers Day</a>
+                <a href="Festive.html" class="dropdown-item">Christmas Day</a>
+                <a href="Valentine.html" class="dropdown-item">Valentines Day</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+
+          <button class="dropdown-btn nav-link">Makkuse Outlet</button>
+          <div class="dropdown-menu">
+            <a href="Outlet.html" class="dropdown-item">Thamel</a>
+            <a href="Outlet.html" class="dropdown-item">Jhamiskhel</a>
+            <a href="Outlet.html" class="dropdown-item">Pokhara</a>
+          </div>
+        </div>
+
+        <a href="Franchise.html" class="nav-link">Franchise</a>
+        <a href="Contact.html" class="nav-link">Contact Us</a>
+        <a href="#" class="basket-icon py-1 px-2" id="orderNowButton">
+          <i class="bi bi-basket-fill text-white text-[30px]"></i>
+          <div class="shop-now-text my-auto">Shop Now</div>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div id="orderModal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2 class="text-[#BE6449] text-[24px] font-bold">E-Commerce Distributors</h2>
+        <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
+        <div class="flex flex-col justify-center gap-4 w-full mt-8">
+            <div class="flex flex-wrap gap-10 justify-center w-full">
+                <div
+                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
+                        <i class="bi bi-google-play"></i>
+                        <p class="text-white">daraz</p>
+                    </div>
+                </div>
+                <div
+                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
+                        <i class="bi bi-google-play"></i>
+                        <p class="text-white">daraz</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-10 justify-center w-full">
+                <div
+                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
+                        <i class="bi bi-google-play"></i>
+                        <p class="text-white">daraz</p>
+                    </div>
+                </div>
+                <div
+                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
+                        <i class="bi bi-google-play"></i>
+                        <p class="text-white">daraz</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+  const modal = document.getElementById('orderModal');
+  const openButton = document.getElementById('orderNowButton');
+  const closeButton = document.getElementById('closeModal');
+
+  // Open the modal
+  openButton.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+  });
+
+  // Close the modal
+  closeButton.addEventListener('click', () => {
+      modal.classList.add('hidden');
+  });
+
+  // Close modal when clicking outside of the modal content
+  window.addEventListener('click', (event) => {
+      if (event.target === modal) {
+          modal.classList.add('hidden');
+      }
+  });
+</script>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });</script>
+
+
+  <!-- Hero Section -->
+  <section class="relative w-full z-1 overflow-hidden pt-16">
+    <!-- Slider -->
+    <div id="slider" class="slider flex">
+      <div class="slide bg-cover bg-center" style="background-image: url('./src/images/banner-slider1.png');"></div>
+      <div class="slide bg-cover bg-center" style="background-image: url('./src/images/cookies.png');"></div>
+      <div class="slide bg-cover bg-center" style="background-image: url('./src/images/banner-slider3.png');"></div>
+    </div>
+
+    <!-- Text Content -->
+    <div class="text-content">
+      <div>
+        <h1 class="main-title" style="font-family: 'Montserrat',sans-serif;">Makkusé</h1>
+        <h1 class="sub-title" style="font-family: 'Montserrat',sans-serif;">Nepali Desserts Redefined</h1>
+        <p class="description" style="font-family: 'Montserrat',sans-serif;">
+          "Sharing The Authentic Luxury Desserts Recipes <br />
+          From The Himalayas"
+        </p>
+      </div>
+    </div>
+
+    <!-- Pagination Dots -->
+    <div id="pagination" class="pagination-container">
+      <div class="indicator rounded-md"></div>
+      <div class="custom-dot rounded-l-md"></div>
+      <div class="custom-dot"></div>
+      <div class="custom-dot rounded-r-md"></div>
+    </div>
+  </section>
+  <!-- Features Section -->
+  <section>
+    <div class="our-story-container">
+      <div class="text-center">
+        <h2 class="story-title" style="font-family: 'Montserrat',sans-serif;">Our Story <div class="divider"></div>
+        </h2>
+
+        <div class="text-content-1">
+          <p class="story-text-1" style="font-family: Arial;">
+            Our mission is to transform the way that the world experiences Nepali Desserts,
+            elevating its making while taking action in favor of a sustainable future.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-section">
+    <div class="text-container">
+      <p class="about-text" style="font-family: Arial;font-weight: 500;">
+        Makkusé brings you an authentic taste from the magical, mystical land of The Himalayas.<br /><br />
+        With an innovative touch to the recipes that have been passed down from generations, we labor to deliver a
+        scrumptious experience in every bite. A luxurious & wholesome experience; Blend of traditional recipes
+        with a modern touch.<br /><br />
+        Aromatic alleys filled with notes of fresh khuwa roasted daily, a wonderful sight that residents of Kathmandu
+        enjoyed decades ago, have sadly diminished - along with the lively entertaining process of making these unique
+        Nepali desserts. With Makkusé, we aim to revive the lost recipes and make the Nepali richness well known across
+        the globe whilst meeting the expectations of customers, making sure we use locally resourced raw products by
+        sourcing the local talent.<br /><br />
+        Makkusé simply means Scrumptious & Beyond Delicious in Newari, our brand logo is written in Kutaakshar, a
+        version
+        within the Ranjana Lipi; the language of the Newar community, from whom our signature recipes originate.
+      </p>
+    </div>
+    <div class="image-container">
+      <img src="./src//images//choclate.png" alt="Delicious cookies with milk" class="about-image">
+    </div>
+  </section>
+  <section class="features-section">
+    <div class="features-content">
+      <div class="features-cards">
+        <div class="feature-card">
+          <img src="./src/images/solar_hand-heart-bold.png" alt="Handmade Icon">
+          <h1 class="feature-title" style="font-family: 'Montserrat',sans-serif;">HANDMADE</h1>
+          <p class="feature-text" style="font-family: Arial;">
+            Crafted By Hand, Using Recipes Passed Down Through Generations With Utmost Care & Attention To Hygiene.
+          </p>
+        </div>
+        <div class="feature-card">
+          <img src="./src/images/lets-icons_dimond-alt-fill.png" alt="Luxury Icon">
+          <h1 class="feature-title" style="font-family: 'Montserrat',sans-serif;">A Luxurious Experience</h1>
+          <p class="feature-text" style="font-family: Arial;">
+            Luxury Isn’t A Price Tag – It Is An Experience – An Enriching Fulfilling Experience & Nepali Luxury, is What
+            we Deliver.
+          </p>
+        </div>
+        <div class="feature-card">
+          <img src="./src/images/la_cookie-bite.png" alt="Delight Icon">
+          <h1 class="feature-title" style="font-family: 'Montserrat',sans-serif;">Delight In Every Bite</h1>
+          <p class="feature-text" style="font-family: Arial;">
+            Every Bite Feels Wholesome, Fulfilling & Delectable.
+          </p>
+        </div>
+      </div>
+      <div class="flex justify-center mt-8 container-eg-btn-2">
+        <a class="button button-5">read more</a>
+      </div>
+    </div>
+    <div class="features-image">
+      <img src="./src/images/product-description 1.png" alt="Product Description" class="features-img">
+    </div>
+  </section>
+
+  <section class="info-section">
+    <div class="container">
+      <div class="info-grid">
+        <div class="info-card">
+          <img src="./src/images/milk.png" alt="Handmade Icon" class="mx-auto h-16">
+          <h3 class="info-title">100% Pure Milk</h3>
+          <p class="info-text" style="font-family: Arial;">
+            Our Khuwa (Thickened Milk) Arrives Fresh From The High Altitudes Of Kavre, Nepal Daily To Our Production
+            Center Located At Kathmandu.
+          </p>
+        </div>
+        <div class="info-card">
+          <img src="./src/images/Phone.png" alt="Handmade Icon" class="mx-auto h-16">
+          <h3 class="info-title">Order Now</h3>
+          <p class="info-text" style="font-family: Arial;">
+            Happily Delivering These Treats to you, Text or Call us on These Platforms for Orders & Queries.
+          </p>
+        </div>
+        <div class="info-card">
+          <img src="./src/images/Gift.png" alt="Handmade Icon" class="mx-auto h-16">
+          <h3 class="info-title">Send a Gift to Nepal</h3>
+          <p class="info-text" style="font-family: Arial;">
+            We Are Available On These E-Commerce Sites. We Accept International Card Payments, E-wallets, & Cash On
+            Delivery.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="product-section">
+    <div class="product-header">
+      <h2 class="product-title" style="font-family: 'Montserrat',sans-serif;">Our Products</h2>
+      <div class="divider"></div>
+      <p class="product-description" style="font-family: Arial;">
+        With Our Selection Of Pustakari, Gundpak & Cookies Travel Back In Time To A Nostalgic Past,
+        Journey Through A Playful Present & Get Ready To Leap Into An Innovative Future.
+      </p>
+    </div>
+    <div class="product-gallery">
+      <div class="product-item">
+        <img src="./src/images/pustakari-small 1.png" alt="Pustakari" class="product-image">
+        <div class="hover-overlay">
+          <span class="hover-text">Pustakari</span>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./src/images/cookies-small 1.png" alt="Cookies" class="product-image">
+        <div class="hover-overlay">
+          <span class="hover-text">Pustakari</span>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./src/images/gudpak-small 1.png" alt="Gundpak" class="product-image">
+        <div class="hover-overlay">
+          <span class="hover-text">Pustakari</span>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-end mt-8 container-eg-btn-3 mx-16">
+      <a class="button button-6">View Product</a>
+    </div>
+  </section>
+  <section class="custom-gifts-section">
+    <div class="gifts-header">
+      <h2 class="gifts-title" style="font-family: 'Montserrat',sans-serif;">Customizing Gifts</h2>
+      <div class="divider"></div>
+      <p class="gifts-tagline">"Personalized gifts, Made Uniquely Yours!"</p>
+    </div>
+    <div class="gifts-content">
+      <div class="gift-box">
+        <h3 class="gift-box-title">
+          Special Collection Luxury Box for your next big event
+        </h3>
+        <p class="gift-box-description" style="font-family: Arial;">
+          Our Ultimate Luxury Box Can Be Customized Specially For Major Occasions Like Weddings, Corporate Events,
+          Rituals & festivities. We Specialize In Designing & Rendering Attractive Customized Boxes.
+        </p>
+        <button class="order-button">ORDER NOW</button>
+      </div>
+      <div class="image-row">
+        <div class="image-container">
+          <img src="./src/images/makkuse-lux 1.png" alt="Luxury Gift Box">
+          <div class="overlay">
+            <p>Luxury Gift Box</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="./src/images/chr3 1.png" alt="Luxury Box">
+          <div class="overlay">
+            <p>Luxury Box</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-row">
+        <div class="image-container">
+          <img src="./src/images/festive-slider-8 1.png" alt="Festive Slider">
+          <div class="overlay">
+            <p>Festive Slider</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="./src/images/1728221526639 1.png" alt="Festive Collection">
+          <div class="overlay">
+            <p>Festive Collection</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-end mt-8 container-eg-btn-3">
+      <a class="button button-6">View Product</a>
+    </div>
+  </section>
+  <section class="nostalgia-section relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="./src/images/Group 177.png" class=""/>
+    </div>
+    <div class="nostalgia-content z-0">
+      <div class="nostalgia-text">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="ok">
+                <div class="placeholder-image-2"></div>
+                 <div class="placeholder-image-3"></div>
+                <div class="text-content-2">
+                  <h1 class="nostalgia-title">"Taste of Nepali Nostalgia"</h1>
+                  <p class="nostalgia-description w-full" style="font-family: Arial;">
+                    My Family Sent Me Makkusé Products As a Gift After I came to Australia, Never had I imagined it
+                    would give me a Taste Of Nepali Nostalgia, All so Wholesome. Definitely Recommended.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ok">
+                <div class="placeholder-image-2"></div>
+                 <div class="placeholder-image-3"></div>
+                <div class="text-content-2">
+                  <h1 class="nostalgia-title">"A Slice of Home"</h1>
+                  <p class="nostalgia-description w-full" style="font-family: Arial;">
+                    Receiving these products felt like a warm hug from home. It’s incredible how they capture the
+                    essence of Nepal so perfectly.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ok">
+                <div class="placeholder-image-2"></div>
+                 <div class="placeholder-image-3"></div>
+                <div class="text-content-2">
+                  <h1 class="nostalgia-title">"Wholesome Memories"</h1>
+                  <p class="nostalgia-description w-full" style="font-family: Arial;">
+                    Each bite brings back beautiful memories from my childhood in Nepal. A must-try for anyone missing
+                    home.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nostalgia-image">
+        <img src="./src/images/Rectangle 194.png" alt="Nepali Nostalgia" class="rounded-image">
+      </div>
+    </div>
+  </section>
+  <div class="flex justify-end mt-8 container-eg-btn-3">
+    <a class="button button-6">View more</a>
+  </div>
+  <section class="outlet-section">
+    <div class="outlet-header">
+      <h1 class="outlet-title" style="font-family: 'Montserrat',sans-serif;">Our Outlet</h1>
+      <div class="outlet-underline"></div>
+    </div>
+    <div class="outlet-container">
+      <div class="outlet-card">
+        <img src="./src/images/outlet1.png" alt="Thamel" class="outlet-image">
+        <div class="overlay-1">
+          <h1>Thamel</h1>
+          <div>
+            <img src="./src/images/logo.png" alt="Your Brand Logo" class="over-im" />
+          </div>
+          <p>Thamel,kathmandu</p>
+          <p>9050945054</p>
+        </div>
+      </div>
+      <div class="outlet-card">
+        <img src="./src/images/outlet2.png" alt="Jhamsikhel" class="outlet-image">
+        <div class="overlay-1">
+          <h1>Jhamsikhel</h1>
+          <div>
+            <img src="./src/images/logo.png" alt="Your Brand Logo" class="over-im" />
+          </div>
+          <p>jhamiskhel,lalitpur</p>
+          <p>345435345345</p>
+        </div>
+      </div>
+      <div class="outlet-card">
+        <img src="./src/images/outlet3.png" alt="Lalitpur" class="outlet-image">
+        <div class="overlay-1">
+          <h1>Pokhara</h1>
+          <div>
+            <img src="./src/images/logo.png" alt="Your Brand Logo" class="over-im" />
+          </div>
+          <p>pokhara</p>
+          <p>234324234</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="stay-in-touch-section">
+    <div class="flex flex-col gap-12">
+      <div class="diamonds-container">
+      <div class="diamond diamond-one">
+        <img src="./src/images/banner-slider3.png" alt="Diamond One" class="diamond-image">
+      </div>
+      <div class="diamond diamond-two">
+        <img src="./src/images/banner-slider1.png" alt="Diamond Two" class="diamond-image">
+      </div>
+      <div class="diamond diamond-three">
+        <img src="./src/images/banner-slider3.png" alt="Diamond Three" class="diamond-image">
+      </div>
+    </div>
+    <div class="flex justify-end mt-8 container-eg-btn-3">
+      <a class="button button-6">View more</a>
+    </div>
+    </div>
+
+    <div class="contact-card relative overflow-hidden">
+      <div class="absolute inset-0">
+        <img src="./src/images/Group 427.png" class=""/>
+      </div>
+      <h1 class="stay-in-touch-title">Stay In Touch</h1>
+      <div class="social-links">
+        <div class="social-item">
+          <img src="https://freepngimg.com/download/logo/69768-logo-computer-layout-instagram-icons-png-file-hd.png"
+            alt="Instagram" class="social-icon">
+          <h4 class="social-text">makkus.np</h4>
+        </div>
+        <div class="social-item">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png"
+            alt="Facebook" class="social-icon">
+          <h4 class="social-text">makkus.np</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="footer relative">
+    <div class="footer-overlay absolute inset-0 bg-gradient-to-r opacity-100" style="background-image: linear-gradient(to right, #874F47 0%, #211311 100%);"></div>
+
+    <div class="footer-line">
+      <img src="./src/images/line.jpg" alt="Footer Divider">
+    </div>
+    <div class="container-foot">
+      <div class="grid">
+        <!-- Logo Section -->
+        <div class="footer-logo">
+          <img src="./src/images/logo.png" alt="Your Brand Logo" class="rounded w-28">
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="footer-links ">
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Quick Links</h3>
+          <ul>
+            <li><a href="#" class="footer-link text-white">Send Gift to Nepal</a></li>
+            <li><a href="#" class="footer-link text-white">Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us Section -->
+        <div class="footer-contact">
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Contact Us</h3>
+          <div>
+            <i class="bi bi-envelope text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">info@makkuse.com</p>
+          </div>
+          <div>
+            <i class="bi bi-telephone text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">+977 9820202020</p>
+          </div>
+          <div>
+            <i class="bi bi-telephone text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">+977 9820202020</p>
+          </div>
+       
+        </div>
+      
+
+        <!-- Address Section -->
+        <div class="footer-address">
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Address</h3>
+          <div class="flex gap-2 mt-2">
+            <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">info@makkuse.com</p>
+          </div>
+          <div class="flex gap-2 mt-2">
+            <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">+977 9820202020</p>
+          </div>
+          <div class="flex gap-2 mt-2">
+            <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">+977 9820202020</p>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Follow us on</h3>
+          <div class="footer-media">
+            <i class="bi bi-instagram text-white"></i>
+            <i class="bi bi-facebook text-white"></i>
+            <i class="bi bi-twitter text-white"></i>
+            <i class="bi bi-linkedin text-white"></i>
+          </div>
+        </div>
+
+        <!-- Have a Question Section -->
+        <div class="footer-question">
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Have a Question?</h3>
+          <form action="#" method="POST">
+            <div class="flex">
+              <input type="text" name="question" id="question" required placeholder="Type your question"
+                class="input-field">
+              <button type="submit" class="submit-btn">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="./src/js/script.js"></script>
+  <script>
+    // JavaScript for auto-sliding functionality
+    const slider = document.getElementById("slider");
+    const dots = document.querySelectorAll(".custom-dot");
+    const indicator = document.querySelector(".indicator");
+    let currentSlide = 0;
+    const totalSlides = dots.length;
+
+    const updateSlider = () => {
+      // Update slider position
+      slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+      // Move the sliding indicator
+      indicator.style.transform = `translateX(${currentSlide * 30}px)`;
+      // 32px is the combined width + space between each dot (e.g., 10px width + 22px margin)
+    };
+
+    // Auto-slide functionality
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateSlider();
+    }, 3000); // Change every 3 seconds
+
+    // Initialize the slider and indicator
+    updateSlider();
+
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 20,
+      grabCursor: true, // Adds a grab cursor effect
+    });
+
+//     document.addEventListener('DOMContentLoaded', function() {
+//     // Check if the popup has been shown before
+//     if (!localStorage.getItem('popupShown')) {
+//         // Show the popup
+//         document.getElementById('popup').style.display = 'flex';
+
+//         // Set a flag in localStorage to indicate the popup has been shown
+//         localStorage.setItem('popupShown', 'true');
+//     }
+
+//     // Close the popup when the close button is clicked
+//     document.getElementById('close-btn').addEventListener('click', function() {
+//         document.getElementById('popup').style.display = 'none';
+//     });
+// });
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("imageModal-1");
+    const closeButton = document.querySelector(".close-btn-1");
+
+    // Close modal on button click
+    closeButton.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    // Close modal when clicking outside the modal content
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+  </script>
+</body>
+
+</html>

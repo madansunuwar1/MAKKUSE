@@ -1,0 +1,317 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <link rel="stylesheet" href="./src/css/tailwind.css" />
+  <link rel="stylesheet" href="./src/css/navbar.css" />
+  <link rel="stylesheet" href="./src/css/footer.css" />
+  <title>Makkuse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body class="">
+  <!-- Navbar -->
+ <nav class="navbar">
+    <div class="containerr">
+      <a href="index.html" class="logo">
+        <img src="./src/images/logo.png" alt="Logo" class="logo-image">
+      </a>
+      <button class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="Ourstory.html" class="nav-link">Our Story</a>
+        <a href="Product.html" class="nav-link">Product</a>
+        <div class="dropdown">
+          <button class="dropdown-btn nav-link">Customized Gifting</button>
+          <div class="dropdown-menu">
+            <a href="Coperategift.html" class="dropdown-item">Corporate Gifts</a>
+            <div class="dropdown-1 dropdown-nested">
+              <a href="Festive.html" class="dropdown-item dropdown-toggle">Festival Gifts</a>
+              <div class="dropdown-menu-1">
+                <a href="Festive.html" class="dropdown-item">Dashain</a>
+                <a href="Festive.html" class="dropdown-item">Tihar</a>
+                <a href="Festive.html" class="dropdown-item">Teej</a>
+                <a href="Festive.html" class="dropdown-item">Fathers Day</a>
+                <a href="Festive.html" class="dropdown-item">Christmas Day</a>
+                <a href="Valentine.html" class="dropdown-item">Valentines Day</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+
+          <button class="dropdown-btn nav-link">Makkuse Outlet</button>
+          <div class="dropdown-menu">
+            <a href="Outlet.html" class="dropdown-item">Thamel</a>
+            <a href="Outlet.html" class="dropdown-item">Jhamiskhel</a>
+            <a href="Outlet.html" class="dropdown-item">Pokhara</a>
+          </div>
+        </div>
+
+        <a href="Franchise.html" class="nav-link">Franchise</a>
+        <a href="Contact.html" class="nav-link">Contact Us</a>
+        <a href="#" class="basket-icon py-1 px-2" id="orderNowButton">
+          <i class="bi bi-basket-fill text-white text-[30px]"></i>
+          <div class="shop-now-text my-auto">Shop Now</div>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div id="orderModal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2 class="text-[#BE6449] text-[24px] font-bold">E-Commerce Distributors</h2>
+        <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
+        <div class="flex flex-col justify-center gap-4 w-full mt-8">
+            <div class="flex flex-wrap gap-10 justify-center w-full">
+                <div
+                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
+                        <i class="bi bi-google-play"></i>
+                        <p class="text-white">daraz</p>
+                    </div>
+                </div>
+                <div
+                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
+                        <i class="bi bi-google-play"></i>
+                        <p class="text-white">daraz</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-10 justify-center w-full">
+                <div
+                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
+                        <i class="bi bi-google-play"></i>
+                        <p class="text-white">daraz</p>
+                    </div>
+                </div>
+                <div
+                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
+                        <i class="bi bi-google-play"></i>
+                        <p class="text-white">daraz</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+  const modal = document.getElementById('orderModal');
+  const openButton = document.getElementById('orderNowButton');
+  const closeButton = document.getElementById('closeModal');
+
+  // Open the modal
+  openButton.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+  });
+
+  // Close the modal
+  closeButton.addEventListener('click', () => {
+      modal.classList.add('hidden');
+  });
+
+  // Close modal when clicking outside of the modal content
+  window.addEventListener('click', (event) => {
+      if (event.target === modal) {
+          modal.classList.add('hidden');
+      }
+  });
+</script>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });</script>
+
+  <!-- Hero Section -->
+  <section class="py-[120px] bg-[url('./src/images/Rectangle_261.png')] bg-cover">
+    <h1
+      class="font-bold text-[40px] text-center  bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] bg-clip-text text-transparent">
+      Makkusé
+      <br />
+     Franchises</h1>
+  </section>
+  <div class="footer-line">
+    <img src="./src/images/line.jpg" alt="Footer Divider">
+  </div>
+  <section class="product-section mb-16">
+    <div class="product-header my-20">
+      <h2 class="text-[30px] text-[#884835] font-montserrat font-bold" style="font-family: 'Montserrat',sans-serif;">Our Franchise</h2>
+      <p class="text-[24px] font-medium text-[#884835] font-montserrat leading-8 mt-4 mx-8 md:mx-24" style="font-family: 'Montserrat', serif;">
+        Join hands with Makkusé and bring the authentic taste of Nepali desserts to your community! We currently have two thriving franchise stores in Jhamsikhel, Lalitpur, and Lakeside, Pokhara.<br><br>If you’re passionate about preserving Nepal’s rich culinary heritage and want to be part of our mission to revive lost recipes, we invite you to open your own Makkusé franchise. Whether you're based in Nepal or abroad, we’ll provide all the guidance and support you need to ensure your success.<br><br>To explore this exciting opportunity and become a part of the Makkusé family, contact us today!<br><br>Let’s share the richness of Nepali flavors, one store at a time.
+      </p>
+    </div>
+    <div class="product-gallery">
+      <div class="product-item">
+        <img src="./src/images/Rectangle 262.png" alt="Pustakari" class="product-image">
+        <div class="hover-overlay">
+          <span class="hover-text">Franchise</span>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./src/images/Rectangle 262.png" alt="Cookies" class="product-image">
+        <div class="hover-overlay">
+          <span class="hover-text">Franchise</span>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="./src/images/Rectangle 262.png" alt="Gundpak" class="product-image">
+        <div class="hover-overlay">
+          <span class="hover-text">Franchise</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="my-20">
+    <h1 class="title-1 text-[#874F47]">Our Valuable Clients</h1>
+    <div class="underline"></div>
+    <div class="flex justify-center flex-wrap gap-20 mt-8">
+      <img src="./src/images/c1.jpg" width="150" height="50" class="object-contain">
+      <img src="./src/images/c3.jpg" width="150" height="50" class="object-contain">
+      <img src="./src/images/c4.jpg" width="150" height="50" class="object-contain">
+      <img src="./src/images/c5.jpg" width="150" height="50" class="object-contain">
+      <img src="./src/images/c6.jpg" width="150" height="50" class="object-contain">
+    </div>
+  </section>
+
+
+  <!-- Features Section -->
+
+
+  <!-- Footer -->
+  <footer class="footer relative">
+    <div class="footer-overlay absolute inset-0 bg-gradient-to-r opacity-100" style="background-image: linear-gradient(to right, #874F47 0%, #211311 100%);"></div>
+
+    <div class="footer-line">
+      <img src="./src/images/line.jpg" alt="Footer Divider">
+    </div>
+    <div class="container-foot">
+      <div class="grid">
+        <!-- Logo Section -->
+        <div class="footer-logo">
+          <img src="./src/images/logo.png" alt="Your Brand Logo" class="rounded w-28">
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="footer-links ">
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Quick Links</h3>
+          <ul>
+            <li><a href="#" class="footer-link text-white">Send Gift to Nepal</a></li>
+            <li><a href="#" class="footer-link text-white">Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us Section -->
+        <div class="footer-contact">
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Contact Us</h3>
+          <div>
+            <i class="bi bi-envelope text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">info@makkuse.com</p>
+          </div>
+          <div>
+            <i class="bi bi-telephone text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">+977 9820202020</p>
+          </div>
+          <div>
+            <i class="bi bi-telephone text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">+977 9820202020</p>
+          </div>
+       
+        </div>
+      
+
+        <!-- Address Section -->
+        <div class="footer-address">
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Address</h3>
+          <div class="flex gap-2 mt-2">
+            <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">info@makkuse.com</p>
+          </div>
+          <div class="flex gap-2 mt-2">
+            <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">+977 9820202020</p>
+          </div>
+          <div class="flex gap-2 mt-2">
+            <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">+977 9820202020</p>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Follow us on</h3>
+          <div class="footer-media">
+            <i class="bi bi-instagram text-white"></i>
+            <i class="bi bi-facebook text-white"></i>
+            <i class="bi bi-twitter text-white"></i>
+            <i class="bi bi-linkedin text-white"></i>
+          </div>
+        </div>
+
+        <!-- Have a Question Section -->
+        <div class="footer-question">
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Have a Question?</h3>
+          <form action="#" method="POST">
+            <div class="flex">
+              <input type="text" name="question" id="question" required placeholder="Type your question"
+                class="input-field">
+              <button type="submit" class="submit-btn">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // JavaScript for auto-sliding functionality
+    const slider = document.getElementById("slider");
+    const dots = document.querySelectorAll(".custom-dot");
+    const indicator = document.querySelector(".indicator");
+    let currentSlide = 0;
+    const totalSlides = dots.length;
+
+    const updateSlider = () => {
+      // Update slider position
+      slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+      // Move the sliding indicator
+      indicator.style.transform = `translateX(${currentSlide * 30}px)`;
+      // 32px is the combined width + space between each dot (e.g., 10px width + 22px margin)
+    };
+
+    // Auto-slide functionality
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateSlider();
+    }, 3000); // Change every 3 seconds
+
+    // Initialize the slider and indicator
+    updateSlider();
+  </script>
+</body>
+
+</html>

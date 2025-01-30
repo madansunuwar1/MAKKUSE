@@ -1,0 +1,317 @@
+.navbar {
+  background: linear-gradient(to right, #874f47 0%, #b17368 50%, #ba9682 100%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+}
+
+.containerr {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  padding-right: 100px;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  z-index: 50;
+}
+
+.logo-image {
+  width: 112px;
+  border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Tablet and smaller screens */
+  .containerr {
+    padding-right: 50px; /* Reduce padding for smaller screens */
+  }
+
+  .logo {
+    top: 15px;
+    left: 100px; /* Adjust position for smaller screens */
+  }
+
+  .logo-image {
+    width: 90px; /* Slightly smaller logo for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile screens */
+  .containerr {
+    flex-direction: column; /* Stack elements vertically if needed */
+    justify-content: center;
+    padding-right: 20px; /* Minimal padding for mobile */
+  }
+
+  .logo {
+    position: relative; /* Allow the logo to flow naturally in the layout */
+    top: 0;
+    left: 0;
+    margin-bottom: 10px; /* Add spacing between elements */
+  }
+
+  .logo-image {
+    width: 80px; /* Smaller logo for mobile */
+  }
+}
+
+.nav-links {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: transform 0.3s ease, text-decoration 0.3s ease;
+}
+
+.nav-link:hover {
+  color: white;
+  transform: scale(1.2); /* Zoom effect */
+  text-decoration: underline; /* Add underline */
+  text-decoration-color: white; /* Ensures the underline is white */
+  text-decoration-thickness: 2px; /* Optional: Adjust underline thickness */
+}
+
+.nav-link::after{
+  background-color: black;
+  height: 10px;
+  width: 30px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-1 {
+  position: relative;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+}
+
+.dropdown-menu {
+  z-index: 10;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #B17368;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-menu-1 {
+  z-index: 10;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #B17368;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-nested {
+  position: relative;
+}
+
+.dropdown-nested .dropdown-menu-1 {
+  left: 100%;
+  top: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-1:hover .dropdown-menu-1 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-item {
+  color: #fff;
+  padding: 10px 10px;
+  width: 150px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #9f736b;
+  color: black;
+}
+
+.basket-icon .icon {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 51;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #9e6258;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+    z-index: 10;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+.basket-icon {
+  display: flex;
+  border-radius: 10px;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.basket-icon:hover {
+  background: linear-gradient(45deg, #211412 0%, #87524A 100%);
+  transition: background 0.3s ease, padding 0.3s ease;
+}
+
+.basket-icon .shop-now-text {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.basket-icon:hover .shop-now-text {
+  opacity: 1;
+}
+
+.basket-icon i {
+  font-size: 25px;
+  transition: opacity 0.3s ease;
+}
+
+.basket-icon:hover i {
+  opacity: 1;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: black;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+}
+
+.modal-content label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: #9e6258;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #884835;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Hidden by default */
+.hidden {
+  display: none;
+}

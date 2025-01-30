@@ -1,0 +1,229 @@
+.footer {
+  font-family: Arial, sans-serif;
+  color: black;
+  padding-bottom: 2rem;
+}
+.footer_contact {
+  display: flex;
+  margin: 10px 0px;
+}
+.footer_contact:hover {
+  color: rgb(84, 148, 209);
+  /* transform: scale(1.009); */
+}
+.footer_media i:hover {
+  transform: scale(1.01);
+}
+
+footer::before {
+  content: "";
+  background-image: url("../images/foot.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+height: 100%; /* Default height */
+  width: 100%;
+  z-index: -1; /* Send the image behind the overlay */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  footer::before {
+    height: 60%; /* Slightly increase the height for tablets */
+    background-position: top; /* Adjust background position for better fit */
+  }
+}
+
+@media (max-width: 768px) {
+  footer::before {
+    height: 70%; /* Further increase height for smaller devices */
+    background-position: center; /* Center the background */
+  }
+}
+
+@media (max-width: 480px) {
+  footer::before {
+    height: 100%; /* Max height for mobile screens */
+    background-size: contain; /* Ensure the image fits without cropping */
+  }
+}
+
+.footer-line img {
+  width: 100%;
+  height: auto;
+}
+
+.container-foot {
+  padding: 6rem 2rem;
+}
+
+/* Grid Styling */
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr; /* Default 1 column layout */
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr); /* 5 columns for large screens */
+  }
+}
+
+/* Section Styles */
+.footer-logo img {
+  width: 112px;
+  border-radius: 8px;
+}
+
+.footer-logo p {
+  font-size: 0.75rem;
+  margin-top: 1rem;
+  color: #333;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-link {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.footer-link:hover {
+  color: black;
+}
+
+.footer-contact div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-contact i {
+  font-size: 1.25rem;
+
+}
+
+.footer-contact p {
+  font-size: 1rem;
+
+}
+
+.footer-media {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-media i {
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-media i:hover {
+  color: black;
+}
+
+.footer-address p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-question form {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.input-field {
+  padding: 0.5rem;
+  background-color: #070606;
+  border: 1px solid #ccc;
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+  width: 70%;
+}
+
+.submit-btn {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #1a78d5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-question form {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+
+  .footer-media {
+    justify-content: center;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo p {
+    font-size: 0.7rem;
+  }
+
+  .footer-link {
+    font-size: 0.9rem;
+  }
+
+  .footer-contact i {
+    font-size: 1.1rem;
+  }
+
+  .footer-contact p {
+    font-size: 0.9rem;
+  }
+
+  .footer-media i {
+    font-size: 1.1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer-overlay{
+  z-index: -4;
+}

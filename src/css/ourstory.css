@@ -1,0 +1,280 @@
+
+
+/* Mission Text */
+
+
+
+
+/* Main Content */
+
+/* Responsive Design */
+
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 10rem; /* Adjust spacing for top/bottom and left/right */
+  gap: 2rem;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.image {
+  border-radius: 1.5rem;
+  width: 100%;
+  height: auto;
+  max-width: 480px;
+  max-height: 560px;
+  object-fit: cover;
+}
+
+.text-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.text-content {
+  font-size: 24px;
+  color: #884835;
+  margin: 0px 40px;
+  line-height: 1.6;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .section-container {
+    flex-direction: column;
+    padding: 3rem 5rem;
+  }
+
+  .image {
+    max-width: 90%;
+    max-height: 400px;
+  }
+
+  .text-content {
+    font-size: 20px;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    padding: 2rem 3rem;
+  }
+
+  .image {
+    max-width: 100%;
+    max-height: 350px;
+  }
+
+  .text-content {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-container {
+    padding: 1rem 2rem;
+  }
+
+  .image {
+    max-width: 100%;
+    max-height: 300px;
+  }
+
+  .text-content {
+    font-size: 16px;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.read-more-button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-color: white;
+  color: #be6449;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.read-more-button:hover {
+  background-color: #be6449;
+  color: white;
+}
+
+.features-image {
+  display: flex;
+  align-items: center;
+}
+
+.container-eg-btn-2 {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto 10px;
+  padding: 0.5em;
+}
+.container-eg-btn-3 {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto 10px;
+  padding: 0.5em;
+}
+.container-eg-btn-2 .button {
+  color: white;
+  margin: 10px;
+  padding: 5px 40px;
+  border: 2px solid #ecb28c;
+  border-radius: 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  z-index: 1;
+}
+.container-eg-btn-2 .button-5:before {
+  position: absolute;
+  transition: 0.3s;
+  content: "";
+  width: 30px;
+  bottom: 0;
+  background: #ecb28c;
+  height: 130%;
+  right: -10%;
+  transform: skewX(-30deg);
+  z-index: -1;
+}
+.container-eg-btn-3 .button {
+  color: black;
+  margin: 10px;
+  padding: 5px 40px;
+  border: 2px solid #552607;
+  border-radius: 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  z-index: 1;
+}
+.container-eg-btn-3 .button-6:before {
+  position: absolute;
+  transition: 0.3s;
+  content: "";
+  width: 30px;
+  bottom: 0;
+  background: #552607;
+  height: 130%;
+  right: -10%;
+  transform: skewX(-30deg);
+  z-index: -1;
+}
+.container-eg-btn-3 .button-6:hover {
+  color: white;
+}
+.container-eg-btn-3 .button-6:hover:before {
+  width: 120%;
+  right: -10;
+  color: black;
+}
+
+.container-eg-btn-2 .button-5:hover {
+  color: black;
+}
+.container-eg-btn-2 .button-5:hover:before {
+  width: 120%;
+  right: -10;
+  color: black;
+}
+
+
+
+/* Image container */
+
+/* Responsive Design */
+
+
+.blog-section {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.blog-card {
+  width: 425px;
+  background-color: #884835;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.blog-card img {
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.blog-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.blog-description {
+  font-size: 17px;
+  color: white;
+  margin-top: 1rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.read-more-btn {
+  background-color: #000;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #555;
+}
+
