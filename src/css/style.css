@@ -135,9 +135,9 @@ button::before {
 .container-eg-btn-2 .button {
   color: white;
   margin: 10px;
-  padding: 5px 40px;
+  padding: 1px 30px;
   border: 2px solid #ecb28c;
-  border-radius: 40px;
+  border-radius: 30px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -148,20 +148,20 @@ button::before {
   position: absolute;
   transition: 0.4s;
   content: "";
-  width: 500px;
-  top: -490%;
+  width: 50px;
+  top: 10%;
   background: #ecb28c;
-  height: 400px;
-  right: -300%;
+  height: 50px;
+  right: -25%;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   z-index: -1;
 }
 .container-eg-btn-3 .button {
   color: black;
   margin: 10px;
-  padding: 5px 40px;
+  padding: 2px 30px;
   border: 2px solid #552607;
-  border-radius: 40px;
+  border-radius: 30px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -184,14 +184,14 @@ button::before {
 
 .container-eg-btn-3 .button-6:before {
   position: absolute;
-  transition: 0.3s;
+  transition: 0.4s;
   content: "";
-  width: 30px;
-  bottom: 0;
-  background: #552607;
-  height: 140%;
-  right: -10%;
-  transform: skewX(-30deg);
+  width: 50px;
+  top: 10%;
+  background: linear-gradient(to right, #321107 0%, #983415 100%);
+  height: 50px;
+  right: -20%;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   z-index: -1;
 }
 
@@ -220,7 +220,10 @@ button::before {
   color: white;
 }
 .container-eg-btn-3 .button-6:hover:before {
-  width: 120%;
+  width: 500%;
+  height: 700%;
+  top: -400%;
+  right: -300%;
   color: black;
 }
 
@@ -228,8 +231,10 @@ button::before {
   color: black;
 }
 .container-eg-btn-2 .button-5:hover:before {
-  width: 440%;
-  top: -540%;
+  width: 500%;
+  height: 700%;
+  top: -400%;
+  right: -300%;
   color: black;
 }
 
@@ -306,7 +311,7 @@ button::before {
 /* Pagination Styles */
 .pagination-container {
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   left: 48%;
   transform: translateX(-20%);
   display: flex;
@@ -362,6 +367,8 @@ button::before {
   font-size: 24px;
   color: #884835;
   width: 50%;
+
+  line-height: 1.2;
   text-align: center;
  
 }
@@ -387,7 +394,7 @@ button::before {
   flex-wrap: wrap;
   justify-content: center;
   gap: 3rem;
-  padding: 2rem 0rem;
+  padding: 2rem 4rem;
   background-color: #874f47;
 }
 
@@ -426,6 +433,7 @@ button::before {
 
 .about-text {
   color: white;
+  line-height: 1.2;
   font-size: 24px;
 
 }
@@ -493,8 +501,8 @@ button::before {
 .feature-card {
   width: 200px;
   background-color: #be6449;
-  border-radius: 1.5rem;
-  padding: 1rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
 }
 
 .feature-card img {
@@ -511,6 +519,7 @@ button::before {
 .feature-text {
   font-size: 14px;
   margin-top: 0.5rem;
+  line-height: 1.2;
   color: white;
 }
 
@@ -572,7 +581,7 @@ button::before {
 }
 
 .info-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
   text-align: center;
   color: #321107;
@@ -581,9 +590,10 @@ button::before {
 }
 
 .info-text {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   letter-spacing: -0.5px;
+  padding: 0px 40px;
   line-height: 1.2;
   color: #321107;
 }
@@ -594,7 +604,7 @@ button::before {
 }
 
 .product-title {
-  font-size: 30px;
+  font-size: 24px;
 font-weight: bold;
   margin-bottom: 0.5rem;
   letter-spacing: -0.5px;
@@ -602,10 +612,10 @@ font-weight: bold;
 }
 
 .product-description {
-  font-size: 24px;
+  font-size: 20px;
   color: #884835;
   margin: 0 auto;
-
+  line-height: 1.2;
   max-width: 50%;
 }
 
@@ -635,8 +645,8 @@ font-weight: bold;
 
 .product-gallery {
   display: grid;
-  gap: 2.5rem;
-  margin-top: 40px;
+  gap: 0rem;
+  margin: 2rem 8rem;
   grid-template-columns: repeat(1, 1fr);
   place-items: center; /* Default for mobile devices */
 }
@@ -656,7 +666,7 @@ font-weight: bold;
 .product-item {
   position: relative;
   overflow: hidden;
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
   width: 350px;
 }
 
@@ -929,7 +939,7 @@ font-weight: bold;
 }
 
 .outlet-section {
-  margin-top: 2rem;
+  margin: 2rem 0rem;
 }
 
 .outlet-header {
@@ -951,7 +961,7 @@ font-weight: bold;
 .outlet-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 2rem;
   justify-content: center;
   margin: 3rem 0;
 }
@@ -987,7 +997,7 @@ font-weight: bold;
   display: grid;
   grid-template-columns: 100%; /* 1 item per row on small screens (100% width) */
   gap: 5%; /* Adjust the gap between items */
-  padding: 10rem 4rem 4rem 4rem;
+  margin: 10rem 4rem 4rem 4rem;
   position: relative;
 }
 
@@ -999,25 +1009,16 @@ font-weight: bold;
 
 @media (min-width: 1024px) {
   .stay-in-touch-section {
-    grid-template-columns: 68% 28%; /* 2 items per row for desktops with 48% width each */
+    grid-template-columns: 60% 40%; /* 2 items per row for desktops with 48% width each */
   }
 }
 
 .diamonds-container {
-  display: flex;
-  position: relative;
-  justify-content: center;
+  width: 800px;
+  height: 300px;
 }
 
-.diamond-one {
-  left: 0;
-}
-.diamond-two {
-  left: 0;
-}
-.diamond-three {
-  left: 0;
-}
+
 
 .diamond-image {
   object-fit: cover;
@@ -1030,8 +1031,8 @@ font-weight: bold;
   border: 5px solid #BE6449;
   background-color: #171515; 
   max-height: 200px;/* Slate-900 equivalent */
-  margin: auto auto;
   padding: 2rem;
+  margin: auto 0;
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -1098,7 +1099,7 @@ font-weight: bold;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+  background: rgba(90, 45, 20, 0.5);  /* Semi-transparent dark background */
   color: white;
   text-align: center;
   padding: 8rem;
@@ -1112,7 +1113,7 @@ font-weight: bold;
   inset: 0;
   left: 0;
   right: 0;
-  background-color: rgb(135, 79, 71, 1); /* Semi-transparent dark background */
+  background-color: rgb(61, 31, 31, 1); /* Semi-transparent dark background */
   color: white;
   text-align: center;
   padding-top: 20px;
@@ -1326,7 +1327,7 @@ font-weight: bold;
 .slide-1 {
   flex-shrink: 0;
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   background-size: cover;
   background-position: center;
 }
@@ -1337,20 +1338,23 @@ font-weight: bold;
   margin-top: 20px;
   text-align: center;
   color: #884835;
-  font-size: 30px;
+  font-size: 26px;
+  line-height: 1.2;
   font-weight: 600;
   padding: 0 20px;
 }
 
 .mission-text p {
   margin: 20px 0px;
+  line-height: 1.2;
   width: 60%;
 }
 
 .main-content-1 {
   position: absolute;
   top: 30%;
-  left: 50%;
+  left: 35%;
+  line-height: 1.2;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
@@ -1358,7 +1362,7 @@ font-weight: bold;
 }
 
 .title-2 {
-  font-size: 96px;
+  font-size: 80px;
   font-weight: bold;
   background: linear-gradient(to right, #be6449, #eaaa84, #be6449);
   -webkit-background-clip: text;
@@ -1367,13 +1371,13 @@ font-weight: bold;
 }
 
 .subtitle-1 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .description-1 {
-  font-size: 26px;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -1430,7 +1434,7 @@ font-weight: bold;
 .product-section-1 {
   display: flex;
   justify-content: center;
-  padding: 4rem 0rem;
+  padding: 4rem 4rem;
   gap: 2rem;
 }
 
@@ -1473,7 +1477,8 @@ font-weight: bold;
 .description-3 p {
   margin-top: 1rem;
   text-align: justify;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.2;
   color: #884835;
 }
 
@@ -1583,14 +1588,15 @@ font-weight: bold;
 }
 
 .blog-title {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   margin-top: 1rem;
 }
 
 .blog-description {
-  font-size: 20px;
+  font-size: 18px;
   color: white;
+  line-height: 1.2;
   margin-top: 1rem;
 }
 
@@ -1721,7 +1727,7 @@ header::before {
   height: auto;
   align-items: center;
   text-align: center;
-  line-height: 1.5; /* Better readability */
+  line-height: 1.2; /* Better readability */
 }
 
 /* Media queries for responsiveness */
