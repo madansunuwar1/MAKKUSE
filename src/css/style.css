@@ -1370,6 +1370,12 @@ font-weight: bold;
   margin-bottom: 20px;
 }
 
+.gradienttext{
+  background: linear-gradient(to bottom right, #be6449 0%, #eaaa84 50%, #be6449 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .subtitle-1 {
   font-size: 32px;
   font-weight: bold;
