@@ -2,7 +2,7 @@
   background: linear-gradient(to right, #874f47 0%, #b17368 50%, #ba9682 100%);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 5px 0;
-  width: 100%;
+  width: 100vw;
   z-index: 999;
   position: fixed;
 }
