@@ -1785,7 +1785,7 @@ header::before {
   .para-primary {
     font-size: 16px; /* Smaller font size for small screens */
     width: 100%; /* Use full screen width */
-    margin: 10px 20px; /* Add padding for smaller screens */
+    margin: 0px 0px; /* Add padding for smaller screens */
   }
 }
 .component_img {
