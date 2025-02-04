@@ -286,10 +286,10 @@
         class="product-image-1">
     </div>
     <div class="product-text-1">
-      <div class="title-1 text-[#874F47]" style="font-family: 'Montserrat',sans-serif;">Large Rectangular Gift Box</div>
-      <div class="underline"></div>
+      <div class="title-1 text-[#874F47] font-bold" style="font-family: 'Montserrat',sans-serif;">Large Rectangular Gift Box</div>
+    
       <div class="description-3">
-        <button class="bg-[#874F47] text-white text-xl py-2 px-8 rounded-md">Includes</button>
+        <h1 class=" text-[#874F47] text-3xl font-semibold rounded-md ml-8">Includes</h1>
         <div class="w-full">
         <ul class="list-disc text-start w-fit mx-auto mt-4 text-[24px] text-[#874F47]" style="font-family: 'Montserrat',sans-serif;">
           <li>15 pcs of Pustakari</li>
@@ -307,9 +307,8 @@
    
     <div class="product-text-1">
       <div class="title-1 text-[#874F47]" style="font-family: 'Montserrat',sans-serif;">Significance of Copper Spoon</div>
-      <div class="underline"></div>
       <div class="description-3">
-        <button class="bg-[#874F47] text-white text-xl py-2 px-8 rounded-md">Includes</button>
+        <h1 class=" text-[#874F47] text-3xl font-semibold rounded-md ml-8">Includes</h1>
         <div class="w-full">
           <ul class="list-disc text-start w-fit mx-auto mt-4 text-[24px] text-[#874F47]" style="font-family: 'Montserrat',sans-serif;">
             <li>15 pcs of Pustakari</li>
@@ -335,9 +334,9 @@
     </div>
     <div class="product-text-1">
       <div class="title-1 text-[#874F47]" style="font-family: 'Montserrat',sans-serif;">Significance of Copper Spoon</div>
-      <div class="underline"></div>
+  
       <div class="description-3">
-        <button class="bg-[#874F47] text-white text-xl py-2 px-8 rounded-md">Includes</button>
+        <h1 class=" text-[#874F47] text-3xl font-semibold rounded-md ml-8">Includes</h1>
         <div class="w-full">
           <ul class="list-disc text-start w-fit mx-auto mt-4 text-[24px] text-[#874F47]" style="font-family: 'Montserrat',sans-serif;">
             <li>15 pcs of Pustakari</li>
@@ -354,9 +353,8 @@
    
     <div class="product-text-1">
       <div class="title-1 text-[#874F47]" style="font-family: 'Montserrat',sans-serif;">Significance of Copper Spoon</div>
-      <div class="underline"></div>
       <div class="description-3">
-        <button class="bg-[#874F47] text-white text-xl py-2 px-8 rounded-md">Includes</button>
+        <h1 class=" text-[#874F47] text-3xl font-semibold rounded-md ml-8">Includes</h1>
         <div class="w-full">
           <ul class="list-disc text-start w-fit mx-auto mt-4 text-[24px] text-[#874F47]" style="font-family: 'Montserrat',sans-serif;">
             <li>15 pcs of Pustakari</li>
@@ -390,7 +388,9 @@
     <button class="button button-7" id="orderNowButton-1">Fill Form For Customize</button>
   </div>
   <div id="orderModal-1" class="modal hidden">
-    <div class="modal-content border-[4px] border-[#B17368] bg-[url('./src/images/rectanglemd.png')] bg-center bg-no-repeat bg-cover rounded-2xl">
+    <div class="gradient-border">
+
+    <div class="modal-content bg-[url('./src/images/rectanglemd.png')] bg-center bg-no-repeat bg-cover rounded-2xl">
         <span class="close" id="closeModal-1">&times;</span>
         <h2 class="text-white text-[24px] font-bold">Corporative Customize Form</h2>
         <div class="underline"></div>
@@ -514,7 +514,29 @@
          
         </form>
     </div>
+  </div>
 </div>
+<style>
+  .gradient-border {
+      text-align: center;
+      background: transparent;  /* Transparent background */
+      border-radius: 8px;  /* Rounded corners */
+      position: relative;
+      z-index: 1;
+  }
+  
+  .gradient-border::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: linear-gradient(to right, #874747 0%, #B17368 50%, #BA9682 100%);
+      border-radius: 10px;  /* Same border radius */
+      z-index: -1;
+  }
+        </style>
 
 <script>
  
@@ -587,15 +609,15 @@
           <h3 class="footer-heading text-white font-bold text-2xl mb-4">Address</h3>
           <div class="flex gap-2 mt-2">
             <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
-            <p class="text-white hover:text-black">info@makkuse.com</p>
+            <p class="text-white hover:text-black">Thamel</p>
           </div>
           <div class="flex gap-2 mt-2">
             <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
-            <p class="text-white hover:text-black">+977 9820202020</p>
+            <p class="text-white hover:text-black">jhamsikhel</p>
           </div>
           <div class="flex gap-2 mt-2">
             <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
-            <p class="text-white hover:text-black">+977 9820202020</p>
+            <p class="text-white hover:text-black">Pokhara</p>
           </div>
         </div>
         <div>

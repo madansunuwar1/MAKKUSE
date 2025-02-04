@@ -27,51 +27,52 @@
 <body class="">
   <style>
     /* Modal Styles */
-  .modal-1 {
-    display: flex; /* Always show on page load */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-  }
-  
-  .modal-content-1 {
-    background: #070606;
-    border-radius: 10px;
-    text-align: center;
-    position: relative;
-    max-width: 80%;
-  }
-  
- 
-  
-  /* Close Button */
-  .close-btn-1 {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  </style>
-    <div id="imageModal-1" class="modal-1">
-      <div class="modal-content-1">
-          <span class="close-btn-1 border-2 rounded-full w-10 h-10 border-[#BE6349] text-[#BE6349]">x</span>
+    .modal-1 {
+      display: flex;
+      /* Always show on page load */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
 
-          <h1 class="main-title text-2xl mt-4" style="font-family: 'Montserrat',sans-serif;">Makkusé</h1>
-          <div class="flex gap-2 md:gap-20 justify-center mt-4 md:mt-24 mb-4 md:mb-8">
-          <img src=""  class="w-[100px] xl:h-[400px] w-[100px] xl:w-[300px] rounded-2xl bg-gray-100">
-          <img src=""  class="w-[100px] xl:h-[400px] w-[100px] xl:w-[300px] rounded-2xl bg-gray-100">
-        </div>
-          <img src="./src/images/border.png" class="w-[300px] xl:w-[900px]" alt="Footer Divider">
+    .modal-content-1 {
+      background: #070606;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+      max-width: 80%;
+    }
+
+
+
+    /* Close Button */
+    .close-btn-1 {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  </style>
+  <div id="imageModal-1" class="modal-1">
+    <div class="modal-content-1">
+      <span class="close-btn-1 border-2 rounded-full w-10 h-10 border-[#BE6349] text-[#BE6349]">x</span>
+
+      <h1 class="main-title text-2xl mt-12" style="font-family: 'Montserrat',sans-serif;">Makkusé</h1>
+      <div class="flex gap-2 md:gap-20 justify-center mt-4 md:mt-24 mb-4 md:mb-8">
+        <img src="" class="w-[100px] xl:h-[350px] w-[100px] xl:w-[250px] rounded-2xl bg-gray-100">
+        <img src="" class="w-[100px] xl:h-[350px] w-[100px] xl:w-[250px] rounded-2xl bg-gray-100">
       </div>
+      <img src="./src/images/border.png" class="w-[300px] xl:w-[900px]" alt="Footer Divider">
+    </div>
   </div>
-  
+
 
   <!-- Navbar -->
   <nav class="navbar">
@@ -119,77 +120,14 @@
 
         <a href="Franchise.html" class="nav-link">Franchise</a>
         <a href="Contact.html" class="nav-link">Contact Us</a>
-        <a href="#" class="basket-icon py-1 px-2" id="orderNowButton">
+        <a href="#" class="basket-icon py-1 px-2">
           <i class="bi bi-basket-fill text-white text-[30px]"></i>
           <div class="shop-now-text my-auto">Shop Now</div>
         </a>
       </div>
     </div>
   </nav>
-  <div id="orderModal" class="modal hidden">
-    <div class="modal-content">
-        <span class="close" id="closeModal">&times;</span>
-        <h2 class="text-[#BE6449] text-[24px] font-bold">E-Commerce Distributors</h2>
-        <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
-        <div class="flex flex-col justify-center gap-4 mt-8">
-            <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
-                <div
-                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
-                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
-                        <i class="bi bi-google-play"></i>
-                        <p class="text-white">daraz</p>
-                    </div>
-                </div>
-                <div
-                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
-                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
-                        <i class="bi bi-google-play"></i>
-                        <p class="text-white">daraz</p>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-wrap gap-4 md:gap-10 justify-center w-full">
-                <div
-                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
-                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
-                        <i class="bi bi-google-play"></i>
-                        <p class="text-white">daraz</p>
-                    </div>
-                </div>
-                <div
-                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
-                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
-                        <i class="bi bi-google-play"></i>
-                        <p class="text-white">daraz</p>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-    </div>
-</div>
-<script>
-  const modal = document.getElementById('orderModal');
-  const openButton = document.getElementById('orderNowButton');
-  const closeButton = document.getElementById('closeModal');
-
-  // Open the modal
-  openButton.addEventListener('click', () => {
-      modal.classList.remove('hidden');
-  });
-
-  // Close the modal
-  closeButton.addEventListener('click', () => {
-      modal.classList.add('hidden');
-  });
-
-  // Close modal when clicking outside of the modal content
-  window.addEventListener('click', (event) => {
-      if (event.target === modal) {
-          modal.classList.add('hidden');
-      }
-  });
-</script>
   <script>
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
@@ -237,7 +175,8 @@
 
         <div class="text-content-1">
           <p class="story-text-1" style="font-family: Arial;font-weight: regular;">
-            Our Mission Is To Transform The Way That The World Experiences Nepali Desserts, Elevating Its Making While Taking Action In Favor Of Sustainable Future.
+            Our Mission Is To Transform The Way That The World Experiences Nepali Desserts, Elevating Its Making While
+            Taking Action In Favor Of Sustainable Future.
           </p>
         </div>
       </div>
@@ -310,13 +249,75 @@
             Center Located At Kathmandu.
           </p>
         </div>
-        <div class="info-card">
-          <img src="./src/images/Phone.png" alt="Handmade Icon" class="mx-auto h-16">
-          <h3 class="info-title">Order Now</h3>
-          <p class="info-text" style="font-family: Arial;">
-            Happily Delivering These Treats to you, Text or Call us on These Platforms for Orders & Queries.
-          </p>
+        <a id="orderNowButton" class="cursor-pointer">
+          <div class="info-card">
+            <img src="./src/images/Phone.png" alt="Handmade Icon" class="mx-auto h-16">
+            <h3 class="info-title">Order Now</h3>
+            <p class="info-text" style="font-family: Arial;">
+              Happily Delivering These Treats to you, Text or Call us on These Platforms for Orders & Queries.
+            </p>
+          </div>
+        </a>
+        <div id="orderModal" class="modal hidden">
+          <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2 class="text-[#BE6449] text-[24px] font-bold">E-Commerce Distributors</h2>
+            <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
+            <div class="flex flex-col justify-center gap-4 mt-8">
+              <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
+                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                  <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
+                    <i class="bi bi-google-play"></i>
+                    <p class="text-white">daraz</p>
+                  </div>
+                </div>
+                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                  <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
+                    <i class="bi bi-google-play"></i>
+                    <p class="text-white">daraz</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-4 md:gap-10 justify-center w-full">
+                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                  <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
+                    <i class="bi bi-google-play"></i>
+                    <p class="text-white">daraz</p>
+                  </div>
+                </div>
+                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
+                  <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
+                    <i class="bi bi-google-play"></i>
+                    <p class="text-white">daraz</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
+        <script>
+          const modal = document.getElementById('orderModal');
+          const openButton = document.getElementById('orderNowButton');
+          const closeButton = document.getElementById('closeModal');
+
+          // Open the modal
+          openButton.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+          });
+
+          // Close the modal
+          closeButton.addEventListener('click', () => {
+            modal.classList.add('hidden');
+          });
+
+          // Close modal when clicking outside of the modal content
+          window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+              modal.classList.add('hidden');
+            }
+          });
+        </script>
         <div class="info-card">
           <img src="./src/images/Gift.png" alt="Handmade Icon" class="mx-auto h-16">
           <h3 class="info-title">Send a Gift to Nepal</h3>
@@ -338,25 +339,31 @@
       </p>
     </div>
     <div class="product-gallery">
-      <div class="product-item">
-        <img src="./src/images/pustakari-small 1.png" alt="Pustakari" class="product-image">
-        <div class="hover-overlay">
-          <span class="hover-text">Pustakari</span>
+      <a href="Singleproduct.html">
+        <div class="product-item">
+          <img src="./src/images/pustakari-small 1.png" alt="Pustakari" class="product-image">
+          <div class="hover-overlay">
+            <span class="hover-text">Pustakari</span>
+          </div>
         </div>
-      </div>
-      <div class="product-item">
-        <img src="./src/images/cookies-small 1.png" alt="Cookies" class="product-image">
-        <div class="hover-overlay">
-          <span class="hover-text">Pustakari</span>
+      </a>
+      <a href="Singleproduct.html">
+        <div class="product-item">
+          <img src="./src/images/cookies-small 1.png" alt="Cookies" class="product-image">
+          <div class="hover-overlay">
+            <span class="hover-text">Pustakari</span>
+          </div>
         </div>
-      </div>
-      <div class="product-item">
-        <img src="./src/images/gudpak-small 1.png" alt="Gundpak" class="product-image">
-        <div class="hover-overlay">
-          <span class="hover-text">Pustakari</span>
+      </a>
+      <a href="Singleproduct.html">
+        <div class="product-item">
+          <img src="./src/images/gudpak-small 1.png" alt="Gundpak" class="product-image">
+          <div class="hover-overlay">
+            <span class="hover-text">Pustakari</span>
+          </div>
         </div>
-      </div>
     </div>
+    </a>
     <div class="flex md:justify-end md:mt-8 container-eg-btn-3 md:mx-36">
       <a class="button button-6"><span class="text-[12px]">VIEW PRODUCT</span></a>
     </div>
@@ -369,14 +376,16 @@
     </div>
     <div class="gifts-content">
       <div class="gift-box">
-        <h3 class="gift-box-title">
+        <h3 class="gift-box-title leading-6" style="font-family: 'Montserrat',sans-serif;">
           Special Collection Luxury Box for your next big event
         </h3>
-        <p class="gift-box-description" style="font-family: Arial;">
+        <p class="gift-box-description leading-5 tracking-tight" style="font-family: Arial;">
           Our Ultimate Luxury Box Can Be Customized Specially For Major Occasions Like Weddings, Corporate Events,
           Rituals & festivities. We Specialize In Designing & Rendering Attractive Customized Boxes.
         </p>
-        <button class="order-button">ORDER NOW</button>
+        <div class="flex md:justify-end md:mt-8 container-eg-btn-6">
+          <a class="button button-9"><span class="text-[20px] font-bold text-white tracking-wide">ORDER NOW</span></a>
+        </div>
       </div>
       <div class="image-row">
         <div class="image-container">
@@ -414,16 +423,16 @@
   </section>
   <section class="nostalgia-section relative overflow-hidden">
     <div class="absolute inset-0">
-      <img src="./src/images/Group 177.png" class=""/>
+      <img src="./src/images/Group 177.png" class="" />
     </div>
     <div class="nostalgia-content z-0">
       <div class="nostalgia-text">
-        <div class="swiper-container">
+        <div class="swiper-container overflow-hidden pb-8">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="ok">
                 <div class="placeholder-image-2"></div>
-                 <div class="placeholder-image-3"></div>
+                <div class="placeholder-image-3"></div>
                 <div class="text-content-2">
                   <h1 class="nostalgia-title">"Taste of Nepali Nostalgia"</h1>
                   <p class="nostalgia-description w-full" style="font-family: Arial;">
@@ -436,7 +445,7 @@
             <div class="swiper-slide">
               <div class="ok">
                 <div class="placeholder-image-2"></div>
-                 <div class="placeholder-image-3"></div>
+                <div class="placeholder-image-3"></div>
                 <div class="text-content-2">
                   <h1 class="nostalgia-title">"A Slice of Home"</h1>
                   <p class="nostalgia-description w-full" style="font-family: Arial;">
@@ -449,7 +458,7 @@
             <div class="swiper-slide">
               <div class="ok">
                 <div class="placeholder-image-2"></div>
-                 <div class="placeholder-image-3"></div>
+                <div class="placeholder-image-3"></div>
                 <div class="text-content-2">
                   <h1 class="nostalgia-title">"Wholesome Memories"</h1>
                   <p class="nostalgia-description w-full" style="font-family: Arial;">
@@ -478,36 +487,40 @@
     <div class="outlet-container">
       <div class="outlet-card">
         <img src="./src/images/outlet1.png" alt="Thamel" class="outlet-image">
-        <div class="overlay-1">
+        <div class="overlay-1">   </div>
           <h1>Thamel</h1>
+          <div class="overlay-content">
           <div>
             <img src="./src/images/logo.png" alt="Your Brand Logo" class="over-im" />
           </div>
-          <p>Thamel,kathmandu</p>
-          <p>9050945054</p>
+          <p class="text-center text-white text-[18px] mt-4">Sher Bhawan, Chaksibari Marg, KTM</p>
+          <p class="text-center text-white text-[18px] mt-2"><i class="bi bi-telephone"></i>+977-9820106915</p>
+     
         </div>
       </div>
       <div class="outlet-card">
         <img src="./src/images/outlet2.png" alt="Jhamsikhel" class="outlet-image">
-        <div class="overlay-1">
+        <div class="overlay-1"></div>
           <h1>Jhamsikhel</h1>
+          <div class="overlay-content">
           <div>
             <img src="./src/images/logo.png" alt="Your Brand Logo" class="over-im" />
           </div>
-          <p>jhamiskhel,lalitpur</p>
-          <p>345435345345</p>
+          <p class="text-center text-white text-[18px] mt-4">jhamiskhel,lalitpur</p>
+          <p class="text-center text-white text-[18px] mt-2"><i class="bi bi-telephone"></i>+977-9820100188</p>
+        
         </div>
       </div>
       <div class="outlet-card">
         <img src="./src/images/outlet3.png" alt="Lalitpur" class="outlet-image">
-        <div class="overlay-1">
+        <div class="overlay-1"></div>
           <h1>Pokhara</h1>
+          <div class="overlay-content">
           <div>
             <img src="./src/images/logo.png" alt="Your Brand Logo" class="over-im" />
           </div>
-          <p>pokhara</p>
-          <p>234324234</p>
-
+          <p class="text-center text-white text-[18px] mt-4">Centre Point, (Lakeside) Ansuvara pokhara</p>
+          <p class="text-center text-white text-[18px] mt-2"><i class="bi bi-telephone"></i>+977-9763251693</p>
         </div>
       </div>
     </div>
@@ -515,25 +528,26 @@
   <section class="stay-in-touch-section">
     <div class="flex flex-col gap-12">
       <div class="diamonds-container relative">
-      <div class="diamond diamond-one absolute top-0 left-0">
-        <img src="./src/images/banner-slider3.png" alt="Diamond One" class="diamond-image">
+        <div class="diamond diamond-one absolute top-0 left-0">
+          <img src="./src/images/banner-slider3.png" alt="Diamond One" class="diamond-image">
+        </div>
+        <div class="diamond diamond-two absolute top-0 left-[50px]  md:left-[200px]">
+          <img src="./src/images/banner-slider1.png" alt="Diamond Two" class="diamond-image">
+        </div>
+        <div class="diamond diamond-three absolute top-0 left-[100px]  md:left-[400px]">
+          <img src="./src/images/banner-slider3.png" alt="Diamond Three" class="diamond-image">
+        </div>
       </div>
-      <div class="diamond diamond-two absolute top-0 left-[50px]  md:left-[200px]">
-        <img src="./src/images/banner-slider1.png" alt="Diamond Two" class="diamond-image">
+      <div class="flex justify-end mt-8 container-eg-btn-3">
+        <a class="button button-6">View more</a>
       </div>
-      <div class="diamond diamond-three absolute top-0 left-[100px]  md:left-[400px]">
-        <img src="./src/images/banner-slider3.png" alt="Diamond Three" class="diamond-image">
-      </div>
-    </div>
-    <div class="flex justify-end mt-8 container-eg-btn-3">
-      <a class="button button-6">View more</a>
-    </div>
     </div>
 
     <section class="mt-2 mb-12 h-[350px] md:mr-12">
-      <div class="border-[8px] border-[#582E22] bg-[#171515] rounded-2xl h-[300px] md:h-[200px]   mx-auto my-auto relative">
+      <div
+        class="border-[8px] border-[#582E22] bg-[#171515] rounded-2xl h-[300px] md:h-[200px]   mx-auto my-auto relative">
         <div class="absolute inset-0 z-0">
-          <img src="./src/images/Group 427.png" class=""/>
+          <img src="./src/images/Group 427.png" class="" />
         </div>
         <h1 style="font-family: 'Montserrat', serif;"
           class="text-[30px] my-4 font-bold bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] bg-clip-text text-transparent text-center">
@@ -549,17 +563,18 @@
             <i class="bi bi-facebook text-[#BE6449] group-hover:text-white text-3xl transition-colors"></i>
             <p class="text-white text-[18px] font-medium">makkuse.np</p>
           </div>
-         
+
         </div>
       </div>
     </section>
   </section>
- 
+
 
   <!-- Footer -->
   <!-- Footer -->
   <footer class="footer relative">
-    <div class="footer-overlay absolute inset-0 bg-gradient-to-r opacity-100" style="background-image: linear-gradient(to right, #874F47 0%, #211311 100%);"></div>
+    <div class="footer-overlay absolute inset-0 bg-gradient-to-r opacity-100"
+      style="background-image: linear-gradient(to right, #874F47 0%, #211311 100%);"></div>
 
     <div class="footer-line">
       <img src="./src/images/line.jpg" alt="Footer Divider">
@@ -595,24 +610,24 @@
             <i class="bi bi-telephone text-white hover:text-black"></i>
             <p class="text-white hover:text-black">+977 9820202020</p>
           </div>
-       
+
         </div>
-      
+
 
         <!-- Address Section -->
         <div class="footer-address">
           <h3 class="footer-heading text-white font-bold text-2xl mb-4">Address</h3>
           <div class="flex gap-2 mt-2">
             <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
-            <p class="text-white hover:text-black">info@makkuse.com</p>
+            <p class="text-white hover:text-black">Thamel</p>
           </div>
           <div class="flex gap-2 mt-2">
             <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
-            <p class="text-white hover:text-black">+977 9820202020</p>
+            <p class="text-white hover:text-black">jhamsikhel</p>
           </div>
           <div class="flex gap-2 mt-2">
             <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
-            <p class="text-white hover:text-black">+977 9820202020</p>
+            <p class="text-white hover:text-black">Pokhara</p>
           </div>
         </div>
         <div>
@@ -678,37 +693,37 @@
       grabCursor: true, // Adds a grab cursor effect
     });
 
-//     document.addEventListener('DOMContentLoaded', function() {
-//     // Check if the popup has been shown before
-//     if (!localStorage.getItem('popupShown')) {
-//         // Show the popup
-//         document.getElementById('popup').style.display = 'flex';
+    //     document.addEventListener('DOMContentLoaded', function() {
+    //     // Check if the popup has been shown before
+    //     if (!localStorage.getItem('popupShown')) {
+    //         // Show the popup
+    //         document.getElementById('popup').style.display = 'flex';
 
-//         // Set a flag in localStorage to indicate the popup has been shown
-//         localStorage.setItem('popupShown', 'true');
-//     }
+    //         // Set a flag in localStorage to indicate the popup has been shown
+    //         localStorage.setItem('popupShown', 'true');
+    //     }
 
-//     // Close the popup when the close button is clicked
-//     document.getElementById('close-btn').addEventListener('click', function() {
-//         document.getElementById('popup').style.display = 'none';
-//     });
-// });
-document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("imageModal-1");
-    const closeButton = document.querySelector(".close-btn-1");
+    //     // Close the popup when the close button is clicked
+    //     document.getElementById('close-btn').addEventListener('click', function() {
+    //         document.getElementById('popup').style.display = 'none';
+    //     });
+    // });
+    document.addEventListener("DOMContentLoaded", function () {
+      const modal = document.getElementById("imageModal-1");
+      const closeButton = document.querySelector(".close-btn-1");
 
-    // Close modal on button click
-    closeButton.addEventListener("click", function () {
+      // Close modal on button click
+      closeButton.addEventListener("click", function () {
         modal.style.display = "none";
-    });
+      });
 
-    // Close modal when clicking outside the modal content
-    window.addEventListener("click", function (event) {
+      // Close modal when clicking outside the modal content
+      window.addEventListener("click", function (event) {
         if (event.target === modal) {
-            modal.style.display = "none";
+          modal.style.display = "none";
         }
+      });
     });
-});
   </script>
 </body>
 

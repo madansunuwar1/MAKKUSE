@@ -81,11 +81,22 @@ button::before {
   transform: rotate(45deg);
   overflow: hidden;
   position: relative;
-  border: 10px solid #9e6258;
+  border: 6px solid #572E22;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
   border-radius: 30px;
 }
 
+.diamond-one {
+  z-index: 10;
+}
+
+.diamond-two {
+  z-index: 30; /* Bring this to the front */
+}
+
+.diamond-three {
+  z-index: 10;
+}
 /* Media query for smaller screens */
 @media (max-width: 1240px) {
   .diamond {
@@ -159,6 +170,7 @@ button::before {
 .container-eg-btn-3 .button {
   color: black;
   margin: 10px;
+  background: #D9D9D9;
   padding: 0px 20px;
   border: 2px solid #552607;
   border-radius: 30px;
@@ -170,16 +182,60 @@ button::before {
 }
 
 .container-eg-btn-4 .button {
-  color: #874F47;
+  color: black;
   margin: 10px;
   padding: 5px 40px;
-  border: 2px solid #BA9581;
+  border: 2px solid #874747;
   border-radius: 10px;
   text-align: center;
   position: relative;
   overflow: hidden;
   transition: 0.3s;
   z-index: 1;
+}
+.container-eg-btn-6 {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto 10px;
+  padding: 0.5em;
+}
+.container-eg-btn-6 .button {
+  color: #874F47;
+  margin: 10px;
+  padding: 10px 60px;
+  border: 2px solid #321107;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.container-eg-btn-6 .button-9:before {
+  position: absolute;
+  transition: 0.4s;
+  content: "";
+  width: 200px;
+  top: -20%;
+  background: linear-gradient(to right, #6c2510 0%,#d2481f 100%);
+  height: 200px;
+  right: -50%;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  z-index: -1;
+}
+
+.container-eg-btn-6 .button-9:hover:before {
+  width: 800px;
+  height: 800px;
+  top: -850%;
+  right: -200%;
+  color: black;
 }
 
 .container-eg-btn-3 .button-6:before {
@@ -201,7 +257,7 @@ button::before {
   content: "";
   width: 30px;
   bottom: 0;
-  background: #BA9581;
+  background: #874747;
   height: 150%;
   right: -10%;
   transform: skewX(-30deg);
@@ -246,7 +302,7 @@ button::before {
 .slide {
   flex-shrink: 0;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
 }
@@ -257,7 +313,7 @@ button::before {
   inset: 0;
   display: flex;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 270px;
   text-align: center;
   color: white;
   padding: 0 1rem;
@@ -354,6 +410,13 @@ button::before {
   width: 120px;
   height: 2px;
   background-color: black;
+  margin: 0 auto 1rem;
+}
+
+.divider-1 {
+  width: 200px;
+  height: 2px;
+  background-color: #321107;
   margin: 0 auto 1rem;
 }
 
@@ -677,7 +740,7 @@ font-weight: bold;
 .product-image {
   width: 100%;
   height: 100%;
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -778,8 +841,8 @@ font-weight: bold;
 
 .gift-box {
   background-color: #070606;
-  border: 8px solid #B86147;
-  padding: 2rem;
+  border: 4px solid #B86147;
+  padding: 8px;
   border-radius: 1.5rem;
   display: flex;
   width: 100%;
@@ -790,7 +853,7 @@ font-weight: bold;
 }
 
 .gift-box-title {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 600;
   background: linear-gradient(to right, #be6449, #eaaa84, #be6449);
   -webkit-background-clip: text;
@@ -799,7 +862,7 @@ font-weight: bold;
 
 .gift-box-description {
   color: white;
-  font-size: 1rem;
+  font-size: 14px;
 }
 
 .order-button {
@@ -855,7 +918,7 @@ font-weight: bold;
 
 @media (min-width: 1024px) {
   .nostalgia-section {
-    padding: 2rem 5rem; /* Larger padding for desktops */
+    padding: 2rem 3rem; /* Larger padding for desktops */
   }
 }
 
@@ -868,14 +931,14 @@ font-weight: bold;
 
 @media (min-width: 1024px) {
   .nostalgia-content {
-    grid-template-columns: 2fr 1fr; /* 2 items per row for desktop screens */
+    grid-template-columns: 1.8fr 1fr; /* 2 items per row for desktop screens */
   }
 }
 
 
 .placeholder-image-2 {
   flex-grow: 1;
-  height: 400px;
+  height: 350px;
   background-color: #cccccc;
   border-radius: 1.5rem;
 }
@@ -917,7 +980,7 @@ font-weight: bold;
 
 .nostalgia-image img {
   width: 100%; /* Default width to take up full container width */
-  height: 100%; /* Adjust height proportionally */
+  height: 480px; /* Adjust height proportionally */
   object-fit: cover;
   border-radius: 1.5rem;
 }
@@ -1116,32 +1179,15 @@ font-weight: bold;
   transform: translateY(100%); /* Start from below the image */
   transition: transform 0.5s ease; /* Smooth sliding effect */
 }
-
-.overlay::before {
-  content: "";
-  border-radius: 30px;
-  inset: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(179, 90, 40, 0.3); 
-  mix-blend-mode: multiply;
-  z-index: -1;
-}
-
 .overlay-1 {
   position: absolute;
-
   inset: 0;
   left: 0;
-  right: 0;
-  background-color: rgb(135, 71, 71, 1); /* Semi-transparent dark background */
+  right: 0; /* Semi-transparent dark background */
   color: white;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 60px;
+  background-color: rgb(135, 71, 71, 1);
   transform: translateY(80%); /* Start from below the image */
   transition: transform 0.5s ease; /* Smooth sliding effect */
 }
@@ -1151,10 +1197,16 @@ font-weight: bold;
   font-size: 24px;
 }
 
-.overlay-1 h1 {
-  margin: 0;
+.outlet-card h1 {
+  position: absolute;
+  left: 40%;
+  bottom: 5%;
+  z-index: 5;
   font-weight: bold;
+  color: white;
   font-size: 24px;
+  transition: transform 0.5s ease, top 0.5s ease; 
+  transform: translateY(0);
 }
 
 .image-container:hover .overlay {
@@ -1164,15 +1216,26 @@ font-weight: bold;
 .outlet-card:hover .overlay-1 {
   border-radius: 25px;
   transform: translateY(0%);
-  background-color: rgb(135, 71, 71, 0.4);/* Move to the top when hovered */
+  mix-blend-mode: multiply;
+  background-color: rgb(135, 71, 71, 1);/* Move to the top when hovered */
+}
+
+.outlet-card:hover h1 {
+  transform: translateY(-170px);
+  transition: transform 0.5s ease; /* Move to the top when hovered */
+}
+
+.outlet-card:hover .overlay-content{
+  position: absolute;
+  inset: 0;
 }
 
 .over-im {
-  margin: 30px auto;
+  margin: 50px auto;
 }
 
 .swiper-container {
-  overflow: hidden;
+
   width: 100%; /* Default to full width of the parent container */
   max-width: 400px; /* Limit maximum width to 900px */
   margin: 0 auto; /* Center the container */
@@ -1200,7 +1263,7 @@ font-weight: bold;
 
 @media (min-width: 768px) {
   .ok {
-    grid-template-columns: 1fr 1fr; /* 2 items per row on tablets and larger screens */
+    grid-template-columns: 0.8fr 1fr; /* 2 items per row on tablets and larger screens */
   }
 }
 
@@ -1217,7 +1280,7 @@ font-weight: bold;
 .placeholder-image-3 {
   position: absolute;
   width: 230px; /* Fixed width for larger screens */
-    height: 220px;/* Maximum width for larger screens *//* Maintain aspect ratio */
+  height: 220px;/* Maximum width for larger screens *//* Maintain aspect ratio */
   background: linear-gradient(to bottom, #AF583E 0%, #EAAA84 50%, #49251A 100%);
   border-radius: 1.5rem;
   left: 190px; /* Use percentages for positioning */
@@ -1229,7 +1292,7 @@ font-weight: bold;
   .placeholder-image-3 {
     width: 230px; /* Fixed width for larger screens */
     height: 220px;
-    bottom: 0; /* Limit size for tablets */
+    bottom: -20; /* Limit size for tablets */
     left: 160px; /* Adjust position */
   }
 }
@@ -1238,8 +1301,8 @@ font-weight: bold;
   .placeholder-image-3 {
     width: 230px; /* Fixed width for larger screens */
     height: 220px;
-    bottom: 0; /* Restore height */
-    left: 200px; /* Original left position for desktops */
+    bottom: -30px; /* Restore height */
+    left: 160px; /* Original left position for desktops */
   }
 }
 
@@ -1396,7 +1459,7 @@ font-weight: bold;
 }
 
 .gradienttext{
-  background: linear-gradient(to bottom right, #be6449 0%, #eaaa84 50%, #be6449 100%);
+  background: linear-gradient(to right, #be6449 45%, #eaaa84 50%, #be6449 100%%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1485,7 +1548,8 @@ font-weight: bold;
 }
 
 .title-1 {
-  font-size: 30px;
+  color: #321107;;
+  font-size: 26px;
   font-weight: 600;
   text-align: center;
 }
@@ -1500,9 +1564,8 @@ font-weight: bold;
 }
 
 .description-3 {
-  margin-top: 30px;
+  margin-top: 10px;
   width: 100%;
-  text-align: center;
 }
 
 .description-3 p {
@@ -1510,7 +1573,7 @@ font-weight: bold;
   text-align: justify;
   font-size: 18px;
   line-height: 1.2;
-  color: #884835;
+  color: #874747;
 }
 
 
@@ -1889,7 +1952,6 @@ header::before {
 
 .contact_form{
   background-color: rgb(0,0,0,0.9);
-   margin: 4px 4px;
    border-radius: 10px;
    opacity: 1;
 }

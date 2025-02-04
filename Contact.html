@@ -150,11 +150,11 @@
 
   <!-- Hero Section -->
   <div class="contact-details grid grid-cols-1 md:grid-cols-[1fr_0.7fr] mt-30 px-4 md:px-[280px] gap-20 py-40 md:py-40 bg-[url('./src/images/contactbg.png')] bg-center bg-cover">
-    <div class="bg-gradient-to-r  from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-[10px]">
+    <div class="gradient-border rounded-[8px]">
       <div class="contact_form px-7 py-3">
 
         <form class="">
-          <h1 class="font-semibold text-[38px] text-white">Contact Us</h1>
+          <h1 class="font-semibold text-[38px] text-white text-start">Contact Us</h1>
           <div class="underline gradient_bg mx-2 mb-4 mt-2"></div>
 
           <div class="grid grid-cols-2">
@@ -179,7 +179,7 @@
       </div>
     </div>
 
-    <div class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-[10px]">
+    <div class="relative  gradient-border rounded-[8px]">
       <div class="contact_info px-4 py-4">
 
 
@@ -191,9 +191,9 @@
 
             <div class="contact_info_texts">
 
-              <h1 class="text-white text-[1.5rem]"> Call Us <div class="call_underline"></div>
+              <h1 class="text-white text-[1.5rem] text-start"> Call Us <div class="call_underline"></div>
               </h1>
-              <p class="text-white">+977,9801234567,+977,9801234567</p>
+              <p class="text-white">+977,9820106916,98201068</p>
             </div>
           </div>
           <div class="contact_info_details ">
@@ -202,9 +202,9 @@
 
             <div class="contact_info_texts">
 
-              <h1 class="text-white text-[1.5rem]"> Our Locations <div class="location_underline"></div>
+              <h1 class="text-white text-[1.5rem] text-start"> Our Locations <div class="location_underline"></div>
               </h1>
-              <p class="text-white">+977,9801234567</p>
+              <p class="text-white">Thamel, Jhamsikhel, Pokhara</p>
             </div>
           </div>
           <div class="contact_info_details ">
@@ -213,14 +213,14 @@
 
             <div class="contact_info_texts">
 
-              <h1 class="text-white text-[1.5rem]">Mail Us<div class="call_underline"></div>
+              <h1 class="text-white text-[1.5rem] text-start">Mail Us<div class="call_underline"></div>
               </h1>
-              <p class="text-white">+977,9801234567</p>
+              <p class="text-white">info@makkuse.com</p>
             </div>
           </div>
 
           <div class="contact_follow_us text-white text-[1.5rem]  flex-col mx-auto">
-            <h1>Follow Us On<div class="follow_underline"></div>
+            <h1 class="text-start">Follow Us On<div class="follow_underline"></div>
             </h1>
 
             <div class="contact_links flex gap-6 mt-4">
@@ -243,7 +243,27 @@
 
       </div>
     </div>
+    <style>
+.gradient-border {
+    text-align: center;
+    background: transparent;  /* Transparent background */
+    border-radius: 8px;  /* Rounded corners */
+    position: relative;
+    z-index: 1;
+}
 
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(to right, #874747 0%, #B17368 50%, #BA9682 100%);
+    border-radius: 8px;  /* Same border radius */
+    z-index: -1;
+}
+      </style>
         
   </div>
 
@@ -298,15 +318,15 @@
           <h3 class="footer-heading text-white font-bold text-2xl mb-4">Address</h3>
           <div class="flex gap-2 mt-2">
             <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
-            <p class="text-white hover:text-black">info@makkuse.com</p>
+            <p class="text-white hover:text-black">Thamel</p>
           </div>
           <div class="flex gap-2 mt-2">
             <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
-            <p class="text-white hover:text-black">+977 9820202020</p>
+            <p class="text-white hover:text-black">jhamsikhel</p>
           </div>
           <div class="flex gap-2 mt-2">
             <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
-            <p class="text-white hover:text-black">+977 9820202020</p>
+            <p class="text-white hover:text-black">Pokhara</p>
           </div>
         </div>
         <div>
