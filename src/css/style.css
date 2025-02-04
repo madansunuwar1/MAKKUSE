@@ -1209,6 +1209,18 @@ font-weight: bold;
   transform: translateY(0);
 }
 
+.outlet-card .jh {
+  position: absolute;
+  left: 35%;
+  bottom: 5%;
+  z-index: 5;
+  font-weight: bold;
+  color: white;
+  font-size: 24px;
+  transition: transform 0.5s ease, top 0.5s ease; 
+  transform: translateY(0);
+}
+
 .image-container:hover .overlay {
   transform: translateY(0); /* Move to the top when hovered */
 }
