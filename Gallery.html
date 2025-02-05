@@ -174,7 +174,7 @@
     </div>
 </nav>
 
-<div class="grid grid-cols-3 mx-24" id="mydiv-1">
+<div class="grid grid-cols-4 mx-24 my-8" id="mydiv-1">
   <div class="flex flex-col gap-8">
   <img src="./src/images//g1.png" />
   <img src="./src/images//g5.png" />
@@ -183,14 +183,14 @@
   <img src="./src/images//g2.png" />
   <img src="./src/images//g6.png" />
 </div>
-<div class="flex flex-col gap-8">
+<div class="col-span-2 flex flex-col gap-8">
   <img src="./src//images/g3.png" class=""/>
   <div class="flex gap-8">
-  <img src="./src//images/g4.png" class="w-1/2"/>
-  <img src="./src//images/g7.png" class="w-1/2"/>
+  <img src="./src//images/g4.png" class="w-[48%]"/>
+  <img src="./src//images/g7.png" class="w-[48%]"/>
 </div>
 </div>
-
+ 
 </div>
 
 <!-- Gallery Grid -->
@@ -242,52 +242,59 @@
 </div>
 
 <script>
-    // Function to prevent default link behavior
-    function preventDefault(event) {
-        event.preventDefault();
-    }
+   function preventDefault(event) {
+    if (event) event.preventDefault();
+}
 
-    // Function to show all items
-    function showAll(event) {
-        preventDefault(event);
-        const items = document.querySelectorAll('.gallery-item');
-        items.forEach(item => item.style.display = 'hidden');
-        document.getElementById("mydiv").style.display = "none";
+// Function to show all items and toggle divs
+function showAll(event) {
+    preventDefault(event);
+    const items = document.querySelectorAll('.gallery-item');
+    items.forEach(item => item.style.display = 'block');
 
-    }
+    // Show mydiv-1 and hide mydiv
+    document.getElementById("mydiv-1").style.display = "grid";
+    document.getElementById("mydiv").style.display = "none";
+}
 
-    // Function to show only photos
-    function showPhotos(event) {
-        preventDefault(event);
-        const items = document.querySelectorAll('.gallery-item');
-        items.forEach(item => {
-            if (item.classList.contains('photo')) {
-                item.style.display = 'block';
-            } else {
-                item.style.display = 'none';
-            }
-        });
-        document.getElementById("mydiv-1").style.display = "none";
+// Function to show only photos
+function showPhotos(event) {
+    preventDefault(event);
+    const items = document.querySelectorAll('.gallery-item');
+    items.forEach(item => {
+        if (item.classList.contains('photo')) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
 
-    }
+    // Hide mydiv-1 and show mydiv
+    document.getElementById("mydiv-1").style.display = "none";
+    document.getElementById("mydiv").style.display = "block";
+}
 
-    // Function to show only videos
-    function showVideos(event) {
-        preventDefault(event);
-        const items = document.querySelectorAll('.gallery-item');
-        items.forEach(item => {
-            if (item.classList.contains('video')) {
-                item.style.display = 'block';
-            } else {
-                item.style.display = 'none';
-            }
-        });
-        document.getElementById("mydiv-1").style.display = "none";
-    }
+// Function to show only videos
+function showVideos(event) {
+    preventDefault(event);
+    const items = document.querySelectorAll('.gallery-item');
+    items.forEach(item => {
+        if (item.classList.contains('video')) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
 
+    // Hide mydiv-1 and show mydiv
+    document.getElementById("mydiv-1").style.display = "none";
+    document.getElementById("mydiv").style.display = "block";
+}
 
-    // Initialize by showing all items
-    showAll(event);
+// Initialize by showing all items on load
+document.addEventListener("DOMContentLoaded", function() {
+    showAll(); 
+});
 </script>
 
   <!-- Footer -->

@@ -137,10 +137,19 @@ button::before {
   display: flex;
   justify-content: center;
   align-items: center;
-
   align-content: center;
   flex-wrap: wrap;
   margin: 0 auto 10px;
+  padding: 0.5em;
+}
+
+.container-eg-btn-10 {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
   padding: 0.5em;
 }
 .container-eg-btn-2 .button {
@@ -182,7 +191,7 @@ button::before {
 }
 
 .container-eg-btn-4 .button {
-  color: black;
+  color: #874F47;
   margin: 10px;
   padding: 5px 40px;
   border: 2px solid #874747;
@@ -191,6 +200,21 @@ button::before {
   position: relative;
   overflow: hidden;
   transition: 0.3s;
+  background-color: white;
+  z-index: 1;
+}
+
+.container-eg-btn-10 .button {
+  color: #BA9682;
+  margin: 10px;
+  padding: 5px 40px;
+  border: 2px solid #BA9682;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  background-color: white;
   z-index: 1;
 }
 .container-eg-btn-6 {
@@ -264,11 +288,33 @@ button::before {
   z-index: -1;
 }
 
+.container-eg-btn-10 .button-10:before {
+  position: absolute;
+  transition: 0.3s;
+  content: "";
+  width: 30px;
+  bottom: 0;
+  background: #BA9682;
+  height: 150%;
+  right: -10%;
+  transform: skewX(-30deg);
+  z-index: -1;
+}
+
 .container-eg-btn-4 .button-7:hover {
   color: white;
 }
 
+.container-eg-btn-10 .button-10:hover {
+  color: white;
+}
+
 .container-eg-btn-4 .button-7:hover:before {
+  width: 120%;
+  color: black;
+}
+
+.container-eg-btn-10 .button-10:hover:before {
   width: 120%;
   color: black;
 }
@@ -1461,6 +1507,13 @@ font-weight: bold;
   padding: 0 20px;
 }
 
+@media (max-width: 768px) {
+  .main-content-1 {
+    left: 10%;  /* Adjust position for small screens */
+    transform: translate(0, -50%); /* Prevent shifting off-screen */
+  }
+}
+
 .title-2 {
   font-size: 80px;
   font-weight: bold;
@@ -1471,7 +1524,7 @@ font-weight: bold;
 }
 
 .gradienttext{
-  background: linear-gradient(to right, #be6449 45%, #eaaa84 50%, #be6449 100%%);
+  background: linear-gradient(to right, #be6449 45%, #eaaa84 50%, #be6449 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

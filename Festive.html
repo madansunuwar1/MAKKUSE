@@ -282,8 +282,183 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <div class="flex justify-center mt-8 container-eg-btn-4">
-    <a class="button button-7 ">Fill Form For Customization</a>
+    <a class="button button-7" id="orderNowButton-1">Fill Form For Customization</a>
 </div>
+
+<div id="orderModal-1" class="modal hidden">
+  <div class="gradient-border">
+
+  <div class="modal-content bg-[url('./src/images/rectanglemd.png')] bg-center bg-no-repeat bg-cover rounded-2xl">
+      <span class="close" id="closeModal-1">&times;</span>
+      <h2 class="text-white text-[24px] font-bold">Corporative Customize Form</h2>
+      <div class="underline"></div>
+      <form action="#" method="POST" class="space-y-4">
+        <!-- Company Name -->
+        <div class="grid grid-cols-2 gap-4">
+        <div>
+          <input
+            type="text"
+            id="company-name"
+            name="company-name"
+            class="mt-1 placeholder-black w-full px-3 py-2 border bg-[#D9D9D9] border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Company Name"
+            required
+          />
+        </div>
+    
+        <!-- Phone Number -->
+        <div>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="mt-1 placeholder-black w-full px-3 py-2 border bg-[#D9D9D9] border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Phone No."
+            required
+          />
+        </div>
+      </div>
+        <div class="grid grid-cols-2 gap-4">
+        <!-- Email -->
+        <div>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="mt-1 placeholder-black w-full px-3 py-2 border bg-[#D9D9D9] border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Email"
+            required
+          />
+        </div>
+    
+        <!-- Number of Boxes -->
+        <div>
+          <input
+            type="number"
+            id="boxes"
+            name="boxes"
+            class="mt-1 placeholder-black w-full px-3 py-2 border bg-[#D9D9D9] border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            placeholder="No of Box"
+            min="1"
+            required
+          />
+        </div>
+      </div>
+    
+        <!-- Price Range Slider -->
+        <div class="relative">
+          <label for="price-range" class="block text-sm font-medium text-white text-left">Price Range</label>
+          <div class="mt-4 relative">
+            <!-- Slider -->
+            <input
+              type="range"
+              id="price-range"
+              name="price-range"
+              class="w-full appearance-none h-2 bg-[#D9D9D9] rounded-lg cursor-pointer accent-[]"
+              min="100"
+              max="10000"
+              step="10"
+              value="100"
+              oninput="updateSliderValue(this)"
+            />
+            <!-- Tooltip -->
+            <div
+              id="price-tooltip"
+              class="absolute transform -translate-x-1/2 -translate-y-14 bg-[#874747] text-white text-xs font-bold px-2 py-1 rounded-md shadow-md transition-transform"
+              style="left: 0%"
+            >
+             Rs.100
+            </div>
+          </div>
+        </div>
+    <script> function updateSliderValue(slider) {
+      const tooltip = document.getElementById("price-tooltip");
+      const sliderWidth = slider.offsetWidth;
+      const max = slider.max;
+      const min = slider.min;
+      const value = slider.value;
+    
+      // Calculate percentage position of the handle
+      const percent = ((value - min) / (max - min)) * 100;
+    
+      // Update tooltip position and value
+      tooltip.style.left = `calc(${percent}% - 10px)`; // Centering the tooltip
+      tooltip.textContent = `Rs${value}`;
+    }</script>
+        <!-- Date Range -->
+        <div>
+          <div class="grid grid-cols-2 gap-4">
+            <input
+              type="date"
+              id="start-date"
+              name="start-date"
+              class="mt-1 w-full px-3 py-2 border bg-[#D9D9D9] border-gray-300 rounded-md shadow-sm focus:outline-none "
+              required
+            />
+           
+            <div class="flex  container-eg-btn-10">
+              <button
+                type="submit"
+                class="button button-10"
+              >
+                Send Mail
+              </button>
+            </div>
+        
+          </div>
+        </div>
+    
+        <!-- Send Mail Button -->
+       
+      </form>
+  </div>
+</div>
+</div>
+<style>
+.gradient-border {
+    text-align: center;
+    background: transparent;  /* Transparent background */
+    border-radius: 8px;  /* Rounded corners */
+    position: relative;
+    z-index: 1;
+}
+
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(to right, #874747 0%, #B17368 50%, #BA9682 100%);
+    border-radius: 10px;  /* Same border radius */
+    z-index: -1;
+}
+      </style>
+
+<script>
+
+const modal1 = document.getElementById('orderModal-1');
+const openButton1 = document.getElementById('orderNowButton-1');
+const closeButton1 = document.getElementById('closeModal-1');
+
+// Open the modal
+openButton1.addEventListener('click', () => {
+    modal1.classList.remove('hidden');
+});
+
+// Close the modal
+closeButton1.addEventListener('click', () => {
+    modal1.classList.add('hidden');
+});
+
+// Close modal when clicking outside of the modal content
+window.addEventListener('click', (event) => {
+    if (event.target === modal1) {
+        modal1.classList.add('hidden');
+    }
+});
+</script>
 
 
   <!-- Footer -->
