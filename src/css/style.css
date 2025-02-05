@@ -1222,6 +1222,7 @@ font-weight: bold;
   color: white;
   text-align: center;
   padding: 8rem;
+  background-color: rgb(179, 90, 40, 0.4);
   transform: translateY(100%); /* Start from below the image */
   transition: transform 0.5s ease; /* Smooth sliding effect */
 }
