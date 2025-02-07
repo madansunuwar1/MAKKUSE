@@ -76,47 +76,39 @@
     </div>
   </nav>
   <div id="orderModal" class="modal hidden">
-    <div class="modal-content">
-        <span class="close" id="closeModal">&times;</span>
-        <h2 class="text-[#BE6449] text-[24px] font-bold">E-Commerce Distributors</h2>
-        <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
-        <div class="flex flex-col justify-center gap-4 w-full mt-8">
-            <div class="flex flex-wrap gap-10 justify-center w-full">
-                <div
-                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
-                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
-                        <i class="bi bi-google-play"></i>
-                        <p class="text-white">daraz</p>
-                    </div>
+          <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2 class="text-[#BE6449] text-[24px] font-bold">E-Commerce Distributors</h2>
+            <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
+            <div class="flex flex-col justify-center gap-4 mt-8">
+              <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
+                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+                  <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+                <img src="./src/images/i2.png" class="w-12 h-5 mx-auto"/>
+                  </div>
                 </div>
-                <div
-                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
-                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
-                        <i class="bi bi-google-play"></i>
-                        <p class="text-white">daraz</p>
-                    </div>
+                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+                  <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+                    <img src="./src/images/i1.png" class="w-10 h-5 mx-auto"/>
+                  </div>
                 </div>
-            </div>
-            <div class="flex flex-wrap gap-10 justify-center w-full">
-                <div
-                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
-                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
-                        <i class="bi bi-google-play"></i>
-                        <p class="text-white">daraz</p>
-                    </div>
+              </div>
+              <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
+                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+                  <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+                    <img src="./src/images/i4.png" class="w-20 h-5 mx-auto"/>
+                  </div>
                 </div>
-                <div
-                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
-                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
-                        <i class="bi bi-google-play"></i>
-                        <p class="text-white">daraz</p>
-                    </div>
+                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+                  <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+                    <img src="./src/images/i3.png" class="w-24 h-5 mx-auto"/>
+                  </div>
                 </div>
-            </div>
+              </div>
 
+            </div>
+          </div>
         </div>
-    </div>
-</div>
 <script>
   const modal = document.getElementById('orderModal');
   const openButton = document.getElementById('orderNowButton');
@@ -194,6 +186,59 @@
     <button class="button button-10" id="orderNowButton-1">Fill Form For Customize</button>
   </div>
 
+  <div id="orderModal-1" class="modal hidden">
+    <div class="gradient-border">
+
+    <div class="modal-content bg-[url('./src/images/rectanglemd.png')] bg-center bg-no-repeat bg-cover rounded-2xl">
+        <span class="close" id="closeModal-1">&times;</span>
+        <h2 class="text-white text-[24px] font-bold">Franchise Form</h2>
+        <div class="underline"></div>
+        <form class="">
+          <div class="grid grid-cols-2">
+            <div class="mb-1">
+              <input type="text" name="Your_name" class="bg-[#D9D9D9] rounded-sm py-1 px-2 placeholder-black w-full"  placeholder="Name">
+            </div>
+            <div class="mb-1">
+              <input type="text" name="phone_num" class="bg-[#D9D9D9] rounded-sm py-1 px-2 placeholder-black w-full"  placeholder="Phone No.">
+            </div>
+          </div>
+          <div class="mb-1">
+            <input type="email" name="Email" class="bg-[#D9D9D9] rounded-sm py-1 px-2 placeholder-black w-full"  placeholder="E-mail">
+          </div>
+          <div class="">
+            <textarea name="message" class="bg-[#D9D9D9] rounded-sm py-1 px-2 placeholder-black w-full" placeholder="Enter your message here..."></textarea>
+          </div>
+
+          <div class="flex justify-end mt-2 container-eg-btn-4">
+            <button class=" button button-7 bg-white">Send Mail</button>
+          </div>
+        </form>
+    </div>
+  </div>
+</div>
+<script>
+ 
+  const modal1 = document.getElementById('orderModal-1');
+  const openButton1 = document.getElementById('orderNowButton-1');
+  const closeButton1 = document.getElementById('closeModal-1');
+
+  // Open the modal
+  openButton1.addEventListener('click', () => {
+      modal1.classList.remove('hidden');
+  });
+
+  // Close the modal
+  closeButton1.addEventListener('click', () => {
+      modal1.classList.add('hidden');
+  });
+
+  // Close modal when clicking outside of the modal content
+  window.addEventListener('click', (event) => {
+      if (event.target === modal1) {
+          modal1.classList.add('hidden');
+      }
+  });
+</script>
 
   <!-- Features Section -->
 

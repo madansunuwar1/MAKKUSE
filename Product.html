@@ -78,47 +78,39 @@
     </div>
   </nav>
   <div id="orderModal" class="modal hidden">
-    <div class="modal-content">
-        <span class="close" id="closeModal">&times;</span>
-        <h2 class="text-[#BE6449] text-[24px] font-bold">E-Commerce Distributors</h2>
-        <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
-        <div class="flex flex-col justify-center gap-4 w-full mt-8">
-            <div class="flex flex-wrap gap-10 justify-center w-full">
-                <div
-                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
-                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
-                        <i class="bi bi-google-play"></i>
-                        <p class="text-white">daraz</p>
-                    </div>
+          <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2 class="text-[#BE6449] text-[24px] font-bold">E-Commerce Distributors</h2>
+            <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
+            <div class="flex flex-col justify-center gap-4 mt-8">
+              <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
+                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+                  <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+                <img src="./src/images/i2.png" class="w-12 h-5 mx-auto"/>
+                  </div>
                 </div>
-                <div
-                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
-                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
-                        <i class="bi bi-google-play"></i>
-                        <p class="text-white">daraz</p>
-                    </div>
+                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+                  <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+                    <img src="./src/images/i1.png" class="w-10 h-5 mx-auto"/>
+                  </div>
                 </div>
-            </div>
-            <div class="flex flex-wrap gap-10 justify-center w-full">
-                <div
-                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
-                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
-                        <i class="bi bi-google-play"></i>
-                        <p class="text-white">daraz</p>
-                    </div>
+              </div>
+              <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
+                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+                  <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+                    <img src="./src/images/i4.png" class="w-20 h-5 mx-auto"/>
+                  </div>
                 </div>
-                <div
-                    class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-lg">
-                    <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
-                        <i class="bi bi-google-play"></i>
-                        <p class="text-white">daraz</p>
-                    </div>
+                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+                  <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+                    <img src="./src/images/i3.png" class="w-24 h-5 mx-auto"/>
+                  </div>
                 </div>
-            </div>
+              </div>
 
+            </div>
+          </div>
         </div>
-    </div>
-</div>
 <script>
   const modal = document.getElementById('orderModal');
   const openButton = document.getElementById('orderNowButton');
@@ -279,8 +271,8 @@
   <div class="product_content">
     <h3 class="text-color font-bold text-[18px] md:text-[30px]" style="font-family: 'Montserrat',sans-serif;">Pustakari</h3>
     <div class="slider-container relative">
-      <button id="prev" class="absolute top-1/2 left-0 transform text-[20px] -translate-y-1/2 bg-[#84362B] text-white w-16 h-16 rounded-full z-10 flex items-center justify-center">
-        &#8249;
+      <button id="prev" class="absolute top-1/2 left-0 transform text-[20px] -translate-y-1/2 bg-[#84362B] text-white w-12 h-12 rounded-full z-10 flex items-center justify-center">
+        <i class="bi bi-chevron-left text-[40px]"></i>
       </button>
       <div class="overflow-hidden">
         <div id="slider" class="flex transition-transform duration-300">
@@ -382,8 +374,8 @@
     </div>
     </div>
     </div>
-    <button id="next" class="text-[20px] absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#84362B] text-white w-16 h-16 rounded-full z-10 flex items-center justify-center">
-      &#8250;
+    <button id="next" class="text-[20px] absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#84362B] text-white w-12 h-12 rounded-full z-10 flex items-center justify-center">
+      <i class="bi bi-chevron-right text-[40px]"></i>
     </button>
   </div>
   </div>
@@ -404,8 +396,8 @@
   <div class="product_content">
     <h3 class="text-color font-bold text-[18px] md:text-[30px]" style="font-family: 'Montserrat',sans-serif;">Pustakari</h3>
     <div class="slider-container relative">
-      <button id="prev-1" class="absolute top-1/2 left-0 transform text-[20px] -translate-y-1/2 bg-[#84362B] text-white w-16 h-16 rounded-full z-10 flex items-center justify-center">
-        &#8249;
+      <button id="prev-1" class="absolute top-1/2 left-0 transform text-[20px] -translate-y-1/2 bg-[#84362B] text-white w-12 h-12 rounded-full z-10 flex items-center justify-center">
+        <i class="bi bi-chevron-left text-[40px]"></i>
       </button>
       <div class="overflow-hidden">
         <div id="slider-1" class="flex transition-transform duration-300">
@@ -507,8 +499,8 @@
     </div>
     </div>
     </div>
-    <button id="next-1" class="text-[20px] absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#84362B] text-white w-16 h-16 rounded-full z-10 flex items-center justify-center">
-      &#8250;
+    <button id="next-1" class="text-[20px] absolute top-1/2 right-0 transform -translate-y-1/2 bg-[#84362B] text-white w-12 h-12 rounded-full z-10 flex items-center justify-center">
+      <i class="bi bi-chevron-right text-[40px]"></i>
     </button>
   </div>
   </div>
