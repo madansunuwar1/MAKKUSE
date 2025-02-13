@@ -44,7 +44,7 @@ height: 100%; /* Default height */
 @media (max-width: 480px) {
   footer::before {
     height: 100%; /* Max height for mobile screens */
-    background-size: contain; /* Ensure the image fits without cropping */
+ /* Ensure the image fits without cropping */
   }
 }
 
@@ -60,7 +60,7 @@ height: 100%; /* Default height */
 /* Grid Styling */
 .grid {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   grid-template-columns: 1fr; /* Default 1 column layout */
 }
 
@@ -221,6 +221,9 @@ height: 100%; /* Default height */
 
   .grid {
     grid-template-columns: 1fr;
+  }
+  .container-foot {
+    padding: 2rem 2rem;
   }
 }
 

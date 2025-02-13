@@ -95,21 +95,21 @@
       <img src="./src/images/Rectangle 312.png" class="" />
     </div>
     <div class="my-auto mx-auto">
-      <h1 class="text-[40px] text-[#874F47] font-bold">Ingredients</h1>
-      <p class="text-[35px] text-[#874F47]">Suger,Lemon,Juice,Khuwa</p>
+      <h1 class="text-[30px] md:text-[40px] text-[#874F47] font-bold">Ingredients</h1>
+      <p class="text-[25px] md:text-[35px] text-[#874F47]">Suger,Lemon,Juice,Khuwa</p>
     </div>
   </section>
 
-  <section class="my-28 mx-12 grid grid-cols-1 md:grid-cols-2">
+  <section class="my-4 md:my-28 mx-12 grid grid-cols-1 md:grid-cols-2">
     <div>
-      <h1 class="text-[40px] text-[#874F47] font-bold">Product Descriptions</h1>
-      <p class="text-[30px] font-semibold text-[#9e6a62]">Delicious hard candies that will take you back in time,
+      <h1 class="text-[30px] md:text-[40px] text-[#874F47] font-bold">Product Descriptions</h1>
+      <p class="text-[20px] md:text-[30px] md:font-semibold text-[#9e6a62]">Delicious hard candies that will take you back in time,
         reminiscing
         days of Nepal's recent but never forgotten authentic delicious history. The small box has around 30
         candies and the large box contains around 50 Pieces of this premium candy.</p>
       <div class="flex flex-wrap">
-        <div class="flex justify-center container-eg-btn-10 ">
-          <button class="button button-10" id="orderNowButton-1">Fill Form For Customize</button>
+        <div class="flex justify-center container-eg-btn-10 hidden md:flex">
+          <button class="button button-10" id="orderNowButton-1">Enquiry For Customization</button>
         </div>
         <div id="orderModal-1" class="modal hidden">
           <div class="gradient-border">
@@ -285,7 +285,7 @@
             }
         });
       </script>
-       <div class="container-eg-btn-10 orderNowButton cursor-pointer">
+       <div class="container-eg-btn-10 orderNowButton cursor-pointer hidden md:flex">
           <a class="button button-10"><span>Order Now</span></a>
         </div>
       </div>
@@ -362,6 +362,13 @@ button.addEventListener('click', () => {
         </div>
       </div>
     </div>
+    <div class="flex justify-center container-eg-btn-10 md:hidden">
+      <button class="button button-10" id="orderNowButton-1">Enquiry For Customization</button>
+    </div>
+    <div class="container-eg-btn-10 orderNowButton cursor-pointer md:hidden">
+      <a class="button button-10"><span>Order Now</span></a>
+    </div>
+  </div>
   </section>
 
 

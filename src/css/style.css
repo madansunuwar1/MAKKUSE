@@ -107,8 +107,8 @@ button::before {
 
 @media (max-width: 700px) {
   .diamond {
-    width: 110px;
-    height: 110px;
+    width: 140px;
+    height: 140px;
   }
 }
 
@@ -141,6 +141,22 @@ button::before {
   flex-wrap: wrap;
   margin: 0 auto 10px;
   padding: 0.5em;
+}
+
+@media (max-width: 500px) {
+  .container-eg-btn-4 .button {
+    color: black;
+    margin: 10px;
+    padding: 5px 40px;
+    border: 2px solid #874747;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    background-color: #D9D9D9;
+    z-index: 1;
+  }
 }
 
 .container-eg-btn-10 {
@@ -179,7 +195,7 @@ button::before {
 .container-eg-btn-3 .button {
   color: black;
   margin: 10px;
-  background: #D9D9D9;
+  background: white;
   padding: 0px 20px;
   border: 2px solid #552607;
   border-radius: 30px;
@@ -200,12 +216,30 @@ button::before {
   position: relative;
   overflow: hidden;
   transition: 0.3s;
-  background-color: #D9D9D9;
+  background-color: white;
   z-index: 1;
 }
 
+@media (max-width: 500px) {
+  .container-eg-btn-4 .button {
+    color: black;
+    margin: 10px;
+    padding: 5px 18px;
+    border: 2px solid #874747;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    background-color: white;
+    z-index: 1;
+  }
+}
+
+
+
 .container-eg-btn-10 .button {
-  color: #BA9682;
+  color: black;
   margin: 10px;
   padding: 5px 40px;
   border: 2px solid #BA9682;
@@ -279,13 +313,40 @@ button::before {
   position: absolute;
   transition: 0.3s;
   content: "";
-  width: 30px;
+  width: 50px;
   bottom: 0;
   background: #874747;
   height: 150%;
   right: -18%;
   transform: skewX(-30deg);
   z-index: -1;
+}
+
+.container-eg-btn-4 .button-8:before {
+  position: absolute;
+  transition: 0.3s;
+  content: "";
+  width: 50px;
+  bottom: 0;
+  background: #874747;
+  height: 150%;
+  right: -18%;
+  transform: skewX(-30deg);
+  z-index: -1;
+}
+
+@media (max-width: 600px) {
+  .container-eg-btn-4 .button-7:before {
+    right: -20%;
+  
+  }
+}
+
+@media (max-width: 600px) {
+  .container-eg-btn-4 .button-8:before {
+    right: -45%;
+  
+  }
 }
 
 .container-eg-btn-10 .button-10:before {
@@ -1045,7 +1106,7 @@ font-weight: bold;
 }
 
 .nostalgia-image img {
-  width: 100%; /* Default width to take up full container width */
+  width: 400px; /* Default width to take up full container width */
   height: 380px; /* Adjust height proportionally */
   object-fit: cover;
   border-radius: 1.5rem;
@@ -1053,8 +1114,8 @@ font-weight: bold;
 
 @media (max-width: 768px) { /* Adjust breakpoint as needed */
   .nostalgia-image img {
-    width: 100%; /* Default width to take up full container width */
-    height: 280px; /* Adjust height proportionally */
+    width: 300px; /* Default width to take up full container width */
+    height: 380px; /* Adjust height proportionally */
     object-fit: cover;
     border-radius: 1.5rem;
   }
@@ -1110,7 +1171,7 @@ font-weight: bold;
 
 .outlet-card {
   position: relative;
-  width: 444px;
+  max-width: 350px;
   height: 420px;
   border-radius: 1.5rem;
   overflow: hidden;
@@ -1139,7 +1200,7 @@ font-weight: bold;
   display: grid;
   grid-template-columns: 100%; /* 1 item per row on small screens (100% width) */
   gap: 5%; /* Adjust the gap between items */
-  margin: 10rem 4rem 4rem 4rem;
+  margin: 8rem 1rem 1rem 1rem;
   position: relative;
 }
 
@@ -1645,6 +1706,13 @@ font-weight: bold;
   gap: 2rem;
 }
 
+.product-section-2 {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 4rem;
+  gap: 2rem;
+}
+
 .product-text-1 {
   display: flex;
   flex-direction: column;
@@ -1719,6 +1787,11 @@ font-weight: bold;
     padding: 2rem 5rem;
   }
 
+  .product-section-2 {
+    flex-direction: column-reverse;
+    padding: 2rem 5rem;
+  }
+
   .description-3 p {
     width: 80%;
     font-size: 20px;
@@ -1732,6 +1805,10 @@ font-weight: bold;
 
 @media (max-width: 768px) {
   .product-section-1 {
+    padding: 2rem;
+  }
+
+  .product-section-2 {
     padding: 2rem;
   }
 

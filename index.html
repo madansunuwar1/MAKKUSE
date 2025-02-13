@@ -258,63 +258,7 @@
             </p>
           </div>
         </a>
-        <div id="orderModal" class="modal hidden">
-          <div class="modal-content">
-            <span class="close" id="closeModal">&times;</span>
-            <h2 class="text-[#BE6449] text-[24px] font-bold">E-Commerce Distributors</h2>
-            <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
-            <div class="flex flex-col justify-center gap-4 mt-8">
-              <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
-                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
-                  <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
-                <img src="./src/images/i2.png" class="w-12 h-5 mx-auto"/>
-                  </div>
-                </div>
-                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
-                  <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
-                    <img src="./src/images/i1.png" class="w-10 h-5 mx-auto"/>
-                  </div>
-                </div>
-              </div>
-              <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
-                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
-                  <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
-                    <img src="./src/images/i4.png" class="w-20 h-5 mx-auto"/>
-                  </div>
-                </div>
-                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
-                  <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
-                    <img src="./src/images/i3.png" class="w-24 h-5 mx-auto"/>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <script>
-          const modal = document.getElementById('orderModal');
-          const openButtons = document.querySelectorAll('.orderNowButton');
-          const closeButton = document.getElementById('closeModal');
-
-          // Open the modal
-          openButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      modal.classList.remove('hidden');
-    });
-  });
-          // Close the modal
-          closeButton.addEventListener('click', () => {
-            modal.classList.add('hidden');
-          });
-
-          // Close modal when clicking outside of the modal content
-          window.addEventListener('click', (event) => {
-            if (event.target === modal) {
-              modal.classList.add('hidden');
-            }
-          });
-        </script>
+    
         <div class="info-card">
           <img src="./src/images/Gift.png" alt="Handmade Icon" class="mx-auto h-16">
           <h3 class="info-title">Send a Gift to Nepal</h3>
@@ -362,7 +306,7 @@
     </div>
     </a>
     <div class="flex md:justify-end md:mt-8 container-eg-btn-3 md:mx-36">
-      <a class="button button-6"><span class="text-[12px]" href="Product.html">VIEW PRODUCT</span></a>
+      <a  href="Product.html" class="button button-6"><span class="text-[12px]">VIEW PRODUCT</span></a>
     </div>
   </section>
   <section class="custom-gifts-section">
@@ -380,8 +324,8 @@
           Our Ultimate Luxury Box Can Be Customized Specially For Major Occasions Like Weddings, Corporate Events,
           Rituals & festivities. We Specialize In Designing & Rendering Attractive Customized Boxes.
         </p>
-        <div class="flex md:justify-end md:mt-8 container-eg-btn-6">
-          <a class="button button-9"><span class="text-[20px] font-bold text-white tracking-wide">ORDER NOW</span></a>
+        <div class="flex md:justify-end md:mt-8 container-eg-btn-6 orderNowButton">
+          <a class="button button-9 orderNowButton" class="cursor-pointer"><span class="text-[20px] font-bold text-white tracking-wide">ORDER NOW</span></a>
         </div>
       </div>
       <div class="image-row">
@@ -468,14 +412,29 @@
           </div>
         </div>
       </div>
-      <div class="nostalgia-image mx-auto">
-        <img src="./src/images/Rectangle 194.png" alt="Nepali Nostalgia" class="rounded-image">
+      <div class="nostalgia-image mx-auto md:mt-8">
+        <img id="slideshow" src="./src/images/Rectangle 194.png" alt="Nepali Nostalgia" class="rounded-image">
       </div>
+      
+      <script>
+        const images = [
+          "./src/images/Rectangle 194.png",
+          "./src/images/Rectangle 194.png",
+          "./src/images/Rectangle 194.png"
+        ];
+      
+        let index = 0;
+        const imgElement = document.getElementById("slideshow");
+      
+        function changeImage() {
+          index = (index + 1) % images.length;
+          imgElement.src = images[index];
+        }
+      
+        setInterval(changeImage, 3000);
+      </script>
     </div>
   </section>
-  <div class="flex justify-end mt-8 container-eg-btn-3">
-    <a class="button button-6">View more</a>
-  </div>
   <section class="outlet-section mx-4 md:mx-0">
     <div class="outlet-header">
       <h1 class="outlet-title" style="font-family: 'Montserrat',sans-serif;">Our Outlet</h1>
@@ -493,7 +452,6 @@
           </div>
           <p class="text-center text-white text-[18px] mt-4">Sher Bhawan, Chaksibari Marg, KTM</p>
           <p class="text-center text-white text-[18px] mt-2"><i class="bi bi-telephone"></i>+977-9820106915</p>
-     
         </div>
       </div>
     </a>
@@ -534,10 +492,10 @@
         <div class="diamond diamond-one absolute top-0 left-0">
           <img src="./src/images/banner-slider3.png" alt="Diamond One" class="diamond-image">
         </div>
-        <div class="diamond diamond-two absolute top-0 left-[50px]  md:left-[200px]">
+        <div class="diamond diamond-two absolute top-0 left-[100px]  md:left-[200px]">
           <img src="./src/images/banner-slider1.png" alt="Diamond Two" class="diamond-image">
         </div>
-        <div class="diamond diamond-three absolute top-0 left-[100px]  md:left-[400px]">
+        <div class="diamond diamond-three absolute top-0 left-[200px]  md:left-[400px]">
           <img src="./src/images/banner-slider3.png" alt="Diamond Three" class="diamond-image">
         </div>
       </div>
@@ -548,7 +506,7 @@
 
     <section class="mt-2 mb-12  md:mr-12">
       <div
-        class="border-[5px] border-[#582E22] bg-[#171515] rounded-2xl h-[300px] md:h-[220px]   mx-8 my-auto relative">
+        class="border-[5px] border-[#582E22] bg-[#171515] rounded-2xl h-[250px] w-[400px] md:h-[220px] my-auto relative">
         <div class="absolute inset-0 z-0 top-0">
           <img src="./src/images/Group 427.png" class="" />
         </div>
@@ -586,7 +544,7 @@
       <div class="grid">
         <!-- Logo Section -->
         <div class="footer-logo">
-          <img src="./src/images/logo.png" alt="Your Brand Logo" class="rounded w-28">
+          <img src="./src/images/logo.png" alt="Your Brand Logo" class="rounded">
         </div>
 
         <!-- Quick Links Section -->
@@ -657,6 +615,62 @@
       </div>
     </div>
   </footer>
+  <div id="orderModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2 class="text-[#BE6449] text-[24px] font-bold">E-Commerce Distributors</h2>
+      <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
+      <div class="flex flex-col justify-center gap-4 mt-8">
+        <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+          <img src="./src/images/i2.png" class="w-12 h-5 mx-auto"/>
+            </div>
+          </div>
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+              <img src="./src/images/i1.png" class="w-10 h-5 mx-auto"/>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+              <img src="./src/images/i4.png" class="w-20 h-5 mx-auto"/>
+            </div>
+          </div>
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+              <img src="./src/images/i3.png" class="w-24 h-5 mx-auto"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const modal = document.getElementById('orderModal');
+    const openButtons = document.querySelectorAll('.orderNowButton');
+    const closeButton = document.getElementById('closeModal');
+
+    // Open the modal
+    openButtons.forEach(button => {
+button.addEventListener('click', () => {
+modal.classList.remove('hidden');
+});
+});
+    // Close the modal
+    closeButton.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+
+    // Close modal when clicking outside of the modal content
+    window.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="./src/js/script.js"></script>
   <script>
