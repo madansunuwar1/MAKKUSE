@@ -23,20 +23,67 @@
 
 <body class="bg-gray-100 text-gray-900">
   <!-- Navbar -->
- <nav class="navbar">
+  <nav class="navbar">
     <div class="containerr">
       <a href="index.html" class="logo">
         <img src="./src/images/logo.png" alt="Logo" class="logo-image">
       </a>
-      <button class="hamburger" id="hamburger">
+      <div class="flex gap-2">
+      <a href="#" class="basket-icon-1 px-2 my-auto md:hidden orderNowButton">
+        <i class="bi bi-basket-fill text-white text-[24px]"></i>
+      </a>
+      <button class="hamburger my-auto" id="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </button>
+    </div>
       <div class="nav-links" id="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="Ourstory.html" class="nav-link">Our Story</a>
-        <a href="Product.html" class="nav-link">Product</a>
+        <div class="dropdown">
+        <button class="dropdown-btn nav-link">Product</button>
+          <div class="dropdown-menu">
+          <div class="dropdown-2 dropdown-nested">
+            <a class="dropdown-item dropdown-toggle">Pustakari</a>
+            <div class="dropdown-menu-2">
+              <a href="puntepustakari.html" class="dropdown-item">punte pustakari</a>
+              <a href="puntepustakari.html" class="dropdown-item">Regular Pustakari</a>
+              <a href="puntepustakari.html" class="dropdown-item">Handcrafted Regular</a>
+              <a href="puntepustakari.html" class="dropdown-item">Hc Coffee</a>
+              <a href="puntepustakari.html" class="dropdown-item">Hc diabities friendly</a>
+            </div>
+          </div>
+          <div class="dropdown-2 dropdown-nested">
+            <a  class="dropdown-item dropdown-toggle">Gundpak</a>
+            <div class="dropdown-menu-2">
+              <a href="puntepustakari.html" class="dropdown-item">Original</a>
+              <a href="puntepustakari.html" class="dropdown-item">Mocha</a>
+              <a href="puntepustakari.html" class="dropdown-item">Rosewater</a>
+              <a href="puntepustakari.html" class="dropdown-item">Suger free</a>
+            </div>
+          </div>
+          <div class="dropdown-2 dropdown-nested">
+            <a  class="dropdown-item dropdown-toggle">Cookies</a>
+            <div class="dropdown-menu-2">
+              <a href="puntepustakari.html" class="dropdown-item">choclate fudge gudpak cookies</a>
+              <a href="puntepustakari.html" class="dropdown-item">gudpak filled semolina cookies</a>
+              <a href="puntepustakari.html" class="dropdown-item">oatmeal gudpak cookies</a>
+            
+            </div>
+          </div>
+          <div class="dropdown-2 dropdown-nested">
+            <a  class="dropdown-item dropdown-toggle">Gift Boxes</a>
+            <div class="dropdown-menu-2">
+              <a href="puntepustakari.html" class="dropdown-item">Regular Boxes</a>
+              <a href="puntepustakari.html" class="dropdown-item">Birthday Gift</a>
+              <a href="puntepustakari.html" class="dropdown-item">Winter Giftbox</a>
+              <a href="puntepustakari.html" class="dropdown-item">Loshar Giftbox</a>
+            
+            </div>
+          </div>
+        </div>
+      </div>
         <div class="dropdown">
           <button class="dropdown-btn nav-link">Customized Gifting</button>
           <div class="dropdown-menu">
@@ -68,69 +115,54 @@
 
         <a href="Franchise.html" class="nav-link">Franchise</a>
         <a href="Contact.html" class="nav-link">Contact Us</a>
-        <a href="#" class="basket-icon py-1 px-2" id="orderNowButton">
+        <a href="#" class="basket-icon py-1 px-2 hidden md:flex orderNowButton">
           <i class="bi bi-basket-fill text-white text-[30px]"></i>
           <div class="shop-now-text my-auto">Shop Now</div>
         </a>
       </div>
     </div>
   </nav>
-  <div id="orderModal" class="modal hidden">
-          <div class="modal-content">
-            <span class="close" id="closeModal">&times;</span>
-            <h2 class="text-[#BE6449] text-[24px] font-bold">E-Commerce Distributors</h2>
-            <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
-            <div class="flex flex-col justify-center gap-4 mt-8">
-              <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
-                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
-                  <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
-                <img src="./src/images/i2.png" class="w-12 h-5 mx-auto"/>
-                  </div>
-                </div>
-                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
-                  <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
-                    <img src="./src/images/i1.png" class="w-10 h-5 mx-auto"/>
-                  </div>
-                </div>
-              </div>
-              <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
-                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
-                  <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
-                    <img src="./src/images/i4.png" class="w-20 h-5 mx-auto"/>
-                  </div>
-                </div>
-                <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
-                  <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
-                    <img src="./src/images/i3.png" class="w-24 h-5 mx-auto"/>
-                  </div>
-                </div>
-              </div>
+  
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdowns = document.querySelectorAll(".dropdown-2");
 
-            </div>
-          </div>
-        </div>
-<script>
-  const modal = document.getElementById('orderModal');
-  const openButton = document.getElementById('orderNowButton');
-  const closeButton = document.getElementById('closeModal');
+  dropdowns.forEach((dropdown) => {
+    const dropdownMenu = dropdown.querySelector(".dropdown-menu-2");
 
-  // Open the modal
-  openButton.addEventListener('click', () => {
-      modal.classList.remove('hidden');
-  });
+    dropdown.addEventListener("click", function (event) {
+      // Only enable click toggle on mobile
+      if (window.innerWidth < 768) {  
+        event.stopPropagation(); // Prevent event bubbling
 
-  // Close the modal
-  closeButton.addEventListener('click', () => {
-      modal.classList.add('hidden');
-  });
+        // Close other dropdowns first
+        document.querySelectorAll(".dropdown-menu-2").forEach((menu) => {
+          if (menu !== dropdownMenu) {
+            menu.style.opacity = "0";
+            menu.style.visibility = "hidden";
+          }
+        });
 
-  // Close modal when clicking outside of the modal content
-  window.addEventListener('click', (event) => {
-      if (event.target === modal) {
-          modal.classList.add('hidden');
+        // Toggle current dropdown
+        const isVisible = dropdownMenu.style.opacity === "1";
+        dropdownMenu.style.opacity = isVisible ? "0" : "1";
+        dropdownMenu.style.visibility = isVisible ? "hidden" : "visible";
       }
+    });
   });
-</script>
+
+  // Close dropdowns when clicking outside (on mobile)
+  document.addEventListener("click", function () {
+    if (window.innerWidth < 768) {  
+      document.querySelectorAll(".dropdown-menu-2").forEach((menu) => {
+        menu.style.opacity = "0";
+        menu.style.visibility = "hidden";
+      });
+    }
+  });
+});
+  </script>
+
   <script>
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
@@ -150,9 +182,9 @@
     <p class="para-primary text-color text-2xl font-semibold leading-7 mt-8" style="font-family: 'Montserrat',sans-serif;"> There are so many exciting conversations waiting to happen within the Nepali dessert space – here are some thoughts from our team, clients and enthusiasts! Do have a read and leave your thoughts!</p>
   </section>
   <div class="grid grid-cols-1 md:grid-cols-[1fr_0.5fr] gap-2 mx-12 my-8">
-    <p class="text-[#884835] text-[20px] leading-6 ">Walking down the alleys of Patan with my dad, after a long stay abroad for 5-6 years, something so familiar yet distanced from me hit my senses. I could smell my childhood and I got all nostalgic from the smell of the delicious hard candies me and my friends used to have during our childhood.<br> Nostalgia hits you hard, sometimes in small packages. I asked my dad if those candies are still the same. He replied,” We don’t get the same flavor anymore though, change is inevitable, don’t you think?” “What about the Pustakari shop round that corner?” I asked as I pointed towards the cranny of that alley. “Why don’t we find out?”, we went towards the corner of the road and could see the very shop where we as children used to go for Pustakari and Gundpak.<br> Uncle has grown some gray hairs, but the same handsome man grinds 8 hours a day, preparing the most delicious Pustakari and Gundpak for us. We went up to the shop, had a little chat, uncle could remember our gang but not me personally. He asked about my friends, I told him about them, most of them are abroad. We asked him for some Pustakari and a packet of Gundpak.<br> Similar packets but the taste has changed. Our host insisted about the shortage of pure milk products in the market. We agreed about the market, its inflation and how everything has lost its quality, its touch. We went back home, with some nostalgia inside our pockets and talked our way back home about how other delicacies of Patan have changed through the years. I came back to Nepal after quite a long time and also, my trip here was to be a short one.<br> I wanted to take my childhood memories back to the States, more in a visible form, in small delectable sizes and obviously in such a packaging that it would be no problem to get through customs at the airport. I asked my friends if they knew some place which gives us a good labeled packaging for these hard candies and gundpak, which everyone loves to have their hands on. Many of my friends told me about Makkuse, the packaging Makkuse offers for their products, the quality of the produce and the original taste of these treats all combined with new and innovative touch. I wanted to try this brand out. We ordered a few jars of Gundpak and a box of Pustakari.<br> We got the delivery the very next day. We were astounded by the packaging they had done for the products and the taste, delicately achieved, similar to the ones we used to have in our childhood. All of us at the dinner table, ran our eyes to each other while trying these products out. Everyone was enjoying the treats with whole heart, happy and everybody having a glance over their shoulders if they can get another candy from besides them. We decided to order some more boxes of Pustakari, a few combos of Gundpak jars and some more boxes of cookies' boxes, as they had Gundpak in them too. I was so pleased with the customer service and the service they provide for the delivery. I decided to take these boxes and packages abroad to my Nepali and foreign friends.<br> After a long tiring flight, I was very excited to share these to my friends. Without a doubt, everyone loved the taste and some of my Nepali friends were just so pleased to have the nostalgia hit them in the form of these delish candies. After a feast of these authentic Nepali desserts, we planned that whoever goes to Nepal shall bring these treats back to the States with them. We enquired Makkuse through social media and we were pleased to know that they were planning to add an international shipping facility too. Couldn’t be more impressed by a Nepali brand, as they have done their part in taking the authentic Nepali luxury dessert to the global stage. All my best wishes to Makkuse, godspeed! <br><br><br> Avish, Oklahoma, USA</p>
-    <img src="./src/images/product-description 1.png" class="w-auto  mt-28"/>
-  </div>
+   <p class="text-[#884835] text-[20px] leading-6 order-2 md:order-1">Walking down the alleys of Patan with my dad, after a long stay abroad for 5-6 years, something so familiar yet distanced from me hit my senses. I could smell my childhood and I got all nostalgic from the smell of the delicious hard candies me and my friends used to have during our childhood.<br> Nostalgia hits you hard, sometimes in small packages. I asked my dad if those candies are still the same. He replied,” We don’t get the same flavor anymore though, change is inevitable, don’t you think?” “What about the Pustakari shop round that corner?” I asked as I pointed towards the cranny of that alley. “Why don’t we find out?”, we went towards the corner of the road and could see the very shop where we as children used to go for Pustakari and Gundpak.<br> Uncle has grown some gray hairs, but the same handsome man grinds 8 hours a day, preparing the most delicious Pustakari and Gundpak for us. We went up to the shop, had a little chat, uncle could remember our gang but not me personally. He asked about my friends, I told him about them, most of them are abroad. We asked him for some Pustakari and a packet of Gundpak.<br> Similar packets but the taste has changed. Our host insisted about the shortage of pure milk products in the market. We agreed about the market, its inflation and how everything has lost its quality, its touch. We went back home, with some nostalgia inside our pockets and talked our way back home about how other delicacies of Patan have changed through the years. I came back to Nepal after quite a long time and also, my trip here was to be a short one.<br> I wanted to take my childhood memories back to the States, more in a visible form, in small delectable sizes and obviously in such a packaging that it would be no problem to get through customs at the airport. I asked my friends if they knew some place which gives us a good labeled packaging for these hard candies and gundpak, which everyone loves to have their hands on. Many of my friends told me about Makkuse, the packaging Makkuse offers for their products, the quality of the produce and the original taste of these treats all combined with new and innovative touch. I wanted to try this brand out. We ordered a few jars of Gundpak and a box of Pustakari.<br> We got the delivery the very next day. We were astounded by the packaging they had done for the products and the taste, delicately achieved, similar to the ones we used to have in our childhood. All of us at the dinner table, ran our eyes to each other while trying these products out. Everyone was enjoying the treats with whole heart, happy and everybody having a glance over their shoulders if they can get another candy from besides them. We decided to order some more boxes of Pustakari, a few combos of Gundpak jars and some more boxes of cookies' boxes, as they had Gundpak in them too. I was so pleased with the customer service and the service they provide for the delivery. I decided to take these boxes and packages abroad to my Nepali and foreign friends.<br> After a long tiring flight, I was very excited to share these to my friends. Without a doubt, everyone loved the taste and some of my Nepali friends were just so pleased to have the nostalgia hit them in the form of these delish candies. After a feast of these authentic Nepali desserts, we planned that whoever goes to Nepal shall bring these treats back to the States with them. We enquired Makkuse through social media and we were pleased to know that they were planning to add an international shipping facility too. Couldn’t be more impressed by a Nepali brand, as they have done their part in taking the authentic Nepali luxury dessert to the global stage. All my best wishes to Makkuse, godspeed! <br><br><br> Avish, Oklahoma, USA</p>
+    <img src="./src/images/product-description 1.png" class="w-auto mt-4 md:mt-28 order-1 md:order-2"/>
+  </div> 
 
 
   <!-- Footer -->
@@ -237,6 +269,62 @@
       </div>
     </div>
   </footer>
+  <div id="orderModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2 class="text-[#BE6449] text-[24px] font-bold">E-Commerce Distributors</h2>
+      <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
+      <div class="flex flex-col justify-center gap-4 mt-8">
+        <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+          <img src="./src/images/i2.png" class="w-12 h-5 mx-auto"/>
+            </div>
+          </div>
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+              <img src="./src/images/i1.png" class="w-10 h-5 mx-auto"/>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+              <img src="./src/images/i4.png" class="w-20 h-5 mx-auto"/>
+            </div>
+          </div>
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+              <img src="./src/images/i3.png" class="w-24 h-5 mx-auto"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const modal = document.getElementById('orderModal');
+    const openButtons = document.querySelectorAll('.orderNowButton');
+    const closeButton = document.getElementById('closeModal');
+
+    // Open the modal
+    openButtons.forEach(button => {
+button.addEventListener('click', () => {
+modal.classList.remove('hidden');
+});
+});
+    // Close the modal
+    closeButton.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+
+    // Close modal when clicking outside of the modal content
+    window.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
   <script>

@@ -80,70 +80,6 @@
         </div>
       </div>
     </nav>
-    <div id="orderModal" class="modal hidden">
-      <div class="modal-content">
-          <span class="close" id="closeModal">&times;</span>
-          <h2 class="text-[#BE6449] text-[24px] font-bold">E-Commerce Distributors</h2>
-          <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
-          <div class="flex flex-col justify-center gap-4 w-full mt-8">
-              <div class="flex flex-wrap gap-10 justify-center w-full">
-                  <div
-                      class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-[20px]">
-                      <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
-                          <i class="bi bi-google-play"></i>
-                          <p class="text-white">daraz</p>
-                      </div>
-                  </div>
-                  <div
-                      class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-[20px]">
-                      <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
-                          <i class="bi bi-google-play"></i>
-                          <p class="text-white">daraz</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="flex flex-wrap gap-10 justify-center w-full">
-                  <div
-                      class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-[20px]">
-                      <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
-                          <i class="bi bi-google-play"></i>
-                          <p class="text-white">daraz</p>
-                      </div>
-                  </div>
-                  <div
-                      class="relative p-1 bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-[20px]">
-                      <div class="bg-slate-600 hover:bg-opacity-0 py-2 px-12 rounded-lg flex gap-4">
-                          <i class="bi bi-google-play"></i>
-                          <p class="text-white">daraz</p>
-                      </div>
-                  </div>
-              </div>
-  
-          </div>
-      </div>
-  </div>
-  <script>
-    const modal = document.getElementById('orderModal');
-    const openButton = document.getElementById('orderNowButton');
-    const closeButton = document.getElementById('closeModal');
-  
-    // Open the modal
-    openButton.addEventListener('click', () => {
-        modal.classList.remove('hidden');
-    });
-  
-    // Close the modal
-    closeButton.addEventListener('click', () => {
-        modal.classList.add('hidden');
-    });
-  
-    // Close modal when clicking outside of the modal content
-    window.addEventListener('click', (event) => {
-        if (event.target === modal) {
-            modal.classList.add('hidden');
-        }
-    });
-  </script>
     <script>
       const hamburger = document.getElementById('hamburger');
       const navLinks = document.getElementById('nav-links');
@@ -158,8 +94,8 @@
       Makkuse <br /> Gallery</h1>
   </section>
   <section class="mb-5 md:mb-8 ">
-    <h1 class=" h-primary font-bold text-color text-center " style="font-family: 'Montserrat',sans-serif;">Our Gallery</h1>
-    <p class="text-[24px] font-semibold text-[#884835] text-center mx-20 mt-4 md:mx-96 md:mt-8 leading-7" style="font-family: 'Montserrat',sans-serif;">Create lasting impressions by presenting personalized corporate gifts for your employees and clients. Easily send gifts to Nepal and spread joy to your loved ones.</p>
+    <h1 class=" h-primary font-bold text-color text-[20px] text-center " style="font-family: 'Montserrat',sans-serif;">Our Gallery</h1>
+    <p class="text-[14px] md:text-[24px] text-[#884835] text-center mx-20 mt-4 md:mx-96 md:mt-8 leading-7" style="font-family: 'Montserrat',sans-serif;">Create lasting impressions by presenting personalized corporate gifts for your employees and clients. Easily send gifts to Nepal and spread joy to your loved ones.</p>
   </section>
   <!-- Navigation -->
   <nav class="bg-white sticky top-0 z-10">
@@ -379,6 +315,62 @@ document.addEventListener("DOMContentLoaded", function() {
       </div>
     </div>
   </footer>
+  <div id="orderModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2 class="text-[#BE6449] text-[24px] font-bold">E-Commerce Distributors</h2>
+      <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
+      <div class="flex flex-col justify-center gap-4 mt-8">
+        <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+          <img src="./src/images/i2.png" class="w-12 h-5 mx-auto"/>
+            </div>
+          </div>
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+              <img src="./src/images/i1.png" class="w-10 h-5 mx-auto"/>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+              <img src="./src/images/i4.png" class="w-20 h-5 mx-auto"/>
+            </div>
+          </div>
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+              <img src="./src/images/i3.png" class="w-24 h-5 mx-auto"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const modal = document.getElementById('orderModal');
+    const openButtons = document.querySelectorAll('.orderNowButton');
+    const closeButton = document.getElementById('closeModal');
+
+    // Open the modal
+    openButtons.forEach(button => {
+button.addEventListener('click', () => {
+modal.classList.remove('hidden');
+});
+});
+    // Close the modal
+    closeButton.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+
+    // Close modal when clicking outside of the modal content
+    window.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  </script>
 
 </body>
 

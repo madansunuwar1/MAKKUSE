@@ -1,12 +1,14 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./src/css/style.css" />
+  <link rel="stylesheet" href="./src/css/corporate.css" />
   <link rel="stylesheet" href="./src/css/tailwind.css" />
   <link rel="stylesheet" href="./src/css/navbar.css" />
   <link rel="stylesheet" href="./src/css/footer.css" />
+  <link rel="stylesheet" href="./src/css/style.css" />
   <title>Makkuse</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
@@ -21,7 +23,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
 
-<body class="">
+<body class="bg-gray-100 text-gray-900 before-cls">
   <!-- Navbar -->
   <nav class="navbar">
     <div class="containerr">
@@ -43,7 +45,7 @@
         <a href="Ourstory.html" class="nav-link">Our Story</a>
         <div class="dropdown">
         <button class="dropdown-btn nav-link">Product</button>
-          <div class="dropdown-menu">
+        <div class="dropdown-menu">
           <div class="dropdown-2 dropdown-nested">
             <a class="dropdown-item dropdown-toggle">Pustakari</a>
             <div class="dropdown-menu-2">
@@ -170,115 +172,245 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });</script>
- 
-
-  <!-- Hero Section -->
-  <section class="py-[120px] bg-[url('./src/images/Rectangle_261.png')] bg-cover">
+  <!-- product banner section  -->
+  <section class="py-[130px] bg-[url('./src/images/banbg.png')] bg-cover ">
     <h1
       class="font-bold text-[40px] text-center  bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] bg-clip-text text-transparent">
-      Makkusé
-      <br />
-     Franchises</h1>
+      Makkus<br/> Punte Pustakari</h1>
   </section>
-  <div class="footer-line">
-    <img src="./src/images/line.jpg" alt="Footer Divider">
-  </div>
-  <section class="product-section mb-16">
-    <div class="product-header my-20">
-      <h2 class="text-[30px] text-[#884835] font-montserrat font-bold" style="font-family: 'Montserrat',sans-serif;">Our Franchise</h2>
-      <p class="text-[24px] font-medium text-[#884835] font-montserrat leading-8 mt-4 mx-8 md:mx-24" style="font-family: 'Montserrat', serif;">
-        Join hands with Makkusé and bring the authentic taste of Nepali desserts to your community! We currently have two thriving franchise stores in Jhamsikhel, Lalitpur, and Lakeside, Pokhara.<br><br>If you’re passionate about preserving Nepal’s rich culinary heritage and want to be part of our mission to revive lost recipes, we invite you to open your own Makkusé franchise. Whether you're based in Nepal or abroad, we’ll provide all the guidance and support you need to ensure your success.<br><br>To explore this exciting opportunity and become a part of the Makkusé family, contact us today!<br><br>Let’s share the richness of Nepali flavors, one store at a time.
-      </p>
+  <section class="my-2 md:my-28 mx-2 md:mx-12 grid grid-cols-1 md:grid-cols-2">
+    <div class="bg-black rounded-2xl  border-[3px] border-[#874F47]">
+      <img src="./src/images/Rectangle 312.png" class="" />
     </div>
-    <div class="product-gallery">
-      <div class="product-item">
-        <img src="./src/images/Rectangle 262.png" alt="Pustakari" class="product-image">
-        <div class="hover-overlay">
-          <span class="hover-text">Franchise</span>
-        </div>
-      </div>
-      <div class="product-item">
-        <img src="./src/images/Rectangle 262.png" alt="Cookies" class="product-image">
-        <div class="hover-overlay">
-          <span class="hover-text">Franchise</span>
-        </div>
-      </div>
-      <div class="product-item">
-        <img src="./src/images/Rectangle 262.png" alt="Gundpak" class="product-image">
-        <div class="hover-overlay">
-          <span class="hover-text">Franchise</span>
-        </div>
-      </div>
+    <div class="my-auto mx-auto">
+      <h1 class="text-[30px] md:text-[40px] text-[#874F47] font-bold">Ingredients</h1>
+      <p class="text-[25px] md:text-[35px] text-[#874F47]">Suger,Lemon,Juice,Khuwa</p>
     </div>
   </section>
-  <section class="">
-    <h1 class="title-1 text-[#874F47]">If Anyone Is Interested for The Franchise</h1>
-    <div class="underline"></div>
-  </section>
-  <div class="flex justify-center container-eg-btn-10 mt-4 md:mt-8">
-    <button class="button button-10" id="orderNowButton-1">Enquiry For Franchise</button>
-  </div>
 
-  <div id="orderModal-1" class="modal hidden">
-    <div class="gradient-border">
-
-    <div class="modal-content bg-[url('./src/images/rectanglemd.png')] bg-center bg-no-repeat bg-cover rounded-2xl">
-        <span class="close" id="closeModal-1">&times;</span>
-        <h2 class="text-white text-[24px] font-bold">Franchise Form</h2>
-        <div class="underline"></div>
-        <form class="">
-          <div class="grid grid-cols-2">
-            <div class="mb-1">
-              <input type="text" name="Your_name" class="bg-[#D9D9D9] rounded-sm py-1 px-2 placeholder-black w-full"  placeholder="Name">
-            </div>
-            <div class="mb-1">
-              <input type="text" name="phone_num" class="bg-[#D9D9D9] rounded-sm py-1 px-2 placeholder-black w-full"  placeholder="Phone No.">
-            </div>
+  <section class="my-4 md:my-28 mx-12 grid grid-cols-1 md:grid-cols-2">
+    <div>
+      <h1 class="text-[30px] md:text-[40px] text-[#874F47] font-bold">Product Descriptions</h1>
+      <p class="text-[20px] md:text-[30px] md:font-semibold text-[#9e6a62]">Delicious hard candies that will take you back in time,
+        reminiscing
+        days of Nepal's recent but never forgotten authentic delicious history. The small box has around 30
+        candies and the large box contains around 50 Pieces of this premium candy.</p>
+      <div class="flex flex-wrap">
+        <div class="flex justify-center container-eg-btn-10 hidden md:flex">
+          <button class="button button-10" id="orderNowButton-1">Enquiry For Customization</button>
+        </div>
+        <div id="orderModal-1" class="modal hidden">
+          <div class="gradient-border">
+      
+          <div class="modal-content bg-[url('./src/images/rectanglemd.png')] bg-center bg-no-repeat bg-cover rounded-2xl">
+              <span class="close" id="closeModal-1">&times;</span>
+              <h2 class="text-white text-[24px] font-bold">Corporative Customize Form</h2>
+              <div class="underline"></div>
+              <form action="#" method="POST" class="space-y-4">
+                <!-- Company Name -->
+                <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <input
+                    type="text"
+                    id="company-name"
+                    name="company-name"
+                    class="mt-1 placeholder-black w-full px-3 py-2 border bg-[#D9D9D9] border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Company Name"
+                    required
+                  />
+                </div>
+            
+                <!-- Phone Number -->
+                <div>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="mt-1 placeholder-black w-full px-3 py-2 border bg-[#D9D9D9] border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Phone No."
+                    required
+                  />
+                </div>
+              </div>
+                <div class="grid grid-cols-2 gap-4">
+                <!-- Email -->
+                <div>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="mt-1 placeholder-black w-full px-3 py-2 border bg-[#D9D9D9] border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+            
+                <!-- Number of Boxes -->
+                <div>
+                  <input
+                    type="number"
+                    id="boxes"
+                    name="boxes"
+                    class="mt-1 placeholder-black w-full px-3 py-2 border bg-[#D9D9D9] border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="No of Box"
+                    min="1"
+                    required
+                  />
+                </div>
+              </div>
+            
+                <!-- Price Range Slider -->
+                <div class="relative">
+                  <label for="price-range" class="block text-sm font-medium text-white text-left">Price Range</label>
+                  <div class="mt-4 relative">
+                    <!-- Slider -->
+                    <input
+                      type="range"
+                      id="price-range"
+                      name="price-range"
+                      class="w-full appearance-none h-2 bg-[#D9D9D9] rounded-lg cursor-pointer accent-[]"
+                      min="100"
+                      max="10000"
+                      step="10"
+                      value="100"
+                      oninput="updateSliderValue(this)"
+                    />
+                    <!-- Tooltip -->
+                    <div
+                      id="price-tooltip"
+                      class="absolute transform -translate-x-1/2 -translate-y-14 bg-[#874747] text-white text-xs font-bold px-2 py-1 rounded-md shadow-md transition-transform"
+                      style="left: 0%"
+                    >
+                     Rs.100
+                    </div>
+                  </div>
+                </div>
+            <script> function updateSliderValue(slider) {
+              const tooltip = document.getElementById("price-tooltip");
+              const sliderWidth = slider.offsetWidth;
+              const max = slider.max;
+              const min = slider.min;
+              const value = slider.value;
+            
+              // Calculate percentage position of the handle
+              const percent = ((value - min) / (max - min)) * 100;
+            
+              // Update tooltip position and value
+              tooltip.style.left = `calc(${percent}% - 10px)`; // Centering the tooltip
+              tooltip.textContent = `Rs${value}`;
+            }</script>
+                <!-- Date Range -->
+                <div>
+                  <div class="grid grid-cols-2 gap-4">
+                    <input
+                      type="date"
+                      id="start-date"
+                      name="start-date"
+                      class="mt-1 w-full px-3 py-2 border bg-[#D9D9D9] border-gray-300 rounded-md shadow-sm focus:outline-none "
+                      required
+                    />
+                   
+                    <div class="flex  container-eg-btn-4">
+                      <button
+                        type="submit"
+                        class="button button-7"
+                      >
+                        Send Mail
+                      </button>
+                    </div>
+                
+                  </div>
+                </div>
+            
+                <!-- Send Mail Button -->
+               
+              </form>
           </div>
-          <div class="mb-1">
-            <input type="email" name="Email" class="bg-[#D9D9D9] rounded-sm py-1 px-2 placeholder-black w-full"  placeholder="E-mail">
-          </div>
-          <div class="">
-            <textarea name="message" class="bg-[#D9D9D9] rounded-sm py-1 px-2 placeholder-black w-full" placeholder="Enter your message here..."></textarea>
-          </div>
-
-          <div class="flex justify-end mt-2 container-eg-btn-4">
-            <button class=" button button-7 bg-white">Send Mail</button>
-          </div>
-        </form>
+        </div>
+      </div>
+      <style>
+        .gradient-border {
+            text-align: center;
+            background: transparent;  /* Transparent background */
+            border-radius: 8px;  /* Rounded corners */
+            position: relative;
+            z-index: 1;
+        }
+        
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(to right, #874747 0%, #B17368 50%, #BA9682 100%);
+            border-radius: 10px;  /* Same border radius */
+            z-index: -1;
+        }
+              </style>
+      
+      <script>
+       
+        const modal1 = document.getElementById('orderModal-1');
+        const openButton1 = document.getElementById('orderNowButton-1');
+        const closeButton1 = document.getElementById('closeModal-1');
+      
+        // Open the modal
+        openButton1.addEventListener('click', () => {
+            modal1.classList.remove('hidden');
+        });
+      
+        // Close the modal
+        closeButton1.addEventListener('click', () => {
+            modal1.classList.add('hidden');
+        });
+      
+        // Close modal when clicking outside of the modal content
+        window.addEventListener('click', (event) => {
+            if (event.target === modal1) {
+                modal1.classList.add('hidden');
+            }
+        });
+      </script>
+       <div class="container-eg-btn-10 orderNowButton cursor-pointer hidden md:flex">
+          <a class="button button-10"><span>Order Now</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="md:w-[80%] md:ml-auto w-100%">
+      <h1 class="text-[40px] text-[#874F47] font-bold text-center">Available Bundles</h1>
+      <div class="grid grid-cols-2 mt-4">
+        <div>
+          <img src="./src/images/Rectangle 314.png" alt />
+          <p class="text-[24px] text-[#874F47] text-center mt-2">Regular Pustakari Box</p>
+          <p class="text-[24px] text-[#874F47] font-bold text-center">RS. 694</p>
+        </div>
+        <div>
+          <img src="./src/images/Rectangle 315.png" alt />
+          <p class="text-[24px] text-[#874F47] text-center mt-2">Regular Pustakari Box</p>
+          <p class="text-[24px] text-[#874F47] font-bold text-center">RS. 694</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center container-eg-btn-10 md:hidden">
+      <button class="button button-10" id="orderNowButton-1">Enquiry For Customization</button>
+    </div>
+    <div class="container-eg-btn-10 orderNowButton cursor-pointer md:hidden">
+      <a class="button button-10"><span>Order Now</span></a>
     </div>
   </div>
-</div>
-<script>
- 
-  const modal1 = document.getElementById('orderModal-1');
-  const openButton1 = document.getElementById('orderNowButton-1');
-  const closeButton1 = document.getElementById('closeModal-1');
+  </section>
 
-  // Open the modal
-  openButton1.addEventListener('click', () => {
-      modal1.classList.remove('hidden');
-  });
 
-  // Close the modal
-  closeButton1.addEventListener('click', () => {
-      modal1.classList.add('hidden');
-  });
+  <!-- products content starts here  -->
 
-  // Close modal when clicking outside of the modal content
-  window.addEventListener('click', (event) => {
-      if (event.target === modal1) {
-          modal1.classList.add('hidden');
-      }
-  });
-</script>
-
-  <!-- Features Section -->
 
 
   <!-- Footer -->
   <footer class="footer relative">
-    <div class="footer-overlay absolute inset-0 bg-gradient-to-r opacity-100" style="background-image: linear-gradient(to right, #874F47 0%, #211311 100%);"></div>
+    <div class="footer-overlay absolute inset-0 bg-gradient-to-r opacity-100"
+      style="background-image: linear-gradient(to right, #874F47 0%, #211311 100%);"></div>
 
     <div class="footer-line">
       <img src="./src/images/line.jpg" alt="Footer Divider">
@@ -314,24 +446,24 @@ document.addEventListener("DOMContentLoaded", function () {
             <i class="bi bi-telephone text-white hover:text-black"></i>
             <p class="text-white hover:text-black">+977 9820202020</p>
           </div>
-       
+
         </div>
-      
+
 
         <!-- Address Section -->
         <div class="footer-address">
           <h3 class="footer-heading text-white font-bold text-2xl mb-4">Address</h3>
           <div class="flex gap-2 mt-2">
             <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
-            <p class="text-white hover:text-black">Thamel</p>
+            <p class="text-white hover:text-black">info@makkuse.com</p>
           </div>
           <div class="flex gap-2 mt-2">
             <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
-            <p class="text-white hover:text-black">jhamsikhel</p>
+            <p class="text-white hover:text-black">+977 9820202020</p>
           </div>
           <div class="flex gap-2 mt-2">
             <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
-            <p class="text-white hover:text-black">Pokhara</p>
+            <p class="text-white hover:text-black">+977 9820202020</p>
           </div>
         </div>
         <div>
@@ -414,34 +546,4 @@ modal.classList.remove('hidden');
       }
     });
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
-  <script>
-    // JavaScript for auto-sliding functionality
-    const slider = document.getElementById("slider");
-    const dots = document.querySelectorAll(".custom-dot");
-    const indicator = document.querySelector(".indicator");
-    let currentSlide = 0;
-    const totalSlides = dots.length;
-
-    const updateSlider = () => {
-      // Update slider position
-      slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-
-      // Move the sliding indicator
-      indicator.style.transform = `translateX(${currentSlide * 30}px)`;
-      // 32px is the combined width + space between each dot (e.g., 10px width + 22px margin)
-    };
-
-    // Auto-slide functionality
-    setInterval(() => {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      updateSlider();
-    }, 3000); // Change every 3 seconds
-
-    // Initialize the slider and indicator
-    updateSlider();
-  </script>
 </body>
-
-</html>

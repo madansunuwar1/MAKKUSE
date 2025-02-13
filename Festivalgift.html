@@ -29,58 +29,153 @@
 
 <body class="bg-gray-100 text-gray-900">
     <section class="">
-        <nav class="navbar">
-            <div class="containerr">
-                <a href="index.html" class="logo">
-                    <img src="./src/images/logo.png" alt="Logo" class="logo-image">
-                </a>
-                <button class="hamburger" id="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-                <div class="nav-links" id="nav-links">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="Ourstory.html" class="nav-link">Our Story</a>
-                    <a href="Product.html" class="nav-link">Product</a>
-                    <div class="dropdown">
-                        <button class="dropdown-btn nav-link">Customized Gifting</button>
-                        <div class="dropdown-menu">
-                            <a href="Coperategift.html" class="dropdown-item">Corporate Gifts</a>
-                             <a href="Festive.html" class="dropdown-item">Festival Gifts</a>
-                        </div>
-                    </div>
-
-                    <!-- Dropdown -->
-                    <div class="dropdown">
-
-                        <button class="dropdown-btn nav-link">Makkuse Outlet</button>
-                        <div class="dropdown-menu">
-                            <a href="Outlet.html" class="dropdown-item">Thamel</a>
-                            <a href="Outlet.html" class="dropdown-item">Jhamiskhel</a>
-                            <a href="Outlet.html" class="dropdown-item">Pokhara</a>
-                        </div>
-                    </div>
-
-                    <a href="Franchise.html" class="nav-link">Franchise</a>
-                    <a href="Contact.html" class="nav-link">Contact Us</a>
-                    <a href="#" class="basket-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3 3h2l.344 2.469A1 1 0 006.344 6h11.312a1 1 0 00.988-.781L19 3h2m-2 6h-14v12a2 2 0 002 2h8a2 2 0 002-2V9z" />
-                        </svg>
-                    </a>
+      <nav class="navbar">
+        <div class="containerr">
+          <a href="index.html" class="logo">
+            <img src="./src/images/logo.png" alt="Logo" class="logo-image">
+          </a>
+          <div class="flex gap-2">
+          <a href="#" class="basket-icon-1 px-2 my-auto md:hidden orderNowButton">
+            <i class="bi bi-basket-fill text-white text-[24px]"></i>
+          </a>
+          <button class="hamburger my-auto" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+          <div class="nav-links" id="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="Ourstory.html" class="nav-link">Our Story</a>
+            <div class="dropdown">
+            <button class="dropdown-btn nav-link">Product</button>
+            <div class="dropdown-menu">
+              <div class="dropdown-2 dropdown-nested">
+                <a class="dropdown-item dropdown-toggle">Pustakari</a>
+                <div class="dropdown-menu-2">
+                  <a href="PUNTEPUSTAKARI.html" class="dropdown-item">punte pustakari</a>
+                  <a href="Product.html" class="dropdown-item">Regular Pustakari</a>
+                  <a href="Product.html" class="dropdown-item">Handcrafted Regular</a>
+                  <a href="Product.html" class="dropdown-item">Hc Coffee</a>
+                  <a href="Product.html" class="dropdown-item">Hc diabities friendly</a>
                 </div>
+              </div>
+              <div class="dropdown-2 dropdown-nested">
+                <a  class="dropdown-item dropdown-toggle">Gundpak</a>
+                <div class="dropdown-menu-2">
+                  <a href="Product.html" class="dropdown-item">Original</a>
+                  <a href="Product.html" class="dropdown-item">Mocha</a>
+                  <a href="Product.html" class="dropdown-item">Rosewater</a>
+                  <a href="Product.html" class="dropdown-item">Suger free</a>
+                </div>
+              </div>
+              <div class="dropdown-2 dropdown-nested">
+                <a  class="dropdown-item dropdown-toggle">Cookies</a>
+                <div class="dropdown-menu-2">
+                  <a href="Product.html" class="dropdown-item">choclate fudge gudpak cookies</a>
+                  <a href="Product.html" class="dropdown-item">gudpak filled semolina cookies</a>
+                  <a href="Product.html" class="dropdown-item">oatmeal gudpak cookies</a>
+                
+                </div>
+              </div>
+              <div class="dropdown-2 dropdown-nested">
+                <a  class="dropdown-item dropdown-toggle">Gift Boxes</a>
+                <div class="dropdown-menu-2">
+                  <a href="Product.html" class="dropdown-item">Regular Boxes</a>
+                  <a href="Product.html" class="dropdown-item">Birthday Gift</a>
+                  <a href="Product.html" class="dropdown-item">Winter Giftbox</a>
+                  <a href="Product.html" class="dropdown-item">Loshar Giftbox</a>
+                
+                </div>
+              </div>
             </div>
-        </nav>
-        <script>
-            const hamburger = document.getElementById('hamburger');
-            const navLinks = document.getElementById('nav-links');
-
-            hamburger.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-            });</script>
+          </div>
+            <div class="dropdown">
+              <button class="dropdown-btn nav-link">Customized Gifting</button>
+              <div class="dropdown-menu">
+                <a href="Coperategift.html" class="dropdown-item">Corporate Gifts</a>
+                <div class="dropdown-1 dropdown-nested">
+                  <a href="Festive.html" class="dropdown-item dropdown-toggle">Festival Gifts</a>
+                  <div class="dropdown-menu-1">
+                    <a href="Festive.html" class="dropdown-item">Dashain</a>
+                    <a href="Festive.html" class="dropdown-item">Tihar</a>
+                    <a href="Festive.html" class="dropdown-item">Teej</a>
+                    <a href="Festive.html" class="dropdown-item">Fathers Day</a>
+                    <a href="Festive.html" class="dropdown-item">Christmas Day</a>
+                    <a href="Valentine.html" class="dropdown-item">Valentines Day</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Dropdown -->
+            <div class="dropdown">
+    
+              <button class="dropdown-btn nav-link">Makkuse Outlet</button>
+              <div class="dropdown-menu">
+                <a href="Outlet.html" class="dropdown-item">Thamel</a>
+                <a href="Outlet.html" class="dropdown-item">Jhamiskhel</a>
+                <a href="Outlet.html" class="dropdown-item">Pokhara</a>
+              </div>
+            </div>
+    
+            <a href="Franchise.html" class="nav-link">Franchise</a>
+            <a href="Contact.html" class="nav-link">Contact Us</a>
+            <a href="#" class="basket-icon py-1 px-2 hidden md:flex orderNowButton">
+              <i class="bi bi-basket-fill text-white text-[30px]"></i>
+              <div class="shop-now-text my-auto">Shop Now</div>
+            </a>
+          </div>
+        </div>
+      </nav>
+      
+      <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdowns = document.querySelectorAll(".dropdown-2");
+    
+      dropdowns.forEach((dropdown) => {
+        const dropdownMenu = dropdown.querySelector(".dropdown-menu-2");
+    
+        dropdown.addEventListener("click", function (event) {
+          // Only enable click toggle on mobile
+          if (window.innerWidth < 768) {  
+            event.stopPropagation(); // Prevent event bubbling
+    
+            // Close other dropdowns first
+            document.querySelectorAll(".dropdown-menu-2").forEach((menu) => {
+              if (menu !== dropdownMenu) {
+                menu.style.opacity = "0";
+                menu.style.visibility = "hidden";
+              }
+            });
+    
+            // Toggle current dropdown
+            const isVisible = dropdownMenu.style.opacity === "1";
+            dropdownMenu.style.opacity = isVisible ? "0" : "1";
+            dropdownMenu.style.visibility = isVisible ? "hidden" : "visible";
+          }
+        });
+      });
+    
+      // Close dropdowns when clicking outside (on mobile)
+      document.addEventListener("click", function () {
+        if (window.innerWidth < 768) {  
+          document.querySelectorAll(".dropdown-menu-2").forEach((menu) => {
+            menu.style.opacity = "0";
+            menu.style.visibility = "hidden";
+          });
+        }
+      });
+    });
+      </script>
+    
+      <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+    
+        hamburger.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });</script>
     </section>
     <div class="banner-img">
         <h1 style="font-family: 'Montserrat', serif;"

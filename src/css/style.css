@@ -322,6 +322,19 @@ button::before {
   z-index: -1;
 }
 
+.container-eg-btn-4 .button-12:before {
+  position: absolute;
+  transition: 0.3s;
+  content: "";
+  width: 50px;
+  bottom: 0;
+  background: #874747;
+  height: 150%;
+  right: -18%;
+  transform: skewX(-30deg);
+  z-index: -1;
+}
+
 .container-eg-btn-4 .button-8:before {
   position: absolute;
   transition: 0.3s;
@@ -338,6 +351,10 @@ button::before {
 @media (max-width: 600px) {
   .container-eg-btn-4 .button-7:before {
     right: -20%;
+  
+  }
+  .container-eg-btn-4 .button-12:before {
+    right: -55%;
   
   }
 }

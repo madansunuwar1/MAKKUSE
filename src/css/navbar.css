@@ -100,6 +100,10 @@
   position: relative;
 }
 
+.dropdown-2 {
+  position: relative;
+}
+
 .dropdown-btn {
   background: none;
   border: none;
@@ -135,6 +139,17 @@
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
+.dropdown-menu-2 {
+  z-index: 10;
+  position: absolute;
+  top: 100%;
+  background-color: #B17368;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
 .dropdown-nested {
   position: relative;
 }
@@ -152,6 +167,16 @@
 .dropdown-1:hover .dropdown-menu-1 {
   opacity: 1;
   visibility: visible;
+}
+@media (min-width: 768px){
+.dropdown-2:hover .dropdown-menu-2  {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-menu-2 {
+  left: 150px;
+}
 }
 
 .dropdown-item {
@@ -220,6 +245,21 @@
   border-radius: 10px;
   gap: 8px;
   text-decoration: none;
+}
+
+.basket-icon-1 {
+  display: flex;
+  border-radius: 10px;
+  gap: 8px;
+  text-decoration: none;
+  
+}
+
+.basket-icon-1 .shop-now-text {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  pointer-events: none;
 }
 
 .basket-icon:hover {

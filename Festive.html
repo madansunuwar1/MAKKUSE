@@ -33,15 +33,62 @@
         <a href="index.html" class="logo">
           <img src="./src/images/logo.png" alt="Logo" class="logo-image">
         </a>
-        <button class="hamburger" id="hamburger">
+        <div class="flex gap-2">
+        <a href="#" class="basket-icon-1 px-2 my-auto md:hidden orderNowButton">
+          <i class="bi bi-basket-fill text-white text-[24px]"></i>
+        </a>
+        <button class="hamburger my-auto" id="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </button>
+      </div>
         <div class="nav-links" id="nav-links">
           <a href="index.html" class="nav-link">Home</a>
           <a href="Ourstory.html" class="nav-link">Our Story</a>
-          <a href="Product.html" class="nav-link">Product</a>
+          <div class="dropdown">
+          <button class="dropdown-btn nav-link">Product</button>
+          <div class="dropdown-menu">
+            <div class="dropdown-2 dropdown-nested">
+              <a class="dropdown-item dropdown-toggle">Pustakari</a>
+              <div class="dropdown-menu-2">
+                <a href="PUNTEPUSTAKARI.html" class="dropdown-item">punte pustakari</a>
+                <a href="Product.html" class="dropdown-item">Regular Pustakari</a>
+                <a href="Product.html" class="dropdown-item">Handcrafted Regular</a>
+                <a href="Product.html" class="dropdown-item">Hc Coffee</a>
+                <a href="Product.html" class="dropdown-item">Hc diabities friendly</a>
+              </div>
+            </div>
+            <div class="dropdown-2 dropdown-nested">
+              <a  class="dropdown-item dropdown-toggle">Gundpak</a>
+              <div class="dropdown-menu-2">
+                <a href="Product.html" class="dropdown-item">Original</a>
+                <a href="Product.html" class="dropdown-item">Mocha</a>
+                <a href="Product.html" class="dropdown-item">Rosewater</a>
+                <a href="Product.html" class="dropdown-item">Suger free</a>
+              </div>
+            </div>
+            <div class="dropdown-2 dropdown-nested">
+              <a  class="dropdown-item dropdown-toggle">Cookies</a>
+              <div class="dropdown-menu-2">
+                <a href="Product.html" class="dropdown-item">choclate fudge gudpak cookies</a>
+                <a href="Product.html" class="dropdown-item">gudpak filled semolina cookies</a>
+                <a href="Product.html" class="dropdown-item">oatmeal gudpak cookies</a>
+              
+              </div>
+            </div>
+            <div class="dropdown-2 dropdown-nested">
+              <a  class="dropdown-item dropdown-toggle">Gift Boxes</a>
+              <div class="dropdown-menu-2">
+                <a href="Product.html" class="dropdown-item">Regular Boxes</a>
+                <a href="Product.html" class="dropdown-item">Birthday Gift</a>
+                <a href="Product.html" class="dropdown-item">Winter Giftbox</a>
+                <a href="Product.html" class="dropdown-item">Loshar Giftbox</a>
+              
+              </div>
+            </div>
+          </div>
+        </div>
           <div class="dropdown">
             <button class="dropdown-btn nav-link">Customized Gifting</button>
             <div class="dropdown-menu">
@@ -73,69 +120,54 @@
   
           <a href="Franchise.html" class="nav-link">Franchise</a>
           <a href="Contact.html" class="nav-link">Contact Us</a>
-          <a href="#" class="basket-icon py-1 px-2" id="orderNowButton">
+          <a href="#" class="basket-icon py-1 px-2 hidden md:flex orderNowButton">
             <i class="bi bi-basket-fill text-white text-[30px]"></i>
             <div class="shop-now-text my-auto">Shop Now</div>
           </a>
         </div>
       </div>
     </nav>
-    <div id="orderModal" class="modal hidden">
-      <div class="modal-content">
-        <span class="close" id="closeModal">&times;</span>
-        <h2 class="text-[#BE6449] text-[24px] font-bold">E-Commerce Distributors</h2>
-        <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
-        <div class="flex flex-col justify-center gap-4 mt-8">
-          <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
-            <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
-              <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
-            <img src="./src/images/i2.png" class="w-12 h-5 mx-auto"/>
-              </div>
-            </div>
-            <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
-              <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
-                <img src="./src/images/i1.png" class="w-10 h-5 mx-auto"/>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
-            <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
-              <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
-                <img src="./src/images/i4.png" class="w-20 h-5 mx-auto"/>
-              </div>
-            </div>
-            <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
-              <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
-                <img src="./src/images/i3.png" class="w-24 h-5 mx-auto"/>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  <script>
-    const modal = document.getElementById('orderModal');
-    const openButton = document.getElementById('orderNowButton');
-    const closeButton = document.getElementById('closeModal');
+    
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdowns = document.querySelectorAll(".dropdown-2");
   
-    // Open the modal
-    openButton.addEventListener('click', () => {
-        modal.classList.remove('hidden');
-    });
+    dropdowns.forEach((dropdown) => {
+      const dropdownMenu = dropdown.querySelector(".dropdown-menu-2");
   
-    // Close the modal
-    closeButton.addEventListener('click', () => {
-        modal.classList.add('hidden');
-    });
+      dropdown.addEventListener("click", function (event) {
+        // Only enable click toggle on mobile
+        if (window.innerWidth < 768) {  
+          event.stopPropagation(); // Prevent event bubbling
   
-    // Close modal when clicking outside of the modal content
-    window.addEventListener('click', (event) => {
-        if (event.target === modal) {
-            modal.classList.add('hidden');
+          // Close other dropdowns first
+          document.querySelectorAll(".dropdown-menu-2").forEach((menu) => {
+            if (menu !== dropdownMenu) {
+              menu.style.opacity = "0";
+              menu.style.visibility = "hidden";
+            }
+          });
+  
+          // Toggle current dropdown
+          const isVisible = dropdownMenu.style.opacity === "1";
+          dropdownMenu.style.opacity = isVisible ? "0" : "1";
+          dropdownMenu.style.visibility = isVisible ? "hidden" : "visible";
         }
+      });
     });
-  </script>
+  
+    // Close dropdowns when clicking outside (on mobile)
+    document.addEventListener("click", function () {
+      if (window.innerWidth < 768) {  
+        document.querySelectorAll(".dropdown-menu-2").forEach((menu) => {
+          menu.style.opacity = "0";
+          menu.style.visibility = "hidden";
+        });
+      }
+    });
+  });
+    </script>
+  
     <script>
       const hamburger = document.getElementById('hamburger');
       const navLinks = document.getElementById('nav-links');
@@ -282,7 +314,7 @@
 
   <div class="modal-content bg-[url('./src/images/rectanglemd.png')] bg-center bg-no-repeat bg-cover rounded-2xl">
       <span class="close" id="closeModal-1">&times;</span>
-      <h2 class="text-white text-[24px] font-bold">Corporative Customize Form</h2>
+      <h2 class="text-white text-[24px] font-bold">Customize Form</h2>
       <div class="underline"></div>
       <form action="#" method="POST" class="space-y-4">
         <!-- Company Name -->
@@ -535,6 +567,62 @@ window.addEventListener('click', (event) => {
       </div>
     </div>
   </footer>
+  <div id="orderModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2 class="text-[#BE6449] text-[24px] font-bold">E-Commerce Distributors</h2>
+      <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
+      <div class="flex flex-col justify-center gap-4 mt-8">
+        <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+          <img src="./src/images/i2.png" class="w-12 h-5 mx-auto"/>
+            </div>
+          </div>
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+              <img src="./src/images/i1.png" class="w-10 h-5 mx-auto"/>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+              <img src="./src/images/i4.png" class="w-20 h-5 mx-auto"/>
+            </div>
+          </div>
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+              <img src="./src/images/i3.png" class="w-24 h-5 mx-auto"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const modal = document.getElementById('orderModal');
+    const openButtons = document.querySelectorAll('.orderNowButton');
+    const closeButton = document.getElementById('closeModal');
+
+    // Open the modal
+    openButtons.forEach(button => {
+button.addEventListener('click', () => {
+modal.classList.remove('hidden');
+});
+});
+    // Close the modal
+    closeButton.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+
+    // Close modal when clicking outside of the modal content
+    window.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  </script>
 
 </body>
 

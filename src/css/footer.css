@@ -189,10 +189,6 @@ height: 100%; /* Default height */
     width: 100%;
   }
 
-  .footer-media {
-    justify-content: center;
-  }
-
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }

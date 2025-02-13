@@ -80,15 +80,62 @@
       <a href="index.html" class="logo">
         <img src="./src/images/logo.png" alt="Logo" class="logo-image">
       </a>
-      <button class="hamburger" id="hamburger">
+      <div class="flex gap-2">
+      <a href="#" class="basket-icon-1 px-2 my-auto md:hidden orderNowButton">
+        <i class="bi bi-basket-fill text-white text-[24px]"></i>
+      </a>
+      <button class="hamburger my-auto" id="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </button>
+    </div>
       <div class="nav-links" id="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="Ourstory.html" class="nav-link">Our Story</a>
-        <a href="Product.html" class="nav-link">Product</a>
+        <div class="dropdown">
+        <button class="dropdown-btn nav-link">Product</button>
+          <div class="dropdown-menu">
+          <div class="dropdown-2 dropdown-nested">
+            <a class="dropdown-item dropdown-toggle">Pustakari</a>
+            <div class="dropdown-menu-2">
+              <a href="puntepustakari.html" class="dropdown-item">punte pustakari</a>
+              <a href="puntepustakari.html" class="dropdown-item">Regular Pustakari</a>
+              <a href="puntepustakari.html" class="dropdown-item">Handcrafted Regular</a>
+              <a href="puntepustakari.html" class="dropdown-item">Hc Coffee</a>
+              <a href="puntepustakari.html" class="dropdown-item">Hc diabities friendly</a>
+            </div>
+          </div>
+          <div class="dropdown-2 dropdown-nested">
+            <a  class="dropdown-item dropdown-toggle">Gundpak</a>
+            <div class="dropdown-menu-2">
+              <a href="puntepustakari.html" class="dropdown-item">Original</a>
+              <a href="puntepustakari.html" class="dropdown-item">Mocha</a>
+              <a href="puntepustakari.html" class="dropdown-item">Rosewater</a>
+              <a href="puntepustakari.html" class="dropdown-item">Suger free</a>
+            </div>
+          </div>
+          <div class="dropdown-2 dropdown-nested">
+            <a  class="dropdown-item dropdown-toggle">Cookies</a>
+            <div class="dropdown-menu-2">
+              <a href="puntepustakari.html" class="dropdown-item">choclate fudge gudpak cookies</a>
+              <a href="puntepustakari.html" class="dropdown-item">gudpak filled semolina cookies</a>
+              <a href="puntepustakari.html" class="dropdown-item">oatmeal gudpak cookies</a>
+            
+            </div>
+          </div>
+          <div class="dropdown-2 dropdown-nested">
+            <a  class="dropdown-item dropdown-toggle">Gift Boxes</a>
+            <div class="dropdown-menu-2">
+              <a href="puntepustakari.html" class="dropdown-item">Regular Boxes</a>
+              <a href="puntepustakari.html" class="dropdown-item">Birthday Gift</a>
+              <a href="puntepustakari.html" class="dropdown-item">Winter Giftbox</a>
+              <a href="puntepustakari.html" class="dropdown-item">Loshar Giftbox</a>
+            
+            </div>
+          </div>
+        </div>
+      </div>
         <div class="dropdown">
           <button class="dropdown-btn nav-link">Customized Gifting</button>
           <div class="dropdown-menu">
@@ -120,13 +167,53 @@
 
         <a href="Franchise.html" class="nav-link">Franchise</a>
         <a href="Contact.html" class="nav-link">Contact Us</a>
-        <a href="#" class="basket-icon py-1 px-2 orderNowButton">
+        <a href="#" class="basket-icon py-1 px-2 hidden md:flex orderNowButton">
           <i class="bi bi-basket-fill text-white text-[30px]"></i>
           <div class="shop-now-text my-auto">Shop Now</div>
         </a>
       </div>
     </div>
   </nav>
+  
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdowns = document.querySelectorAll(".dropdown-2");
+
+  dropdowns.forEach((dropdown) => {
+    const dropdownMenu = dropdown.querySelector(".dropdown-menu-2");
+
+    dropdown.addEventListener("click", function (event) {
+      // Only enable click toggle on mobile
+      if (window.innerWidth < 768) {  
+        event.stopPropagation(); // Prevent event bubbling
+
+        // Close other dropdowns first
+        document.querySelectorAll(".dropdown-menu-2").forEach((menu) => {
+          if (menu !== dropdownMenu) {
+            menu.style.opacity = "0";
+            menu.style.visibility = "hidden";
+          }
+        });
+
+        // Toggle current dropdown
+        const isVisible = dropdownMenu.style.opacity === "1";
+        dropdownMenu.style.opacity = isVisible ? "0" : "1";
+        dropdownMenu.style.visibility = isVisible ? "hidden" : "visible";
+      }
+    });
+  });
+
+  // Close dropdowns when clicking outside (on mobile)
+  document.addEventListener("click", function () {
+    if (window.innerWidth < 768) {  
+      document.querySelectorAll(".dropdown-menu-2").forEach((menu) => {
+        menu.style.opacity = "0";
+        menu.style.visibility = "hidden";
+      });
+    }
+  });
+});
+  </script>
 
   <script>
     const hamburger = document.getElementById('hamburger');
@@ -230,7 +317,7 @@
         </div>
       </div>
       <div class="flex justify-center mt-8 container-eg-btn-2">
-        <a class="button button-5"><span class="text-[12px]" href="Ourstory.html">READ MORE</span></a>
+        <a class="button button-5" href="Ourstory.html"><span class="text-[12px]" >READ MORE</span></a>
       </div>
     </div>
     <div class="features-image">
@@ -329,38 +416,44 @@
         </div>
       </div>
       <div class="image-row">
+        <a href="Festive.html">
         <div class="image-container">
           <img src="./src/images/makkuse-lux 1.png" alt="Luxury Gift Box">
           <div class="overlay">
             <p>Luxury Gift Box</p>
           </div>
         </div>
+        </a>
+        <a href="Festive.html">
         <div class="image-container">
           <img src="./src/images/chr3 1.png" alt="Luxury Box">
           <div class="overlay">
-            <p>Luxury Box</p>
+            <p>Cooperative Box</p>
           </div>
         </div>
+        </a>
       </div>
 
       <div class="image-row">
+        <a href="Festive.html">
         <div class="image-container">
           <img src="./src/images/festive-slider-8 1.png" alt="Festive Slider">
           <div class="overlay">
             <p>Festive Slider</p>
           </div>
         </div>
+        </a>
+        <a href="Festive.html">
         <div class="image-container">
           <img src="./src/images/1728221526639 1.png" alt="Festive Collection">
           <div class="overlay">
-            <p>Festive Collection</p>
+            <p>wedding box</p>
           </div>
         </div>
+        </a>
       </div>
     </div>
-    <div class="flex justify-end mt-8 container-eg-btn-3">
-      <a class="button button-6">View Product</a>
-    </div>
+    
   </section>
   <section class="nostalgia-section relative overflow-hidden">
     <div class="absolute inset-0">
@@ -500,13 +593,13 @@
         </div>
       </div>
       <div class="flex justify-end mt-8 container-eg-btn-3">
-        <a class="button button-6">View more</a>
+        <a class="button button-6" href="Gallery.html">View more</a>
       </div>
     </div>
 
     <section class="mt-2 mb-12  md:mr-12">
       <div
-        class="border-[5px] border-[#582E22] bg-[#171515] rounded-2xl h-[250px] w-[400px] md:h-[220px] my-auto relative">
+        class="border-[5px] border-[#582E22] bg-[#171515] rounded-2xl h-[250px] md:w-[400px] md:h-[220px] my-auto relative">
         <div class="absolute inset-0 z-0 top-0">
           <img src="./src/images/Group 427.png" class="" />
         </div>
