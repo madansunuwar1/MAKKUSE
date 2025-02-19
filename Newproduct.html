@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/css/corporate.css" />
+  <link rel="stylesheet" href="./src/css/tailwind.css" />
+  <link rel="stylesheet" href="./src/css/navbar.css" />
+  <link rel="stylesheet" href="./src/css/footer.css" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <title>Makkuse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 before-cls">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="containerr">
+      <a href="index.html" class="logo">
+        <img src="./src/images/logo.png" alt="Logo" class="logo-image">
+      </a>
+      <div class="flex gap-2">
+      <a href="#" class="basket-icon-1 px-2 my-auto md:hidden orderNowButton">
+        <i class="bi bi-basket-fill text-white text-[24px]"></i>
+      </a>
+      <button class="hamburger my-auto" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="Ourstory.html" class="nav-link">Our Story</a>
+        <div class="dropdown">
+        <button class="dropdown-btn nav-link">Product</button>
+          <div class="dropdown-menu">
+          <div class="dropdown-2 dropdown-nested">
+            <a class="dropdown-item dropdown-toggle">Pustakari</a>
+            <div class="dropdown-menu-2">
+              <a href="puntepustakari.html" class="dropdown-item">punte pustakari</a>
+              <a href="puntepustakari.html" class="dropdown-item">Regular Pustakari</a>
+              <a href="puntepustakari.html" class="dropdown-item">Handcrafted Regular</a>
+              <a href="puntepustakari.html" class="dropdown-item">Hc Coffee</a>
+              <a href="puntepustakari.html" class="dropdown-item">Hc diabities friendly</a>
+            </div>
+          </div>
+          <div class="dropdown-2 dropdown-nested">
+            <a  class="dropdown-item dropdown-toggle">Gundpak</a>
+            <div class="dropdown-menu-2">
+              <a href="puntepustakari.html" class="dropdown-item">Original</a>
+              <a href="puntepustakari.html" class="dropdown-item">Mocha</a>
+              <a href="puntepustakari.html" class="dropdown-item">Rosewater</a>
+              <a href="puntepustakari.html" class="dropdown-item">Suger free</a>
+            </div>
+          </div>
+          <div class="dropdown-2 dropdown-nested">
+            <a  class="dropdown-item dropdown-toggle">Cookies</a>
+            <div class="dropdown-menu-2">
+              <a href="puntepustakari.html" class="dropdown-item">choclate fudge gudpak cookies</a>
+              <a href="puntepustakari.html" class="dropdown-item">gudpak filled semolina cookies</a>
+              <a href="puntepustakari.html" class="dropdown-item">oatmeal gudpak cookies</a>
+            
+            </div>
+          </div>
+          <div class="dropdown-2 dropdown-nested">
+            <a  class="dropdown-item dropdown-toggle">Gift Boxes</a>
+            <div class="dropdown-menu-2">
+              <a href="puntepustakari.html" class="dropdown-item">Regular Boxes</a>
+              <a href="puntepustakari.html" class="dropdown-item">Birthday Gift</a>
+              <a href="puntepustakari.html" class="dropdown-item">Winter Giftbox</a>
+              <a href="puntepustakari.html" class="dropdown-item">Loshar Giftbox</a>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="dropdown">
+          <button class="dropdown-btn nav-link">Customized Gifting</button>
+          <div class="dropdown-menu">
+            <a href="Coperategift.html" class="dropdown-item">Corporate Gifts</a>
+            <div class="dropdown-1 dropdown-nested">
+              <a href="Festive.html" class="dropdown-item dropdown-toggle">Festival Gifts</a>
+              <div class="dropdown-menu-1">
+                <a href="Festive.html" class="dropdown-item">Dashain</a>
+                <a href="Festive.html" class="dropdown-item">Tihar</a>
+                <a href="Festive.html" class="dropdown-item">Teej</a>
+                <a href="Festive.html" class="dropdown-item">Fathers Day</a>
+                <a href="Festive.html" class="dropdown-item">Christmas Day</a>
+                <a href="Valentine.html" class="dropdown-item">Valentines Day</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+
+          <button class="dropdown-btn nav-link">Makkuse Outlet</button>
+          <div class="dropdown-menu">
+            <a href="Outlet.html" class="dropdown-item">Thamel</a>
+            <a href="Outlet.html" class="dropdown-item">Jhamiskhel</a>
+            <a href="Outlet.html" class="dropdown-item">Pokhara</a>
+          </div>
+        </div>
+
+        <a href="Franchise.html" class="nav-link">Franchise</a>
+        <a href="Contact.html" class="nav-link">Contact Us</a>
+        <a href="#" class="basket-icon py-1 px-2 hidden md:flex orderNowButton">
+          <i class="bi bi-basket-fill text-white text-[30px]"></i>
+          <div class="shop-now-text my-auto">Shop Now</div>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- product banner section  -->
+  <section class="py-[60px] md:py-[140px] bg-[url('./src/images/ful.png')] bg-cover">
+    <h1
+      class="font-bold text-[40px] text-center gradienttext" style="font-family: 'Montserrat',sans-serif;">
+      Pustakari</h1>
+    <p class="text-[20px] text-center text-white mx-4 md:mx-[520px]" style="font-family: 'Montserrat',sans-serif;">A traditional hard candy made from thickened milk, fried and mixed with sugar and shaped into dainty portions.</p>
+  </section>
+  <!-- products content starts here  -->
+
+ <section class="grid grid-cols-1 md:grid-cols-4 gap-12 mx-4 md:mx-10 my-12 md:my-40 item-start">
+    <div class="border-[#874f47] border-[8px] bg-[#070606] px-3 rounded-[25px] col-span-1 self-start py-20 md:py-10" style="font-family: 'Montserrat',sans-serif;">
+        <div class="text-center text-[24px] text-[#874f47] font-bold">Category</div>
+        <div class="border-b-[2px] mt-1 w-10 border-white mx-auto"></div>
+        <ul class="text-center">
+            <li class="text-center text-[24px] text-white mt-6 hover:text-[#874f47]">pustakari</li>
+            <li class="text-center text-[24px] text-white mt-4 hover:text-[#874f47]">gudpak</li>
+            <li class="text-center text-[24px] text-white mt-4 hover:text-[#874f47]">Cookies</li>
+        </ul>
+        <div class="text-center text-[24px] text-[#874f47] mt-6 font-bold">combobox</div>
+        <div class="border-b-[2px] mt-1 w-10 border-white mx-auto"></div>
+        <ul class="text-center">
+            <li class="text-center text-[24px] text-white mt-6 hover:text-[#874f47]">special pack</li>
+            <li class="text-center text-[24px] text-white mt-4 hover:text-[#874f47]">ultimate luxury gift</li>
+            <li class="text-center text-[24px] text-white mt-4 hover:text-[#874f47]">Small gift Boxes</li>
+        </ul>
+    </div>
+    <div class="col-span-1 md:col-span-3 gap-4">
+        <h1 class="text-[24px] text-black font-bold mb-[34px]">Product</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3">
+            <div>
+                <img class="h-[430px] w-[400px] rounded-[20px] bg-[#d9d9d9]"/>
+                <p class="font-semibold text-[20px] text-[#874F47] mt-2 text-center" style="font-family: 'Montserrat',sans-serif;">Punte Pustakari</p>
+            </div>
+            <div>
+                <img class="h-[430px] w-[400px] rounded-[20px] bg-[#d9d9d9]"/>
+                <p class="font-semibold text-[20px] text-[#874F47] mt-2 text-center" style="font-family: 'Montserrat',sans-serif;">Punte Pustakari</p>
+            </div>
+            <div>
+                <img class="h-[430px] w-[400px] rounded-[20px] bg-[#d9d9d9]"/>
+                <p class="font-semibold text-[20px] text-[#874F47] mt-2 text-center" style="font-family: 'Montserrat',sans-serif;">Punte Pustakari</p>
+            </div>
+            <div>
+                <img class="h-[430px] w-[400px] rounded-[20px] bg-[#d9d9d9]"/>
+                <p class="font-semibold text-[20px] text-[#874F47] mt-2 text-center" style="font-family: 'Montserrat',sans-serif;">Punte Pustakari</p>
+            </div>
+            <div>
+                <img class="h-[430px] w-[400px] rounded-[20px] bg-[#d9d9d9]"/>
+                <p class="font-semibold text-[20px] text-[#874F47] mt-2 text-center" style="font-family: 'Montserrat',sans-serif;">Punte Pustakari</p>
+            </div>
+        </div>
+    </div>
+ </section>
+  <!-- Footer -->
+  <footer class="footer relative">
+    <div class="footer-overlay absolute inset-0 bg-gradient-to-r opacity-100" style="background-image: linear-gradient(to right, #874F47 0%, #211311 100%);"></div>
+
+    <div class="footer-line">
+      <img src="./src/images/line.jpg" alt="Footer Divider">
+    </div>
+    <div class="container-foot">
+      <div class="grid">
+        <!-- Logo Section -->
+        <a href="index.html">
+        <div class="footer-logo">
+          <img src="./src/images/logo.png" alt="Your Brand Logo" class="rounded">
+        </div>
+      </a>
+
+        <!-- Quick Links Section -->
+        <div class="footer-links ">
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Quick Links</h3>
+          <ul>
+            <li><a href="#" class="footer-link text-white">Send Gift to Nepal</a></li>
+            <li><a href="Gallery.html" class="footer-link text-white">Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us Section -->
+        <div class="footer-contact">
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Contact Us</h3>
+          <div>
+            <i class="bi bi-envelope text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">info@makkuse.com</p>
+          </div>
+          <div>
+            <i class="bi bi-telephone text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">+977 9820202020</p>
+          </div>
+          <div>
+            <i class="bi bi-telephone text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">+977 9820202020</p>
+          </div>
+       
+        </div>
+      
+
+        <!-- Address Section -->
+        <div class="footer-address">
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Address</h3>
+          <div class="flex gap-2 mt-2">
+            <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">Thamel</p>
+          </div>
+          <div class="flex gap-2 mt-2">
+            <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">jhamsikhel</p>
+          </div>
+          <div class="flex gap-2 mt-2">
+            <i class="bi bi-geo-alt-fill text-white hover:text-black"></i>
+            <p class="text-white hover:text-black">Pokhara</p>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Follow us on</h3>
+          <div class="footer-media">
+            <i class="bi bi-instagram text-white"></i>
+            <i class="bi bi-facebook text-white"></i>
+            <i class="bi bi-twitter text-white"></i>
+            <i class="bi bi-linkedin text-white"></i>
+          </div>
+        </div>
+
+        <!-- Have a Question Section -->
+        <div class="footer-question">
+          <h3 class="footer-heading text-white font-bold text-2xl mb-4">Have a Question?</h3>
+          <form action="#" method="POST">
+            <div class="flex">
+              <input type="text" name="question" id="question" required placeholder="Type your question"
+                class="input-field">
+              <button type="submit" class="submit-btn">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="orderModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2 class="text-[#BE6449] text-[24px] font-bold">E-Commerce Distributors</h2>
+      <p class="text-[#BE6449] text-md">Our Product Are Available In These Platform</p>
+      <div class="flex flex-col justify-center gap-4 mt-8">
+        <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+          <img src="./src/images/i2.png" class="w-12 h-5 mx-auto"/>
+            </div>
+          </div>
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+              <img src="./src/images/i1.png" class="w-10 h-5 mx-auto"/>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-4 md:gap-10 justify-center">
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+              <img src="./src/images/i4.png" class="w-20 h-5 mx-auto"/>
+            </div>
+          </div>
+          <div class="relative p-[1px] bg-gradient-to-r from-[#BE6449] via-[#EAAA84] to-[#BE6449] rounded-md w-[150px]">
+            <div class="bg-[#302F2F] hover:bg-opacity-0 py-2 rounded-md mx-auto">
+              <img src="./src/images/i3.png" class="w-24 h-5 mx-auto"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const modal = document.getElementById('orderModal');
+    const openButtons = document.querySelectorAll('.orderNowButton');
+    const closeButton = document.getElementById('closeModal');
+
+    // Open the modal
+    openButtons.forEach(button => {
+button.addEventListener('click', () => {
+modal.classList.remove('hidden');
+});
+});
+    // Close the modal
+    closeButton.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+
+    // Close modal when clicking outside of the modal content
+    window.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  </script>
+  <script>
+  const slider = document.getElementById('slider');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+    let currentIndex = 0;
+    
+    function getVisibleItems() {
+      if (window.innerWidth >= 1024) {
+        return 3; // Desktop
+      } else if (window.innerWidth >= 640) {
+        return 2; // Tablet
+      } else {
+        return 1; // Mobile
+      }
+    }
+    
+    prev.addEventListener('click', () => {
+      const visibleItems = getVisibleItems();
+      if (currentIndex > 0) {
+        currentIndex -= 1;
+        updateSliderPosition(visibleItems);
+      }
+    });
+    
+    next.addEventListener('click', () => {
+      const visibleItems = getVisibleItems();
+      if (currentIndex < slider.children.length - visibleItems) {
+        currentIndex += 1;
+        updateSliderPosition(visibleItems);
+      }
+    });
+    
+    function updateSliderPosition(visibleItems) {
+      const cardWidth = slider.children[0].offsetWidth;
+      slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+    
+    // Recalculate on window resize
+    window.addEventListener('resize', () => {
+      updateSliderPosition(getVisibleItems());
+    });
+    
+    const slider1 = document.getElementById('slider-1');
+    const prev1 = document.getElementById('prev-1');
+    const next1 = document.getElementById('next-1');
+    let currentIndex1 = 0;
+    
+    function getVisibleItems1() {
+      if (window.innerWidth >= 1024) {
+        return 3; // Desktop
+      } else if (window.innerWidth >= 640) {
+        return 2; // Tablet
+      } else {
+        return 1; // Mobile
+      }
+    }
+    
+    prev1.addEventListener('click', () => {
+      const visibleItems1 = getVisibleItems1();
+      if (currentIndex1 > 0) {
+        currentIndex1 -= 1;
+        updateSliderPosition1(visibleItems1);
+      }
+    });
+    
+    next1.addEventListener('click', () => {
+      const visibleItems1 = getVisibleItems1();
+      if (currentIndex1 < slider1.children.length - visibleItems1) {
+        currentIndex1 += 1;
+        updateSliderPosition1(visibleItems1);
+      }
+    });
+    
+    function updateSliderPosition1(visibleItems1) {
+      const cardWidth1 = slider1.children[0].offsetWidth;
+      slider1.style.transform = `translateX(-${currentIndex1 * cardWidth1}px)`;
+    }
+    
+    // Recalculate on window resize
+    window.addEventListener('resize', () => {
+      updateSliderPosition1(getVisibleItems1());
+    });
+    </script>
+</body>
